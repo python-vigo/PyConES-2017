@@ -4,8 +4,8 @@ PyDay Galicia 2017 Website
 
 Web page made for PyDay Galicia 2017, developed with Django with :heart:.
 
-<!-- .. image:: https://travis-ci.org/python-spain/PyConES-2017.svg?branch=master
-    :target: https://travis-ci.org/python-spain/PyConES-2017 -->
+.. image:: https://travis-ci.org/python-spain/PyConES-2017.svg?branch=master
+.. :target: https://travis-ci.org/python-spain/PyConES-2017 -->
 
 Deploy for local development
 ----------------------------
