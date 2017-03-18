@@ -298,8 +298,8 @@ PRESS_EMAIL = "press2017@es.pycon.org"
 
 POSTGRES_USER='postgres'
 POSTGRES_PASSWORD='potato'
-POSTGRES_DB='pycones2017'
+POSTGRES_DB='pydaygal2017'
 DJANGO_SECRET_KEY='4)i0p15fwh0c+@b+m4qbd4_%ix19)_!xj(o(c(tp+&1c5-wh8$'
 DJANGO_SETTINGS_MODULE='config.settings.production'
-DATABASE_URL='postgres://postgres:potato@172.19.0.2:5432/pycones2017'
+DATABASE_URL='postgres://postgres:potato@172.19.0.2:5432/pydaygal2017'
 DJANGO_ALLOWED_HOSTS='localhost'

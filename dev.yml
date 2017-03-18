@@ -16,4 +16,4 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: potato
-      POSTGRES_DB: pycones2017
+      POSTGRES_DB: pydaygal2017
