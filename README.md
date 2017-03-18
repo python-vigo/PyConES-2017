@@ -1,10 +1,9 @@
-================
-PyDay Galicia 2017 Website
-================
+
+# PyDay Galicia 2017 Website
 
 Web page made for PyDay Galicia 2017, developed with Django with :heart:.
 
-.. image:: https://travis-ci.org/python-spain/PyConES-2017.svg?branch=master
+<!-- .. image:: https://travis-ci.org/python-spain/PyConES-2017.svg?branch=master
 .. :target: https://travis-ci.org/python-spain/PyConES-2017 -->
 
 Deploy for local development
@@ -12,9 +11,9 @@ Deploy for local development
 
 For local development you should run into a Python virtual environment:
 
-.. code-block:: bash
-
+```bash
     $ bash ./gunicorn-local.sh
+```
 
 This will install all required dependencies and packages.
 
@@ -25,10 +24,9 @@ Deploy with Docker
 To deploy using docker, first we've to create a ``.env`` file with the
 credentials of the database, secret key, etc.
 
-.. code-block:: bash
-
+```bash
     $ cp env.example .env
-
+```
 The available environment variables are:
 
 - ``POSTGRES_PASSWORD`` Postgres database password
@@ -45,7 +43,6 @@ The available environment variables are:
 The default values are ready to run the containers in a development machine using **production
 configuration**. Then, we've have to use Docker Compose to bring it up.
 
-.. code-block:: bash
-
+```bash
     $ docker-compose up -d
-
+```
