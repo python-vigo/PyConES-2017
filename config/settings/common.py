@@ -14,7 +14,7 @@ import markdown
 ROOT_DIR = environ.Path(__file__) - 3
 
 # environ.Path value to the project directory:
-APPS_DIR = ROOT_DIR.path('pycones')
+APPS_DIR = ROOT_DIR.path('pydaygal')
 
 # Absolute filesystem path to the config directory:
 CONFIG_ROOT = str(APPS_DIR.path("config"))
@@ -135,8 +135,8 @@ TEMPLATES = [
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
-                'pycones.utils.context_processors.project_settings',
-                'pycones.configurations.context_processors.options',
+                'pydaygal.utils.context_processors.project_settings',
+                'pydaygal.configurations.context_processors.options',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
@@ -170,15 +170,15 @@ THIRD_PARTY_APPS = tuple(
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
-    'pycones.utils',
-    'pycones.users',
-    'pycones.configurations',
-    'pycones.blog',
-    'pycones.sponsorships',
-    'pycones.proposals',
-    'pycones.reviewers',
-    'pycones.speakers',
-    'pycones.workshops',
+    'pydaygal.utils',
+    'pydaygal.users',
+    'pydaygal.configurations',
+    'pydaygal.blog',
+    'pydaygal.sponsorships',
+    'pydaygal.proposals',
+    'pydaygal.reviewers',
+    'pydaygal.speakers',
+    'pydaygal.workshops',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

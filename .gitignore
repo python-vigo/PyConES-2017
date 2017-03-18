@@ -61,10 +61,10 @@ lib/
 lib/python3.5/
 
 # Build files
-pycones/static/css/*.css
-pycones/static/js/bin/*.js
+pydaygal/static/css/*.css
+pydaygal/static/js/bin/*.js
 public/
 
 
 # Media files
-pycones/media/
+pydaygal/media/

@@ -43,7 +43,7 @@ var cssTask = function(options) {
     // Common 'run' code for each options
     var run = function(options) {
         options = sassOptions || options;
-        gulp.src(pathsConfig().sass + '/pycones.scss')
+        gulp.src(pathsConfig().sass + '/pydaygal.scss')
             .pipe(sass(options).on('error', sass.logError))
             .pipe(autoprefixer({ browsers: ['last 2 version'] }))
             .pipe(pixrem())

@@ -15,10 +15,10 @@ urlpatterns = i18n_patterns(
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
     url(r'^code-of-conduct/$', TemplateView.as_view(template_name='pages/code_of_conduct.html'), name="code-of-conduct"),
     url(r'^info/$', TemplateView.as_view(template_name='pages/info.html'), name="info"),
-    url(r'^blog/', include('pycones.blog.urls', namespace="blog")),
-    url(r'^users/', include('pycones.users.urls', namespace="users")),
-    url(r'^speakers/', include('pycones.speakers.urls', namespace="speakers")),
-    url(r'^workshops/', include('pycones.workshops.urls', namespace="workshops")),
+    url(r'^blog/', include('pydaygal.blog.urls', namespace="blog")),
+    url(r'^users/', include('pydaygal.users.urls', namespace="users")),
+    url(r'^speakers/', include('pydaygal.speakers.urls', namespace="speakers")),
+    url(r'^workshops/', include('pydaygal.workshops.urls', namespace="workshops")),
 )
 
 # URLs without i18n
