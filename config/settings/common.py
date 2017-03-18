@@ -62,14 +62,11 @@ MANAGERS = ADMINS
 TIME_ZONE = 'UTC'
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'gl'
+LANGUAGE_CODE = 'es-gl'
 ugettext = lambda s: s
 LANGUAGES = (
-    ('es', ugettext(u'Español')),
     ('gl', ugettext(u'Gallego')),
-    ('ca', ugettext(u'Catalán')),
-    ('eu', ugettext(u'Euskera')),
-    ('en', ugettext(u'English')),
+    ('es', ugettext(u'Español')),
 )
 LOCALE_PATHS = (
     str(APPS_DIR.path('locale')),

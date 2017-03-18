@@ -32,7 +32,6 @@ class Migration(migrations.Migration):
                 ('_biography_rendered', models.TextField(editable=False)),
                 ('annotation', models.TextField(blank=True, default='')),
                 ('is_keynoter', models.BooleanField(default=False)),
-                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, related_name='speaker', to=settings.AUTH_USER_MODEL)),
             ],
             options={
                 'ordering': ['name'],

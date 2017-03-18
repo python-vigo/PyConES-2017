@@ -1,37 +1,32 @@
-<article class="row speaker">
+<article class="row workshop">
     <div class="col-12">
         <div class="row">
           <div class="col-3">
-            {% if speaker.photo %}
-            <p><img src="{{ speaker.photo.url }}" class="img-responsive speaker-img"></p>
+            {% if workshop.photo %}
+            <p><img src="{{ workshop.photo.url }}" class="img-responsive workshop-img"></p>
             {% endif %}
           </div>
           <div class="col-9 col-vertical-middle-fixed">
-            <div class="row speaker-name">
+            <div class="row workshop-name">
               <h4>
-                {{ speaker.name}}
+                {{ workshop.name}}
               </h4>
             </div>
-            <div class="row speaker-track">
-              {% if speaker.track == 1 %}
-              <p class="speaker-track-1">
+            <div class="row workshop-track">
+              {% if workshop.track == 3 %}
+              <p class="workshop-track-1">
                 Track Iniciación
               </p>
               {% endif %}
-              {% if speaker.track == 2 %}
-              <p class="speaker-track-2">
-                Track Avanzado
-              </p>
-              {% endif %}
             </div>
-            <div class="row speaker-current-position">
+            <div class="row workshop-current-position">
               <p>
-                  {{ speaker.annotation }}
+                  {{ workshop.speaker }}
               </p>
             </div>
             <div></div>
           </div>
         </div>
-        <p class="speaker-content">{{ speaker.biography }}</p>
+        <p class="workshop-content">{{ workshop.content }}</p>
     </div>
 </article>

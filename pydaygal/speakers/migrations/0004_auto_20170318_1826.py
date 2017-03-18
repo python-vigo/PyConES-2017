@@ -17,15 +17,6 @@ class Migration(migrations.Migration):
             name='speaker',
             options={'verbose_name': 'speaker', 'verbose_name_plural': 'speakers'},
         ),
-        migrations.RemoveField(
-            model_name='speaker',
-            name='user',
-        ),
-        migrations.AddField(
-            model_name='speaker',
-            name='track',
-            field=models.IntegerField(default=0),
-        ),
         migrations.AlterField(
             model_name='speaker',
             name='biography',
