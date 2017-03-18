@@ -4,18 +4,18 @@ PyDay Galicia 2017 Website
 
 Web page made for PyDay Galicia 2017, developed with Django with :heart:.
 
-# .. image:: https://travis-ci.org/python-spain/PyConES-2017.svg?branch=master
-#    :target: https://travis-ci.org/python-spain/PyConES-2017
+<!-- .. image:: https://travis-ci.org/python-spain/PyConES-2017.svg?branch=master
+    :target: https://travis-ci.org/python-spain/PyConES-2017 -->
 
 Deploy for local development
 ----------------------------
 
-For local development you should run:
+For local development you should run into a Python virtual environment:
 
 .. code-block:: bash
- $ bash ./gunicorn-local.sh 
+ $ bash ./gunicorn-local.sh
 
-into a Python virtual environment. This will install all required dependencies and packages.
+This will install all required dependencies and packages.
 
 
 Deploy with Docker
