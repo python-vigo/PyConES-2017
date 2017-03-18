@@ -8,7 +8,7 @@ from pycones.blog.models import Post
 
 class PostTranslationOptions(TranslationOptions):
     fields = ('title', 'slug', 'content')
-    fallback_languages = {'default': ('es', 'en', 'ca')}
+    fallback_languages = {'default': ('gl', 'es', 'ca', 'en')}
 
 
 translator.register(Post, PostTranslationOptions)

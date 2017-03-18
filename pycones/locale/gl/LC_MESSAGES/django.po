@@ -3,17 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Miguel González <migonzalvar@gmail.com>, 2015
-# Oscar Carballal <oscar.carballal@gmail.com>, 2015
+# Ivan Nieto <ivan.n.s@tuta.io>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Web PyConES 2015\n"
+"Project-Id-Version: Web PyDay Galicia 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-08 16:38+0000\n"
-"PO-Revision-Date: 2015-07-12 17:01+0000\n"
-"Last-Translator: Miguel González <migonzalvar@gmail.com>\n"
+"POT-Creation-Date: 2017-03-16 16:38+0000\n"
+"PO-Revision-Date: 2017-03-16 17:01+0000\n"
+"Last-Translator: Ivan Nieto <ivan.n.s@tuta.io>\n"
 "Language-Team: Galician (http://www.transifex.com/python-espana/web-"
-"pycones-2015/language/gl/)\n"
+"pycones-2017/language/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: config/settings/common.py:68 pycones/proposals/__init__.py:16
 msgid "Español"
-msgstr "Español"
+msgstr ""
 
 #: config/settings/common.py:69
 msgid "Catalán"
@@ -30,7 +29,7 @@ msgstr ""
 
 #: config/settings/common.py:70
 msgid "Gallego"
-msgstr ""
+msgstr "Galego"
 
 #: config/settings/common.py:71
 msgid "Euskera"
@@ -67,11 +66,11 @@ msgstr ""
 
 #: pycones/blog/models.py:59
 msgid "Seguir leyendo..."
-msgstr "Seguir lendo..."
+msgstr "Continuar lendo..."
 
 #: pycones/blog/views.py:39
-msgid "Web de la PyConES 2016"
-msgstr "Web da PyConES 2015"
+msgid "Web de la PyDay Galicia 2016"
+msgstr "Web da PyDay Galicia 2017"
 
 #: pycones/configurations/__init__.py:9
 msgid "Float"
@@ -127,11 +126,11 @@ msgstr ""
 
 #: pycones/proposals/admin.py:55
 msgid "Revisiones completadas"
-msgstr ""
+msgstr "Revisións completadas"
 
 #: pycones/proposals/admin.py:59
 msgid "Revisiones asignadas"
-msgstr ""
+msgstr "Revisións asignadas"
 
 #: pycones/proposals/admin.py:63
 msgid "Lista de etiquetas"
@@ -147,7 +146,7 @@ msgstr ""
 
 #: pycones/proposals/forms.py:43
 msgid "Este campo no puede estar vacío."
-msgstr ""
+msgstr "Este campo non pode estar baleiro"
 
 #: pycones/proposals/forms.py:46
 msgid ""
@@ -155,6 +154,9 @@ msgid ""
 "al equipo organizador a seleccionar tu charla indicando un breve esquema, si "
 "habrá demos en directo o qué conocimientos previos debería tener la audiencia"
 msgstr ""
+"¡O resumo e moi corto! Ten que conter ao menos 80 palabras. Axuda "
+"ao equipo organizador a seleccionar a túa charla indicando un breve esquema, se "
+"haberá demos en directo ou qué coñecementos previos debería ter a audiencia"
 
 #: pycones/proposals/models.py:23
 msgid "Name"
@@ -162,7 +164,7 @@ msgstr "Nome"
 
 #: pycones/proposals/models.py:34
 msgid "Nivel de la audiencia"
-msgstr ""
+msgstr "Nivel da audiencia"
 
 #: pycones/proposals/models.py:41
 msgid "Idioma"
@@ -174,7 +176,7 @@ msgstr ""
 
 #: pycones/proposals/models.py:59
 msgid "Tipo de propuesta"
-msgstr ""
+msgstr "Tipo de proposta"
 
 #: pycones/proposals/models.py:61
 msgid "Título"
@@ -189,10 +191,12 @@ msgid ""
 "Si tu propuesta se acepta esto se hará público, y se incluirá en el "
 "programa. Debería ser un párrafo, con un máximo de 500 caracteres."
 msgstr ""
+"Se a túa proposta acéptase, isto farase público, e será incluida no "
+"programa. Debería ser un só párrafo, cun máximo de 500 caracteres."
 
 #: pycones/proposals/models.py:69
 msgid "Resumen detallado"
-msgstr ""
+msgstr "Resumo en detalle"
 
 #: pycones/proposals/models.py:73
 #, fuzzy
@@ -211,7 +215,7 @@ msgstr ""
 
 #: pycones/proposals/models.py:78
 msgid "Notas adicionales"
-msgstr ""
+msgstr "Notas adicionais"
 
 #: pycones/proposals/models.py:82
 #, fuzzy
@@ -242,20 +246,20 @@ msgstr ""
 #: pycones/proposals/models.py:164
 #, python-format
 msgid "[%s] Confirmación de propuesta de charla"
-msgstr ""
+msgstr "[%s] Confirmación de proposta de charla"
 
 #: pycones/proposals/models.py:183
 #, python-format
 msgid "[%s] Notificación de propuesta de charla"
-msgstr ""
+msgstr "[%s] Notificación de proposta de charla"
 
 #: pycones/reviewers/admin.py:46
 msgid "Revisiones"
-msgstr ""
+msgstr "Revisións"
 
 #: pycones/reviewers/forms.py:33
 msgid "Debes puntuar entre 1 y 10"
-msgstr ""
+msgstr "Tes que puntuar entre 1 e 10"
 
 #: pycones/reviewers/models.py:23
 msgid "Relevancia"
@@ -264,19 +268,19 @@ msgstr ""
 #: pycones/reviewers/models.py:23 pycones/reviewers/models.py:26
 #: pycones/reviewers/models.py:29
 msgid "Puntuación del 1 al 10"
-msgstr ""
+msgstr "Puntiación do 1 ao 10"
 
 #: pycones/reviewers/models.py:26
 msgid "Interés General"
-msgstr ""
+msgstr "Interés Xeral"
 
 #: pycones/reviewers/models.py:29
 msgid "Novedad"
-msgstr ""
+msgstr "Novidade"
 
 #: pycones/reviewers/models.py:32
 msgid "Notas del revisor"
-msgstr ""
+msgstr "Notas do revisor"
 
 #: pycones/reviewers/models.py:34
 msgid "¿Existe un conflico de intereses?"
@@ -289,7 +293,8 @@ msgstr ""
 #: pycones/reviewers/models.py:63
 #, python-format
 msgid "[%s] Tienes una nueva propuesta para revisar"
-msgstr ""
+msgstr "[%s] Tes unha nova proposta para revisar"
+
 
 #: pycones/schedules/models.py:104 pycones/schedules/models.py:233
 msgid "video URL"
@@ -305,23 +310,23 @@ msgstr ""
 
 #: pycones/schedules/models.py:235
 msgid "URL de la presentación o del código"
-msgstr ""
+msgstr "URL da presentación ou do código"
 
 #: pycones/schedules/models.py:236
 msgid "Fichero de presentación"
-msgstr ""
+msgstr "Ficheiro de presentación"
 
 #: pycones/schedules/views.py:90 pycones/speakers/views.py:47
 msgid "Datos actualizados correctamente"
-msgstr ""
+msgstr "Os datos foron actualizados correctamente"
 
 #: pycones/speakers/models.py:18
 msgid "Nombre"
-msgstr ""
+msgstr "Nome"
 
 #: pycones/speakers/models.py:20
 msgid "Tal como quieres que apareza en el programa de la conferencia."
-msgstr ""
+msgstr "Tal e como queres que apareza no programa da conferencia."
 
 #: pycones/speakers/models.py:23
 msgid "Biografía"
@@ -334,12 +339,11 @@ msgstr ""
 #| "using <a href='http://daringfireball.net/projects/markdown/basics' "
 #| "target='_blank'>Markdown</a>."
 msgid ""
-"Unas palabras sobre ti. Edita usando <a href='http://warpedvisions.org/"
+"Unas palabras sobre el speaker. Edita usando <a href='http://warpedvisions.org/"
 "projects/markdown-cheat-sheet/target='_blank'>Markdown</a>."
 msgstr ""
-"Esquema detallado. Farase público se a túa proposta é aceptada. Edita usando "
-"<a href='http://daringfireball.net/projects/markdown/basics' "
-"target='_blank'>Markdown</a>."
+"Unhas palabras sobre o speaker. Edita utilizando <a href='http://warpedvisions.org/"
+"projects/markdown-cheat-sheet/target='_blank'>Markdown</a>."
 
 #: pycones/speakers/models.py:33
 msgid "Foto"
@@ -455,7 +459,7 @@ msgstr "arquivo"
 
 #: pycones/templates/emails/users/restore_email.html:3
 msgid "Entra en este enlace para establecer tu contraseña:"
-msgstr ""
+msgstr "Entra neste enlace para establecer o teu contrasinal"
 
 #: pycones/templates/headers.html:22
 msgid "Información del evento"
@@ -467,7 +471,7 @@ msgstr ""
 
 #: pycones/templates/headers.html:28
 msgid "Salir"
-msgstr ""
+msgstr "Saír"
 
 #: pycones/templates/headers.html:45 pycones/templates/pages/info.html:7
 msgid "Código de conducta"
@@ -477,45 +481,45 @@ msgstr "Código de comportamento"
 msgid "Contacta con nosotros"
 msgstr "Contacta con nós"
 
-#: pycones/templates/pages/code_of_conduct.html:6
+#: pycones/templates/pages/code_of_conduct.html:3
 msgid "Codigo de conducta"
 msgstr "Código de comportamento"
 
-#: pycones/templates/pages/code_of_conduct.html:7
+#: pycones/templates/pages/code_of_conduct.html:4
 msgid ""
-"PyConES es una conferencia hecha por la comunidad pensada para la "
+"PyDay Galicia es una conferencia hecha por la comunidad pensada para la "
 "divulgación y colaboración dentro de la comunidad de desarrolladores."
 msgstr ""
-"PyConES é unha conferencia feita pola comunidade pensada para a divulgación "
+"PyDay Galicia é unha conferencia feita pola comunidade pensada para a divulgación "
 "e colaboración dentro da comunidade de desenvolvedores."
 
-#: pycones/templates/pages/code_of_conduct.html:8
+#: pycones/templates/pages/code_of_conduct.html:5
 msgid ""
 "Valoramos la participación de cada miembro de la comunidad Python y queremos "
 "que todos los asistentes tengan una experiencia entretenida y satisfactoria. "
 "Para ello, se espera que todos los asistentes muestren respeto y cortesía "
 "hacia el resto durante la conferencia y todos los eventos relacionados con "
-"ella, estén oficialmente auspiciados por PyConES o no."
+"ella, estén oficialmente auspiciados por PyDay Galicia o no."
 msgstr ""
 "Valoramos a participación de cada membro da comunidade Python e queremos que "
 "todos os asistentes teñan unha experiencia entretida e satisfactoria. Para "
 "iso, esperamos que todos os asistentes amosen respeto e cortesía hacia os "
 "demais durante a conferencia e todos os eventos relacionados con ela, estén "
-"organizados pola PyConES ou non"
+"organizados pola PyDay Galicia ou non"
 
-#: pycones/templates/pages/code_of_conduct.html:9
+#: pycones/templates/pages/code_of_conduct.html:6
 msgid ""
 "En concreto, todos los delegados, disertantes, expositores y voluntarios que "
-"tomen parte en actividades relacionadas con PyConES deberán acatar el "
+"tomen parte en actividades relacionadas con PyDay Galicia deberán acatar el "
 "presente código de conducta. Los organizadores cuidarán del cumplimiento de "
 "este código durante el evento."
 msgstr ""
-"En concreto, todos os delegados, disertantes, expositores e voluntarios que "
-"tomen parte nas actividades relacionados coa PyConES deberán acatar o "
+"En concreto, tódolos delegados, disertantes, expositores e voluntarios que "
+"tomen parte nas actividades relacionados coa PyDay Galicia deberán acatar o "
 "presente código de conducta. Os organizadores coidarán do cumplimento deste "
 "código durante o evento."
 
-#: pycones/templates/pages/code_of_conduct.html:10
+#: pycones/templates/pages/code_of_conduct.html:7
 msgid ""
 "Se entiende por acoso todo comentario ofensivo alusivo al sexo, preferencias "
 "sexuales, discapacidades, aspecto físico, etnias y religiones; toda "
@@ -531,7 +535,7 @@ msgstr ""
 "charlas ou outras actividades; todo contacto físico inapropiado e toda "
 "proposta sexual non desexada."
 
-#: pycones/templates/pages/code_of_conduct.html:11
+#: pycones/templates/pages/code_of_conduct.html:8
 msgid ""
 "Los participantes que sean apercibidos deberán desistir inmediatamente de su "
 "actitud."
@@ -539,7 +543,7 @@ msgstr ""
 "Os participantes que sexan reprendidos deberán desistir inmediatamente na "
 "súa atitude."
 
-#: pycones/templates/pages/code_of_conduct.html:12
+#: pycones/templates/pages/code_of_conduct.html:9
 msgid ""
 "Los expositores, las casetas o pabellones de patrocinadores o empresas y "
 "actividades similares también están sujetas a la política antiacoso. En "
@@ -555,17 +559,17 @@ msgstr ""
 "deberían empregar uniformes ou vestimentas sexistas, dado que se crearía un "
 "ambiente sexualizado."
 
-#: pycones/templates/pages/code_of_conduct.html:13
+#: pycones/templates/pages/code_of_conduct.html:10
 msgid ""
 "Cuida tu lenguaje. Recuerda que las bromas sexistas, racistas y excluyentes "
 "en general podrían ofender a otras personas. El lenguaje excesivamente soez "
-"y las bromas ofensivas son inapropiadas en PyConES."
+"y las bromas ofensivas son inapropiadas en PyDay Galicia."
 msgstr ""
 "Coida a túa linguaxe. Recorda que as bromas sexistas, racistas e excluíntes "
 "en xeral poden ofender a outras persoas. A linguaxe excesivamente soez e as "
-"bromas ofensivas son inapropiadas na PyConES."
+"bromas ofensivas son inapropiadas na PyDay Galicia."
 
-#: pycones/templates/pages/code_of_conduct.html:14
+#: pycones/templates/pages/code_of_conduct.html:11
 msgid ""
 "Si algún participante infringiera este código de conducta, la organización "
 "podrá tomar las medidas que considere adecuadas, como la amonestación o la "
@@ -575,27 +579,27 @@ msgstr ""
 "poderá tomar as medidas que considere axeitadas, como a amoestación ou a "
 "expulsión sen dereito a reembolso. "
 
-#: pycones/templates/pages/code_of_conduct.html:15
+#: pycones/templates/pages/code_of_conduct.html:12
 msgid "Información de contacto"
 msgstr "Información de contacto"
 
-#: pycones/templates/pages/code_of_conduct.html:16
+#: pycones/templates/pages/code_of_conduct.html:13
 msgid ""
 "Si estás siendo objeto de acoso, notas que alguien está siendo acosado, o "
 "tienes cualquier otra preocupación, por favor ponte en contacto con un "
 "miembro del personal de la conferencia. El personal de la conferencia "
-"vestirá camisetas con la inscripción \"Personal PyConES\". Además puedes "
+"vestirá camisetas con la inscripción \"Personal PyDay Galicia\". Además puedes "
 "hablar con el personal del lugar y pedir que se te ponga en contacto con el "
 "responsable de la conferencia - Juan Luis Cano."
 msgstr ""
 "Se estás sendo obxecto de acoso, notas que alguén está a ser acosado ou tes "
 "calquera outra preocupación, por favor ponte en contacto cun membro do "
 "persoal da conferencia. O persoal da conferencia vestirá camisetas coa "
-"inscrición \"Personal PyConES\". Ademais podes falar co persoal do lugar e "
+"inscrición \"Personal PyDay Galicia\". Ademais podes falar co persoal do lugar e "
 "pedir que che poñan en contacto co responsable da conferencia - Juan Luis "
 "Cano."
 
-#: pycones/templates/pages/code_of_conduct.html:17
+#: pycones/templates/pages/code_of_conduct.html:14
 msgid ""
 "Si se trata de una cuestión especialmente urgente, dirígete a cualquiera de "
 "estas personas:"
@@ -603,7 +607,7 @@ msgstr ""
 "Se se trata dunha cuestión especialmente urxente, diríxete a calquera destas "
 "persoas:"
 
-#: pycones/templates/pages/code_of_conduct.html:21
+#: pycones/templates/pages/code_of_conduct.html:18
 msgid ""
 "El personal de la conferencia ayudará gustosamente a los participantes a que "
 "se pongan en contacto con el personal de seguridad del lugar o la policía "
@@ -617,96 +621,61 @@ msgstr ""
 "acoso para que poidan sentirse seguras durante o desenrolo da conferencia. O "
 "teu benestar é unha das nosas prioridades."
 
-#: pycones/templates/pages/code_of_conduct.html:22
+#: pycones/templates/pages/code_of_conduct.html:19
 msgid "Gracias por hacer de este un evento abierto a la comunidad y amistoso."
-msgstr "Gracias por facer deste un evento aberto á comunidade e amigable."
+msgstr "Grazas por facer deste un evento aberto á comunidade e amigable."
 
-#: pycones/templates/pages/code_of_conduct.html:23
+#: pycones/templates/pages/code_of_conduct.html:20
 msgid "Licencia"
 msgstr "Licenza"
 
-#: pycones/templates/pages/code_of_conduct.html:25
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Este Código de Conducta se basa en los códigos de "
-#| "conducta de PyCon US 2013\n"
-#| "                        (<a href=\"https://us.pycon.org/2013/about/code-"
-#| "of-conduct/\">https://us.pycon.org/2013/about/code-of-conduct/</a>) y\n"
-#| "                        PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/"
-#| "conference/diversity/\">http://ar.pycon.org/2012/conference/diversity/</"
-#| "a>), y\n"
-#| "                        está disponible bajo una licencia Creative "
-#| "Commons Atribución 3.0 España.\n"
-#| "                    "
+#: pycones/templates/pages/code_of_conduct.html:21
 msgid ""
-"\n"
-"        Este Código de Conducta se basa en los códigos de conducta de PyCon "
-"US 2013\n"
-"        (<a href=\"https://us.pycon.org/2013/about/code-of-conduct/"
-"\">https://us.pycon.org/2013/about/code-of-conduct/</a>) y\n"
-"        PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/conference/"
-"diversity/\">http://ar.pycon.org/2012/conference/diversity/</a>), y\n"
-"        está disponible bajo una licencia Creative Commons Atribución 3.0 "
-"España.\n"
-"    "
+"Este Código de Conducta se basa en los siguientes códigos:"
 msgstr ""
-"\n"
-"Este Código de Conduta baséase nos códigos de conduta da PyCon US 2013 (<a "
-"href=\"https://us.pycon.org/2013/about/code-of-conduct/\">https://us.pycon."
-"org/2013/about/code-of-conduct/</a>) e PyConAr 2012 (<a href=\"http://ar."
-"pycon.org/2012/conference/diversity/\">http://ar.pycon.org/2012/conference/"
-"diversity/</a>) e está dispoñible baixo unha licenza Creative Commons "
-"Atribución 3.0 España."
+"Este Código de Comportamento baséase nos seguintes códigos:"
+
+#: pycones/templates/pages/code_of_conduct.html:24
+msgid ""
+"y está disponible bajo licencia Creative Commons Atribución 3.0 España."
+msgstr ""
+"e atópase baixo licencia Creative Commons Atribución 3.0 España."
+
+#: pycones/templates/pages/home.html:4
+msgid ""
+"¿Que es PyDay Galicia 2017?"
+msgstr ""
+"Qué é a PyDay Galicia 2017?"
+
+#: pycones/templates/pages/home.html:5
+msgid ""
+"PyDay Galicia es la conferencia anual de la comunidad Python gallega, "
+"que celebrará su segunda edición el día <strong>XXXXX de Junio de "
+"2017</strong> en <strong>Vigo</strong>, tras una primera edición exitosa "
+"con muy buena acogida."
+msgstr ""
+"PyDay Galicia é a conferencia anual da comunidade Python galega, "
+"que celebrará su segunda edición el día <strong>XXXXX de Xuño de "
+"2017</strong> en <strong>Vigo</strong>, tras unha primeira edición exitosa "
+"con moi boa acollida."
+
+#: pycones/templates/pages/home.html:6
+msgid ""
+"Este evento se acoge al formato seguido por: "
+"<a href=\"http://2017.es.pycon.org\" target=\"_blank\">PyConEs</a> y "
+"<a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>."
+msgstr ""
+"Este evento acóllese ao formato seguido por: "
+"<a href=\"http://2017.es.pycon.org\" target=\"_blank\">PyConEs</a> e "
+"<a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>."
 
 #: pycones/templates/pages/home.html:9
-#, fuzzy
-#| msgid "¿Que es PyConES 2016?"
-msgid "¿Que es PyConES 2017?"
-msgstr "Qué é a PyConES 2015?"
-
-#: pycones/templates/pages/home.html:11
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                    <strong>PyConES</strong> es la conferencia nacional "
-#| "sobre Python más importante de España.\n"
-#| "                    La PyConES celebrará su cuarta edición los días "
-#| "<strong>7 a 9 de octubre de 2016</strong> en <strong>Almería</strong>, "
-#| "después de\n"
-#| "                    tres exitosas ediciones en Madrid, Zaragoza y "
-#| "Valencia respectivamente y siguiendo el formato del evento mundial\n"
-#| "                    <a href=\"http://pycon.org\" target=\"_blank\">PyCon</"
-#| "a>.\n"
-#| "                "
-msgid ""
-"\n"
-"                    <strong>PyConES</strong> es la conferencia nacional "
-"sobre Python más importante de España.\n"
-"                    La PyConES celebrará su quinta edición los días "
-"<strong>22 a 24 de septimebre de 2017</strong> en <strong>Cáceres</strong>, "
-"después de\n"
-"                    cuatro exitosas ediciones en Madrid, Zaragoza, Valencia "
-"y Almería respectivamente y siguiendo el formato del evento mundial\n"
-"                    <a href=\"http://pycon.org\" target=\"_blank\">PyCon</"
-"a>.\n"
-"                "
-msgstr ""
-"\n"
-"<strong>PyConES</strong> é a conferencia nacional sobre Python mais "
-"importante de España. A PyConES celebrará a súa terceira edición os días "
-"<strong>21 e 22 novembro de 2015</strong> en <strong>Valencia</strong>, "
-"despois de dúas exitosas edicións en Madrid e Zaragoza respectivamente e "
-"segundo o formato do evento mundial <a href=\"http://pycon.org\" target="
-"\"_blank\">PyCon</a>."
+msgid "EDICIONES ANTERIORES"
+msgstr "EDICIÓNS ANTERIORES"
 
 #: pycones/templates/pages/home.html:18
-msgid "Ediciones anteriores"
-msgstr "Edicións anteriores"
-
-#: pycones/templates/pages/home.html:30
-msgid "Patrocinadores"
-msgstr "Patrocinadores"
+msgid "PATROCINADORES"
+msgstr ""
 
 #: pycones/templates/pages/home.html:60
 #, fuzzy, python-format
@@ -731,126 +700,69 @@ msgstr ""
 
 #: pycones/templates/pages/home.html:69
 msgid "Folleto (ES)"
-msgstr "Folleto (EN)"
+msgstr ""
 
 #: pycones/templates/pages/home.html:72
 msgid "Folleto (EN)"
-msgstr "Folleto (EN)"
+msgstr ""
 
 #: pycones/templates/pages/info.html:9
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        PyConES aspira a crear un ambiente libre de "
-#| "acosos o discriminaciones por razón de género, orientación sexual, "
-#| "discapacidad, aspecto físico, etnia o religión. No se tolerará "
-#| "discriminación alguna bajo ninguna circunstancia.\n"
-#| "                    "
 msgid ""
-"\n"
-"        PyConES aspira a crear un ambiente libre de acosos o "
-"discriminaciones por razón de género, orientación sexual, discapacidad, "
-"aspecto físico, etnia o religión. No se tolerará discriminación alguna bajo "
-"ninguna circunstancia.\n"
-"    "
+"PyDay Galicia aspira a crear un ambiente libre de acosos o discriminaciones "
+"por razón de género, orientación sexual, discapacidad, aspecto físico, etnia "
+"o religión. No se tolerará discriminación alguna bajo ninguna circunstancia."
 msgstr ""
-"\n"
-"                            PyConES aspira a crear un ambente libre de "
-"acosos ou discriminacións por razón de xénero, orientación sexual, "
-"discapacidade, aspecto físico, etnia ou relixión. Non se tolerará "
-"discriminación algunha baixo ningunha circunstancia.\n"
-"                            "
+"PyDay Galicia aspira a crear un ambente libre de acosos ou discriminacións "
+"por razón de xénero, orientación sexual, discapacidade, aspecto físico, "
+"etnia ou relixión. Non se tolerará discriminación algunha "
+"baixo ningunha circunstancia."
 
 #: pycones/templates/pages/info.html:14
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Todo el contenido de la conferencia deberá "
-#| "ajustarse a una audiencia profesional integrada por personas procedentes "
-#| "de sectores diferentes. Tanto el lenguaje como las imágenes sexualmente "
-#| "explícitos son inapropiados en la conferencia y en las charlas.\n"
-#| "                    "
 msgid ""
-"\n"
-"        Todo el contenido de la conferencia deberá ajustarse a una audiencia "
+"Todo el contenido de la conferencia deberá ajustarse a una audiencia "
 "profesional integrada por personas procedentes de sectores diferentes. Tanto "
 "el lenguaje como las imágenes sexualmente explícitos son inapropiados en la "
-"conferencia y en las charlas.\n"
-"    "
+"conferencia y en las charlas."
 msgstr ""
-"\n"
 "Todo o contido da conferencia deberá axustarse a unha audiencia profesional "
 "integrada por persoas procedentes de sectores diferentes. Tanto a linguaxe "
 "coma as imaxes sexualmente explícitas son inapropiados na conferencia e nas "
 "charlas."
 
-#: pycones/templates/pages/info.html:19
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Sé amable con los demás. No insultes o humilles a "
-#| "otros asistentes. Compórtate de manera profesional. Recuerda que las "
-#| "bromas sexistas, racistas o discriminatorias están prohibidas en la "
-#| "PyConES.\n"
-#| "                    "
+#: pycones/templates/pages/info.html:10
 msgid ""
-"\n"
-"        Sé amable con los demás. No insultes o humilles a otros asistentes. "
+"Sé amable con los demás. No insultes o humilles a otros asistentes. "
 "Compórtate de manera profesional. Recuerda que las bromas sexistas, racistas "
-"o discriminatorias están prohibidas en la PyConES.\n"
-"    "
+"o discriminatorias están prohibidas en la PyDay Galicia."
 msgstr ""
-"\n"
 "Sé amable cos demais. Non insultes ou humilles a outros asistentes. "
 "Compórtate de xeito profesional. Lembra que as bromas sexistas, racistas ou "
-"discriminatorias están prohibidas na PyConES."
+"discriminatorias están prohibidas na PyDay Galicia."
 
-#: pycones/templates/pages/info.html:24
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Los asistentes que incumplan estas reglas podrán -"
-#| "a discreción de los organizadores- ser sancionados o expulsados de la "
-#| "conferencia sin derecho a reembolso.\n"
-#| "                    "
+#: pycones/templates/pages/info.html:13
 msgid ""
-"\n"
-"        Los asistentes que incumplan estas reglas podrán -a discreción de "
-"los organizadores- ser sancionados o expulsados de la conferencia sin "
-"derecho a reembolso.\n"
-"    "
+"Los asistentes que incumplan estas reglas podrán -a discreción de los organizadores- "
+"ser sancionados o expulsados de la conferencia sin derecho a reembolso."
 msgstr ""
-"\n"
-"Os asistentes que incumpran estas regras poderán -a discreción dos "
-"organizadores- ser sancionados ou expulsados da conferencia sen dereito a "
-"reembolso."
+"Os asistentes que incumpran estas regras poderán -a discreción dos organizadores- "
+"ser sancionados ou expulsados da conferencia sen dereito a reembolso."
 
-#: pycones/templates/pages/info.html:29
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Gracias por ayudarnos a hacer este evento "
-#| "amistoso y abierto para todos.\n"
-#| "                    "
+#: pycones/templates/pages/info.html:15
 msgid ""
-"\n"
-"        Gracias por ayudarnos a hacer este evento amistoso y abierto para "
-"todos.\n"
-"    "
+"Gracias por ayudarnos a hacer este evento amistoso y abierto para todos."
 msgstr ""
-"\n"
-"Gracias por axudarnos a facer este evento amigable e aberto para todos."
+"Grazas por axudarnos a facer este evento amigable e aberto para todos."
 
 #: pycones/templates/pages/info.html:33
 msgid "Código de Conducta Completo"
-msgstr "Código de Conduta Completo"
+msgstr "Código de Comportamento Completo"
 
 #: pycones/templates/pages/landing.html:20
 msgid ""
-"Estamos preparando la nueva edición de la PyConES, dentro de poco habrá más "
+"Estamos preparando la nueva edición de la PyDay Galicia, dentro de poco habrá más "
 "novedades."
 msgstr ""
-"Estamos a preparar a nova edición da PyConEs, dentro de pouco haberá mais "
+"Estamos a preparar a nova edición da PyDay Galicia, dentro de pouco haberá mais "
 "novedades."
 
 #: pycones/templates/users/request_code.html:5
@@ -1035,8 +947,8 @@ msgstr ""
 #~ msgid "Toggle navigation"
 #~ msgstr "Activar navegación"
 
-#~ msgid "PyConES 2016"
-#~ msgstr "PyConES 2015"
+#~ msgid "PyDay Galicia 2016"
+#~ msgstr "PyDay Galicia 2017"
 
 #~ msgid "Compra tu entradas"
 #~ msgstr "Merca as túas entradas"
@@ -1044,8 +956,8 @@ msgstr ""
 #~ msgid "Blog"
 #~ msgstr "Blog"
 
-#~ msgid "PyConES"
-#~ msgstr "PyConES"
+#~ msgid "PyDay Galicia"
+#~ msgstr "PyDay Galicia"
 
 #~ msgid "Compra de entradas"
 #~ msgstr "Merca de entradas"

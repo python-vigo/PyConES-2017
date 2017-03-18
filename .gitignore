@@ -57,6 +57,7 @@ node_modules/
 
 # virtual environments
 .env
+lib/
 
 # Build files
 pycones/static/css/*.css

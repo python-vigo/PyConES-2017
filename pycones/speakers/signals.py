@@ -8,17 +8,17 @@ from pycones.speakers.models import Speaker
 
 
 def register_speakers_handler(sender, **kwargs):
-    """Handle profiles when the user is added to a group."""
+    """Handle profiles when the speaker is added to a group."""
 
     action = kwargs.get("action")
     instance = kwargs.get("instance")
     if instance and action in ("post_add", "post_remove"):
         if SPEAKERS_GROUP_NAME in instance.groups.values_list("name", flat=True):
-            if not Speaker.objects.filter(user=instance).exists():
-                Speaker.objects.create(user=instance)
+            if not Speaker.objects.filter(speaker=instance).exists():
+                Speaker.objects.create(speaker=instance)
         else:
-            if Speaker.objects.filter(user=instance).exists():
-                Speaker.objects.filter(user=instance).delete()
+            if Speaker.objects.filter(speaker=instance).exists():
+                Speaker.objects.filter(speaker=instance).delete()
 
 
 def create_speakers_group(sender, **kwargs):

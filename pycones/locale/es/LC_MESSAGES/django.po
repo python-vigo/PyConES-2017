@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ivan Nieto <ivan.n.s@tuta.io>, 2017.
 #
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-08 16:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Ivan Nieto <ivan.n.s@tuta.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -67,7 +67,7 @@ msgid "Seguir leyendo..."
 msgstr ""
 
 #: pycones/blog/views.py:39
-msgid "Web de la PyConES 2016"
+msgid "Web de la PyDay Galicia 2016"
 msgstr ""
 
 #: pycones/configurations/__init__.py:9
@@ -478,7 +478,7 @@ msgstr ""
 
 #: pycones/templates/pages/code_of_conduct.html:7
 msgid ""
-"PyConES es una conferencia hecha por la comunidad pensada para la "
+"PyDay Galicia es una conferencia hecha por la comunidad pensada para la "
 "divulgación y colaboración dentro de la comunidad de desarrolladores."
 msgstr ""
 
@@ -488,13 +488,13 @@ msgid ""
 "que todos los asistentes tengan una experiencia entretenida y satisfactoria. "
 "Para ello, se espera que todos los asistentes muestren respeto y cortesía "
 "hacia el resto durante la conferencia y todos los eventos relacionados con "
-"ella, estén oficialmente auspiciados por PyConES o no."
+"ella, estén oficialmente auspiciados por PyDay Galicia o no."
 msgstr ""
 
 #: pycones/templates/pages/code_of_conduct.html:9
 msgid ""
 "En concreto, todos los delegados, disertantes, expositores y voluntarios que "
-"tomen parte en actividades relacionadas con PyConES deberán acatar el "
+"tomen parte en actividades relacionadas con PyDay Galicia deberán acatar el "
 "presente código de conducta. Los organizadores cuidarán del cumplimiento de "
 "este código durante el evento."
 msgstr ""
@@ -529,7 +529,7 @@ msgstr ""
 msgid ""
 "Cuida tu lenguaje. Recuerda que las bromas sexistas, racistas y excluyentes "
 "en general podrían ofender a otras personas. El lenguaje excesivamente soez "
-"y las bromas ofensivas son inapropiadas en PyConES."
+"y las bromas ofensivas son inapropiadas en PyDay Galicia."
 msgstr ""
 
 #: pycones/templates/pages/code_of_conduct.html:14
@@ -548,7 +548,7 @@ msgid ""
 "Si estás siendo objeto de acoso, notas que alguien está siendo acosado, o "
 "tienes cualquier otra preocupación, por favor ponte en contacto con un "
 "miembro del personal de la conferencia. El personal de la conferencia "
-"vestirá camisetas con la inscripción \"Personal PyConES\". Además puedes "
+"vestirá camisetas con la inscripción \"Personal PyDay Galicia\". Además puedes "
 "hablar con el personal del lugar y pedir que se te ponga en contacto con el "
 "responsable de la conferencia - Juan Luis Cano."
 msgstr ""
@@ -591,15 +591,15 @@ msgid ""
 msgstr ""
 
 #: pycones/templates/pages/home.html:9
-msgid "¿Que es PyConES 2017?"
+msgid "¿Que es PyDay Galicia 2017?"
 msgstr ""
 
 #: pycones/templates/pages/home.html:11
 msgid ""
 "\n"
-"                    <strong>PyConES</strong> es la conferencia nacional "
+"                    <strong>PyDay Galicia</strong> es la conferencia nacional "
 "sobre Python más importante de España.\n"
-"                    La PyConES celebrará su quinta edición los días "
+"                    La PyDay Galicia celebrará su quinta edición los días "
 "<strong>22 a 24 de septimebre de 2017</strong> en <strong>Cáceres</strong>, "
 "después de\n"
 "                    cuatro exitosas ediciones en Madrid, Zaragoza, Valencia "
@@ -638,7 +638,7 @@ msgstr ""
 #: pycones/templates/pages/info.html:9
 msgid ""
 "\n"
-"        PyConES aspira a crear un ambiente libre de acosos o "
+"        PyDay Galicia aspira a crear un ambiente libre de acosos o "
 "discriminaciones por razón de género, orientación sexual, discapacidad, "
 "aspecto físico, etnia o religión. No se tolerará discriminación alguna bajo "
 "ninguna circunstancia.\n"
@@ -660,7 +660,7 @@ msgid ""
 "\n"
 "        Sé amable con los demás. No insultes o humilles a otros asistentes. "
 "Compórtate de manera profesional. Recuerda que las bromas sexistas, racistas "
-"o discriminatorias están prohibidas en la PyConES.\n"
+"o discriminatorias están prohibidas en la PyDay Galicia.\n"
 "    "
 msgstr ""
 
@@ -687,7 +687,7 @@ msgstr ""
 
 #: pycones/templates/pages/landing.html:20
 msgid ""
-"Estamos preparando la nueva edición de la PyConES, dentro de poco habrá más "
+"Estamos preparando la nueva edición de la PyDay Galicia, dentro de poco habrá más "
 "novedades."
 msgstr ""
 

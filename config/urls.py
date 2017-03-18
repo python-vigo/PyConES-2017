@@ -17,7 +17,8 @@ urlpatterns = i18n_patterns(
     url(r'^info/$', TemplateView.as_view(template_name='pages/info.html'), name="info"),
     url(r'^blog/', include('pycones.blog.urls', namespace="blog")),
     url(r'^users/', include('pycones.users.urls', namespace="users")),
-
+    url(r'^speakers/', include('pycones.speakers.urls', namespace="speakers")),
+    url(r'^workshops/', include('pycones.workshops.urls', namespace="workshops")),
 )
 
 # URLs without i18n

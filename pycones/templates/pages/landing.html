@@ -1,28 +1,23 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-
-{% block syndication %}{% endblock syndication %}
-
-{% block body_attrs %}class="landing"{% endblock %}
-{% block body %}
-
-    <div class="container">
-
-        <div class="landing-claim">
-            <div class="row">
-                <div class="col-12 col-xl-12">
-                    <img src="{% static "images/logo.png" %}" class="img-fluid">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>{% trans "Estamos preparando la nueva edición de la PyConES, dentro de poco habrá más novedades." %}</p>
-                    <p><a href="https://twitter.com/pycones" target="_blank"><i class="fa fa-twitter"></i></a></p>
-                </div>
+{% block syndication %} {% endblock syndication %}
+{% block body_attrs %}class="landing"{% endblock %} {% block body %}
+<div class="container">
+    <div class="landing-claim">
+        <div class="row">
+            <div class="col-12 col-xl-12">
+                <img src="{%static " images/logo.png "%}" class="img-fluid ">
             </div>
         </div>
-
+        <div class="row ">
+            <div class="col-12 text-center ">
+                <p>{% trans "Estamos preparando la nueva edición de la PyDay Galicia, dentro de poco habrá más novedades." %}</p>
+                <p><a href="https://twitter.com/pycones " target="_blank "><i class="fa fa-twitter "></i></a></p>
+            </div>
+        </div>
     </div>
+
+</div>
 
 {% endblock body %}

@@ -17,6 +17,7 @@ from pycones.blog.managers import ArticlesManager
 from pycones.utils.files import UploadToDir
 
 
+@python_2_unicode_compatible
 class AbstractArticle(TimeStampedModel):
     """Abstract model for articles, posts, etc."""
 
@@ -24,11 +25,13 @@ class AbstractArticle(TimeStampedModel):
     author = models.ForeignKey(settings.AUTH_USER_MODEL)
     title = models.TextField()
     slug = models.SlugField(blank=True, unique=True, max_length=128)
-    content = MarkupField(default="", default_markup_type="markdown", blank=True)
+    content = MarkupField(
+        default="", default_markup_type="markdown", blank=True)
 
     scheduled_at = models.DateTimeField(null=True, blank=True)
 
-    outstanding_image = models.ImageField(upload_to=UploadToDir('images', random_name=False), null=True, blank=True)
+    outstanding_image = models.ImageField(upload_to=UploadToDir(
+        'images', random_name=False), null=True, blank=True)
 
     objects = ArticlesManager()
 
@@ -84,4 +87,3 @@ class Post(AbstractArticle):
         slug_base = self.slug if self.slug else self.title
         self.slug = slugify(slug_base)
         super(Post, self).save(**kwargs)
-

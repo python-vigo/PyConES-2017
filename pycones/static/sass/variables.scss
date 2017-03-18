@@ -1,17 +1,16 @@
 // Options from Bootstrap
 @import "colors";
-
-$brand-primary: $green-primary !default;
-$brand-success: $green-dark !default;
-$brand-info: $green-light !default;
+$brand-primary: $blue-primary !default;
+$brand-success: $blue-dark !default;
+$brand-info: $blue-light !default;
 $brand-warning: $red-light !default;
 $brand-danger: $red-dark !default;
-
 $enable-flex: true;
-
-$font-family-sans-serif: 'roble_alt_lightlight', Arial, sans-serif !default;
-
+$font-family-sans-serif: 'Roboto',
+Arial,
+sans-serif !default;
 $font-size-root: 12.8px !default;
-
-$headings-font-family: 'roble_alt_boldbold', Arial, sans-serif !default;
-$headings-color: $green-dark !default;
+$headings-font-family: 'Raleway',
+Arial,
+sans-serif !default;
+$headings-color: $blue-dark !default;

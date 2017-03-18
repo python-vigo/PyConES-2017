@@ -50,7 +50,7 @@ API_DEBUG = DEBUG
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
 ADMINS = (
-    ("Marcos Gabarda", 'hey@marcosgabarda.com'),
+    ("Ivan Nieto", 'ivan.n.s@tuta.io'),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
@@ -62,12 +62,12 @@ MANAGERS = ADMINS
 TIME_ZONE = 'UTC'
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'gl'
 ugettext = lambda s: s
 LANGUAGES = (
     ('es', ugettext(u'Español')),
-    ('ca', ugettext(u'Catalán')),
     ('gl', ugettext(u'Gallego')),
+    ('ca', ugettext(u'Catalán')),
     ('eu', ugettext(u'Euskera')),
     ('en', ugettext(u'English')),
 )
@@ -178,6 +178,7 @@ LOCAL_APPS = (
     'pycones.proposals',
     'pycones.reviewers',
     'pycones.speakers',
+    'pycones.workshops',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -232,6 +233,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Custom user app defaults
 # Select the correct user model
 AUTH_USER_MODEL = 'users.User'
+AUTH_SPEAKER_MODEL = 'speakers.Speaker'
 
 # PASSWORD VALIDATION
 # ------------------------------------------------------------------------------
@@ -288,8 +290,16 @@ INSTALLED_APPS += (
 # ------------------------------------------------------------------------------
 # This values may vary during the life of the conference.
 LANDING_GLOBAL_REDIRECT = env.bool('PYCONES_LANDING_GLOBAL_REDIRECT', default=False)
-CONFERENCE_TITLE = "PyConES 2017"
+CONFERENCE_TITLE = "PyDay Galicia 2017"
 CONTACT_EMAIL = "contact2017@es.pycon.org"
 SPONSORS_EMAIL = "sponsors2017@es.pycon.org"
 CFP_EMAIL = "cfp2017@es.pycon.org"
 PRESS_EMAIL = "press2017@es.pycon.org"
+
+POSTGRES_USER='postgres'
+POSTGRES_PASSWORD='potato'
+POSTGRES_DB='pycones2017'
+DJANGO_SECRET_KEY='4)i0p15fwh0c+@b+m4qbd4_%ix19)_!xj(o(c(tp+&1c5-wh8$'
+DJANGO_SETTINGS_MODULE='config.settings.production'
+DATABASE_URL='postgres://postgres:potato@172.19.0.2:5432/pycones2017'
+DJANGO_ALLOWED_HOSTS='localhost'

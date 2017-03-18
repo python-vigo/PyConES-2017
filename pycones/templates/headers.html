@@ -22,6 +22,15 @@
                         <a class="nav-link" href="{% url "info" %}">{% trans "Información del evento" %}</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{% url "speakers:list" %}">{% trans "Speakers" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{% trans "Programa" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url "workshops:list" %}">{% trans "Workshops" %}</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url "blog:list" %}">{% trans "Blog" %}</a>
                     </li>
                     <li class="nav-item">
@@ -67,7 +76,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 text-center" style="font-size: 32px;">
-                        <a href="https://twitter.com/pycones"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/pythonvigo"><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
