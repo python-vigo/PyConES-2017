@@ -13,7 +13,8 @@ Deploy for local development
 For local development you should run into a Python virtual environment:
 
 .. code-block:: bash
- $ bash ./gunicorn-local.sh
+
+    $ bash ./gunicorn-local.sh
 
 This will install all required dependencies and packages.
 
