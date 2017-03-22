@@ -1,32 +1,18 @@
-<article class="row workshop">
-    <div class="col-12">
-        <div class="row">
-          <div class="col-3">
-            {% if workshop.photo %}
-            <p><img src="{{ workshop.photo.url }}" class="img-responsive workshop-img"></p>
-            {% endif %}
-          </div>
-          <div class="col-9 col-vertical-middle-fixed">
-            <div class="row workshop-name">
-              <h4>
-                {{ workshop.name}}
-              </h4>
-            </div>
-            <div class="row workshop-track">
-              {% if workshop.track == 3 %}
-              <p class="workshop-track-1">
-                Track Iniciación
-              </p>
-              {% endif %}
-            </div>
-            <div class="row workshop-current-position">
-              <p>
-                  {{ workshop.speaker }}
-              </p>
-            </div>
-            <div></div>
-          </div>
-        </div>
-        <p class="workshop-content">{{ workshop.content }}</p>
+<article class="col-xs-12 workshop text-center">
+    <div class="col-xs-8-offset-2">
+        {% if workshop.photo %}
+        <img src="{{ workshop.photo.url }}" class="img-responsive"> {% endif %}
     </div>
+    <div class="col-xs-8-offset-2 workshop-name">
+        <h4>
+            {{ workshop.name}}
+        </h4>
+    </div>
+    <div class="col-xs-8-offset-2 workshop-current-position">
+        <p>
+            Capacitador: <strong>{{ workshop.speaker }}</strong>
+        </p>
+    </div>
+    <div></div>
+    <p class="workshop-content">{{ workshop.content }}</p>
 </article>

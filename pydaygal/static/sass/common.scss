@@ -1,3 +1,4 @@
+@import "colors";
 .acorn-background {
     background: url("../images/landing-bg.jpg");
     background-size: cover;
@@ -22,11 +23,11 @@ $logo-height: 400px;
     display: inline-block;
     vertical-align: middle;
     float: none;
-    margin: auto -5px auto auto;
+    margin: auto auto;
 }
 
 .claim {
-    border-bottom: 5px solid $blue-dark;
+    /*border-bottom: 5px solid $blue-dark;*/
     margin-bottom: 15px;
     .img-logo {
         padding: 10px;
@@ -35,4 +36,11 @@ $logo-height: 400px;
 
 .img-responsive {
     max-width: 100%;
+}
+
+.nav-link {
+    color: $blue-primary !important;
+    &:hover {
+        color: $blue-dark !important;
+    }
 }

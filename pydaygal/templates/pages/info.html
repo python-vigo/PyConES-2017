@@ -1,4 +1,10 @@
-{% extends "container_landing.html" %} {% load static %} {% load i18n %} {% block content %}
+{% extends "container_clean.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<h2>{% trans "Información del evento" %}</h2>
+
 <h2>{% trans "Codigo de conducta" %}</h2>
 <p class="loud">
     {% trans "PyDay Galicia aspira a crear un ambiente libre de acosos o discriminaciones por razón de género, orientación sexual, discapacidad, aspecto físico, etnia o religión. No se tolerará discriminación alguna bajo ninguna circunstancia." %}
@@ -14,4 +20,5 @@
 </p>
 <p class="loud">{% trans "Gracias por ayudarnos a hacer este evento amistoso y abierto para todos." %}</p>
 
-<a href="{% url "code-of-conduct" %}">{% trans "Código de Conducta Completo" %}</a> {% endblock content %}
+<a href="{% url "code-of-conduct" %}">{% trans "Código de Conducta Completo" %}</a>
+{% endblock content %}

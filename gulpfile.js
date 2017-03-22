@@ -109,8 +109,8 @@ gulp.task('default', function() {
         development: true
     });
     imagesTask({
-        development: false
-            // watch: pathsConfig().images + "/**/*"
+        development: true,
+        watch: pathsConfig().images + "/**/*"
     });
     appTask({
         development: true,

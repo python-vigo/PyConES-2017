@@ -1,20 +1,20 @@
 #!/bin/sh
-sudo apt-get update && apt-get install -y \
-    software-properties-common
-sudo add-apt-repository multiverse
-sudo apt-get update && apt-get install -y \
-   build-essential \
-   git \
-   libpq-dev \
-   python3 \
-   python3-dev \
-   python3-pip \
-   nginx \
-   libjpeg-dev \
-   jpegoptim \
-   optipng \
-   gettext \
-   curl
+# sudo apt-get update && apt-get install -y \
+#     software-properties-common
+# sudo add-apt-repository multiverse
+# sudo apt-get update && apt-get install -y \
+#    build-essential \
+#    git \
+#    libpq-dev \
+#    python3 \
+#    python3-dev \
+#    python3-pip \
+#    nginx \
+#    libjpeg-dev \
+#    jpegoptim \
+#    optipng \
+#    gettext \
+#    curl
 
 pip install -r requirements/base.txt
 pip install -r requirements/production.txt

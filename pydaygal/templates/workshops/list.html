@@ -2,14 +2,14 @@
 {% load i18n %}
 
 {% block content %}
-    {% for workshop in workshops %}
-        {% include "workshops/_workshop.html" %}
-        <hr />
-        {% empty %}
-        <div class="row" style="min-height: 150px; padding-top: 50px">
-            <div class="col-12 text-center">
-                <h2>{% trans "¡Aún no hay ningun workshop!" %}</h2>
-            </div>
+{% for workshop in workshops %}
+    {% include "workshops/_workshop.html" %}
+    <hr />
+    {% empty %}
+    <div class="row" style="min-height: 150px; padding-top: 50px">
+        <div class="col-12 text-center">
+            <h2>{% trans "¡Aún no hay ningun workshop!" %}</h2>
         </div>
-    {% endfor %}
+    </div>
+{% endfor %}
 {% endblock content %}
