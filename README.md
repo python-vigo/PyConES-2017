@@ -9,13 +9,13 @@ Web page made for PyDay Galicia 2017, developed with Django with :heart:.
 Deploy for local development
 ----------------------------
 
-For local development you should run into a Python virtual environment:
+For local development you should run this script into a Python virtual environment:
 
 ```bash
     $ bash ./run-local.sh
 ```
 
-This will install all required dependencies and packages.
+This will install all required dependencies and will start to serve on localhost:8000.
 
 
 Deploy with Docker
