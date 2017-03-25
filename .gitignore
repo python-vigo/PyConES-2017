@@ -43,6 +43,9 @@ htmlcov
 # Pycharm
 .idea
 
+# VSCode
+.vscode/
+
 # Vim
 
 *~
@@ -59,6 +62,7 @@ node_modules/
 .env
 lib/
 lib/python3.5/
+venv/
 
 # Build files
 pydaygal/static/css/*.css
