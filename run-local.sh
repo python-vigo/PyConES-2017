@@ -12,6 +12,7 @@
 #    python3-dev \
 #    python3-pip \
 #    nginx \
+#    libssl-dev \
 #    libjpeg-dev \
 #    jpegoptim \
 #    optipng \
@@ -25,6 +26,8 @@ sudo yum install -y \
     epel-release \
     git \
     libpqxx-devel \
+    zlib \
+    openssl-devel \
     python-devel \
     nginx \
     libjpeg-turbo-devel \
