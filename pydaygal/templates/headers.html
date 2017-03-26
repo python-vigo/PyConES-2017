@@ -20,6 +20,11 @@
             <a class="navbar-brand" href="{% url "home" %}"><img src="{%static "images/logo.png" %}" class="img-responsive" style="max-width: 50px">&nbsp;</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    {% if request.user.is_authenticated %}
+                    <li class="nav-item">
+                        <p class="nav-link">{{ request.user }}</p>
+                    </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "info" %}">{% trans "Información del evento" %}</a>
                     </li>
@@ -35,11 +40,21 @@
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "blog:list" %}">{% trans "Blog" %}</a>
                     </li>
+                    {% if not request.user.is_authenticated %}
                     <li class="nav-item">
-                        {% if request.user.is_authenticated %}
-                        <a class="nav-link hvr-underline-from-left" href="{% url "users:sign-out" %}">{% trans "Salir" %}</a>
-                        {% endif %}
+                        <a class="nav-link hvr-underline-from-left" href="{% url "users:sign-in" %}">Login</a>
                     </li>
+                    {% endif %}
+                    {% if request.user.is_staff %}
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-left" href="{% url "admin:index" %}">Admin</a>
+                    </li>
+                    {% endif %}
+                    {% if request.user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-left" href="{% url "users:sign-out" %}">{% trans "Salir" %}</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
