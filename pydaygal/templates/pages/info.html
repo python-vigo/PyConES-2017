@@ -3,22 +3,24 @@
 {% load i18n %}
 
 {% block content %}
-<h2>{% trans "Información del evento" %}</h2>
-
-<h2>{% trans "Codigo de conducta" %}</h2>
-<p class="loud">
+  <h1 style="text-align: center;margin-bottom: 20px;">{% trans "Información del evento" %}</h1>
+<div class="container"><h2>{% trans "Codigo de conducta" %}</h2>
+  <p class="loud">
     {% trans "PyDay Galicia aspira a crear un ambiente libre de acosos o discriminaciones por razón de género, orientación sexual, discapacidad, aspecto físico, etnia o religión. No se tolerará discriminación alguna bajo ninguna circunstancia." %}
-</p>
-<p class="loud">
+  </p>
+  <p class="loud">
     {% trans "Todo el contenido de la conferencia deberá ajustarse a una audiencia profesional integrada por personas procedentes de sectores diferentes. Tanto el lenguaje como las imágenes sexualmente explícitos son inapropiados en la conferencia y en las charlas." %}
-</p>
-<p class="loud">
+  </p>
+  <p class="loud">
     {% trans "Sé amable con los demás. No insultes o humilles a otros asistentes. Compórtate de manera profesional. Recuerda que las bromas sexistas, racistas o discriminatorias están prohibidas en la PyDay Galicia." %}
-</p>
-<p class="loud">
+  </p>
+  <p class="loud">
     {% trans "Los asistentes que incumplan estas reglas podrán -a discreción de los organizadores- ser sancionados o expulsados de la conferencia sin derecho a reembolso." %}
-</p>
-<p class="loud">{% trans "Gracias por ayudarnos a hacer este evento amistoso y abierto para todos." %}</p>
+  </p>
+  <p class="loud">{% trans "Gracias por ayudarnos a hacer este evento amistoso y abierto para todos." %}</p>
 
-<a href="{% url "code-of-conduct" %}">{% trans "Código de Conducta Completo" %}</a>
+  <a href="{% url "code-of-conduct" %}">
+  {% trans "Código de Conducta Completo" %}
+  </a>
+</div>
 {% endblock content %}
