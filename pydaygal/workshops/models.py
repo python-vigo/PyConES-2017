@@ -41,8 +41,7 @@ class Workshop(TimeStampedModel):
         null=True
     )
     track = models.IntegerField(default=3)
-    speaker = models.TextField(default="", blank=True)
-
+    speaker = models.ForeignKey(Speaker)
 
     objects = WorkshopsManager()
 
