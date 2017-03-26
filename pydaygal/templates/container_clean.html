@@ -1,11 +1,6 @@
-{% extends "headers.html" %} {% load static %} {% block container %}
-
-<div class="container">
-    <div class="row" style="margin-top:40px">
-        <div class="col-12 col-lg-8 offset-lg-2">
-            {% block content %} {% endblock content %}
-        </div>
-    </div>
+{% extends "headers.html" %} {% load static %}
+{% block container %}
+<div class="container" style="height: 100%;">
+    {% block content %} {% endblock content %}
 </div>
-
 {% endblock container %}
