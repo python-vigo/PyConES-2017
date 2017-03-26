@@ -63,7 +63,11 @@ TIME_ZONE = 'UTC'
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = 'es-gl'
-ugettext = lambda s: s
+
+
+def ugettext(s): return s
+
+
 LANGUAGES = (
     ('gl', ugettext(u'Gallego')),
     ('es', ugettext(u'Español')),
@@ -86,7 +90,8 @@ USE_TZ = True
 
 # FIXTURE CONFIGURATION
 # ------------------------------------------------------------------------------
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-FIXTURE_DIRS
+# See:
+# https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-FIXTURE_DIRS
 FIXTURE_DIRS = (
     str(APPS_DIR.path('fixtures')),
 )
@@ -109,8 +114,10 @@ MIDDLEWARE = [
 # EMAIL
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
-DEFAULT_FROM_EMAIL = env('DJANGO_DEFAULT_FROM_EMAIL', default='{} <noreply@{}>'.format(PROJECT_NAME, PROJECT_DOMAIN))
-EMAIL_SUBJECT_PREFIX = env('DJANGO_EMAIL_SUBJECT_PREFIX', default='[{}] '.format(PROJECT_NAME))
+DEFAULT_FROM_EMAIL = env('DJANGO_DEFAULT_FROM_EMAIL',
+                         default='{} <noreply@{}>'.format(PROJECT_NAME, PROJECT_DOMAIN))
+EMAIL_SUBJECT_PREFIX = env(
+    'DJANGO_EMAIL_SUBJECT_PREFIX', default='[{}] '.format(PROJECT_NAME))
 SERVER_EMAIL = env('DJANGO_SERVER_EMAIL', default=DEFAULT_FROM_EMAIL)
 
 # TEMPLATE CONFIGURATION
@@ -176,6 +183,7 @@ LOCAL_APPS = (
     'pydaygal.reviewers',
     'pydaygal.speakers',
     'pydaygal.workshops',
+    'pydaygal.schedules',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -198,12 +206,14 @@ STATIC_ROOT = str(ROOT_DIR('public'))
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
 STATIC_URL = '/static/'
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
+# See:
+# https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
     str(APPS_DIR.path('static')),
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
+# See:
+# https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -234,7 +244,8 @@ AUTH_SPEAKER_MODEL = 'speakers.Speaker'
 
 # PASSWORD VALIDATION
 # ------------------------------------------------------------------------------
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
+# See:
+# https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -286,7 +297,8 @@ INSTALLED_APPS += (
 # PROJECT CUSTOM SETTINGS
 # ------------------------------------------------------------------------------
 # This values may vary during the life of the conference.
-LANDING_GLOBAL_REDIRECT = env.bool('PYCONES_LANDING_GLOBAL_REDIRECT', default=False)
+LANDING_GLOBAL_REDIRECT = env.bool(
+    'PYCONES_LANDING_GLOBAL_REDIRECT', default=False)
 CONFERENCE_TITLE = "PyDay Galicia 2017"
 CONTACT_EMAIL = "contact2017@es.pycon.org"
 SPONSORS_EMAIL = "sponsors2017@es.pycon.org"
