@@ -13,6 +13,7 @@ from model_utils.models import TimeStampedModel
 
 from pydaygal.workshops.managers import WorkshopsManager
 from pydaygal.utils.files import UploadToDir
+from pydaygal.speakers.models import Speaker
 
 
 @python_2_unicode_compatible
