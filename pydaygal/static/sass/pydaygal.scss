@@ -13,7 +13,6 @@
 @import "common";
 @import "landing";
 @import "sponsors";
-@import "speakers";
 html,
 body {
     height: 100%;
@@ -33,7 +32,7 @@ footer {
     padding-top: 15px;
     /*border-top: 5px solid $blue-dark;*/
     min-height: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     a {
         color: $blue-dark;
         &:hover {
@@ -42,16 +41,16 @@ footer {
     }
 }
 
-@media (min-width: 768px){
-  .navbar-nav{
-     margin: 0 0 0 auto;
-     display: inherit;
-     float: none;
-  }
-}
-@media (max-width: 767px){
-  .navbar-nav{
-    text-align: center;
-  }
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin: 0 0 0 auto;
+        display: inherit;
+        float: none;
+    }
 }
 
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
