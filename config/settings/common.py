@@ -183,7 +183,6 @@ LOCAL_APPS = (
     'pydaygal.reviewers',
     'pydaygal.speakers',
     'pydaygal.workshops',
-    'pydaygal.schedules',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
