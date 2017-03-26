@@ -27,25 +27,6 @@
     <link rel="stylesheet" href="{% static "css/pydaygal.css" %}">
     <link rel="stylesheet" href="{% static "css/hover-min.css" %}">
     <link rel="stylesheet" href="{% static "css/cards.css" %}">
-    <style>
-      /* Grow */
-      .hvr-grow {
-          display: inline-block;
-          vertical-align: middle;
-          transform: translateZ(0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          backface-visibility: hidden;
-          -moz-osx-font-smoothing: grayscale;
-          transition-duration: 0.3s;
-          transition-property: transform;
-      }
-
-      .hvr-grow:hover,
-      .hvr-grow:focus,
-      .hvr-grow:active {
-          transform: scale(1.1);
-      }
-    </style>
     <!-- Use this to quickly test CSS changes in a template,
         then move to pydaygal.css -->
     {% block extra_css %}{% endblock extra_css %}
