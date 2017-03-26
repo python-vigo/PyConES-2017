@@ -1,4 +1,4 @@
-<article class="col-xs-12 workshop text-center">
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 workshop text-center">
     <div class="col-xs-8-offset-2">
         {% if workshop.photo %}
         <img src="{{ workshop.photo.url }}" class="img-responsive"> {% endif %}
@@ -9,10 +9,8 @@
         </h4>
     </div>
     <div class="col-xs-8-offset-2 workshop-current-position">
-        <p>
-            Capacitador: <strong>{{ workshop.speaker }}</strong>
-        </p>
+        Capacitador: <strong>{{ workshop.speaker }}</strong>
     </div>
     <div></div>
     <p class="workshop-content">{{ workshop.content }}</p>
-</article>
+</div>
