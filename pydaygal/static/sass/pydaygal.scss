@@ -26,13 +26,15 @@ strong {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: $blue-primary;
     color: $blue-dark;
     margin-top: 30px;
     padding-top: 15px;
     /*border-top: 5px solid $blue-dark;*/
-    min-height: 100px;
-    padding-bottom: 20px;
+    height: 100px;
     a {
         color: $blue-dark;
         &:hover {
