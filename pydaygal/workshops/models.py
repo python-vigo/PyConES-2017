@@ -42,8 +42,7 @@ class Workshop(TimeStampedModel):
         null=True
     )
     track = models.IntegerField(default=3)
-    speaker = models.ForeignKey(Speaker)
-
+    speaker = models.ForeignKey(Speaker, default=1)
     objects = WorkshopsManager()
 
     class Meta:
