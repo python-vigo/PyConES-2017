@@ -63,6 +63,7 @@ node_modules/
 lib/
 lib/python3.5/
 venv/
+.venv/
 
 # Build files
 pydaygal/static/css/*.css
