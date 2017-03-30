@@ -6,13 +6,15 @@ Web page made for PyDay Galicia 2017, developed with Django with :heart:.
 <!-- .. image:: https://travis-ci.org/python-spain/PyConES-2017.svg?branch=master
 .. :target: https://travis-ci.org/python-spain/PyConES-2017 -->
 
-Deploy for local development
+Development
 ----------------------------
 
-For local development you should run this script into a Python virtual environment:
+For development run this on your terminal into the project root folder:
 
 ```bash
-    $ bash ./run-local.sh
+    $ python3 -m venv .venv && \
+        source .venv/bin/activate \
+        bash ./run-local.sh
 ```
 
 This will install all required dependencies and will start to serve on localhost:8000.
