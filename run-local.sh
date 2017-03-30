@@ -36,17 +36,34 @@
 # #     gettext \
 # #     curl
 
-# pip install -r requirements/base.txt
-# pip install -r requirements/production.txt
-# pip install -r requirements/local.txt
-# pip install -r requirements/test.txt
+# For Fedora systems
 
-# sed -i 's/\r//' entrypoint-local.sh \
-#     && chmod +x entrypoint-local.sh \
-#     && chown ivan entrypoint-local.sh \
-#     && sed -i 's/\r//' run-local.sh \
-#     && chmod +x run-local.sh \
-#     && chown ivan run-local.sh
+ sudo dnf install -y \
+     epel-release \
+     git \
+     libpqxx-devel \
+     zlib \
+     openssl-devel \
+     python-devel \
+     nginx \
+     libjpeg-turbo-devel \
+     jpegoptim \
+     optipng \
+     gettext \
+     curl
+
+ pip install --upgrade pip wheel setuptools
+ pip install -r requirements/base.txt
+ pip install -r requirements/production.txt
+ pip install -r requirements/local.txt
+ pip install -r requirements/test.txt
+
+ sed -i 's/\r//' entrypoint-local.sh \
+     && chmod +x entrypoint-local.sh \
+     && chown ivan entrypoint-local.sh \
+     && sed -i 's/\r//' run-local.sh \
+     && chmod +x run-local.sh \
+     && chown ivan run-local.sh
 #     # && chown initios entrypoint-local.sh \
 #     # && chown initios run-local.sh
 
@@ -54,7 +71,7 @@
 npm install \
 && npm run build \
 && python3 manage.py collectstatic --noinput \
+&& python3 manage.py compilemessages \
+&& python3 manage.py makemigrations \
 && python3 manage.py migrate \
 && python3 manage.py runserver
-
-# && python3 manage.py compilemessages \
