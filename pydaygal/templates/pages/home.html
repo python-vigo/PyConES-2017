@@ -14,17 +14,13 @@
 <div class="row">
     <div class="col-12">
         <h6 id="sponsors" class="text-center"> {% trans "PATROCINADORES" %}:</h6>
-        {% sponsor_levels as levels %} {% for level in levels %} {% sponsors level.pk as sponsors %} {% if sponsors %}
+        {% sponsor_levels as levels %}
+        {% for level in levels %}
+        {% sponsors level.pk as sponsors %}
+        {% if sponsors %}
         <div class="row">
             {% for sponsor in sponsors %}
-            <div class="
-                {% if level.order == 0 %}
-                    col-8 offset-2
-                {% else %}
-                    col-6
-                    {% if level.order < 2 %}col-md-6{% else %}col-md-4{% endif %}
-                {% endif %}
-                text-center">
+            <div class="col-lg-3>
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}" alt="{{ sponsor.name }}" class="img-fluid sponsors-img">
                 </a>
@@ -33,14 +29,16 @@
             <div class="clearfix visible-xs"></div>
             {% endif %} {% if forloop.counter|divisibleby:"3" %}
             <div class="clearfix visible-sm"></div>
-            {% endif %} {% endfor %}
+            {% endif %}
+            {% endfor %}
         </div>
         {% else %}
         <h3>{{ level.name }}</h3>
         <p class="loud">
             {% blocktrans with level_name=level.name|lower %} ¿Quieres ser sponsor {{ level_name }}? <a href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">¡Contacta con nosotros!</a> {% endblocktrans %}
         </p>
-        {% endif %} {% endfor %}
+        {% endif %}
+        {% endfor %}
         <hr />
         <p class="text-center loud">
             <a href="{% static "files/es_brochure_v2.pdf" %}" class="btn btn-primary" target="_blank">
