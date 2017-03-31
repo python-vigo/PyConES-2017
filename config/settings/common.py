@@ -179,8 +179,6 @@ LOCAL_APPS = (
     'pydaygal.configurations',
     'pydaygal.blog',
     'pydaygal.sponsorships',
-    'pydaygal.proposals',
-    'pydaygal.reviewers',
     'pydaygal.speakers',
     'pydaygal.workshops',
 )
@@ -239,7 +237,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Custom user app defaults
 # Select the correct user model
 AUTH_USER_MODEL = 'users.User'
-AUTH_SPEAKER_MODEL = 'speakers.Speaker'
 
 # PASSWORD VALIDATION
 # ------------------------------------------------------------------------------
@@ -297,7 +294,7 @@ INSTALLED_APPS += (
 # ------------------------------------------------------------------------------
 # This values may vary during the life of the conference.
 LANDING_GLOBAL_REDIRECT = env.bool(
-    'PYCONES_LANDING_GLOBAL_REDIRECT', default=False)
+    'PYDAYGAL_LANDING_GLOBAL_REDIRECT', default=False)
 CONFERENCE_TITLE = "PyDay Galicia 2017"
 CONTACT_EMAIL = "contact2017@es.pycon.org"
 SPONSORS_EMAIL = "sponsors2017@es.pycon.org"
