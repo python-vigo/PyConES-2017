@@ -1,49 +1,49 @@
 @import "colors";
 .acorn-background {
-    background: url("../images/landing-bg.jpg");
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 70%;
+  background: url("../images/landing-bg.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 70%;
 }
 
 $logo-width: 495px;
 $logo-height: 400px;
 .logo {
+  background: #fff url("../images/logo.png") no-repeat 15px 15px;
+  background-size: $logo-width $logo-height !important;
+  width: $logo-width+30px;
+  height: $logo-height+30px;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: #fff url("../images/logo.png") no-repeat 15px 15px;
-    background-size: $logo-width $logo-height !important;
-    width: $logo-width+30px;
-    height: $logo-height+30px;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        background: #fff url("../images/logo.png") no-repeat 15px 15px;
-        background-size: $logo-width $logo-height;
-    }
+    background-size: $logo-width $logo-height;
+  }
 }
 
 .col-vertical-middle-fixed {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-    margin: auto auto;
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin: auto auto;
 }
 
 .claim {
-    /*border-bottom: 5px solid $blue-dark;*/
-    margin-bottom: 15px;
-    .img-logo {
-        padding: 10px;
-    }
+  /*border-bottom: 5px solid $blue-dark;*/
+  margin-bottom: 15px;
+  .img-logo {
+    padding: 10px;
+  }
 }
 
 .img-responsive {
-    max-width: 100%;
-    width: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .nav-link {
-    color: $blue-primary !important;
-    &:hover {
-        color: $blue-dark !important;
-    }
+  color: $blue-primary !important;
+  &:hover {
+    color: $blue-dark !important;
+  }
 }
 
 .navbar {
@@ -52,50 +52,50 @@ $logo-height: 400px;
 
 @import "colors";
 .acorn-background {
-    background: url("../images/landing-bg.jpg");
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 70%;
+  background: url("../images/landing-bg.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 70%;
 }
 
 $logo-width: 495px;
 $logo-height: 400px;
 .logo {
+  background: #fff url("../images/logo.png") no-repeat 15px 15px;
+  background-size: $logo-width $logo-height !important;
+  width: $logo-width+30px;
+  height: $logo-height+30px;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: #fff url("../images/logo.png") no-repeat 15px 15px;
-    background-size: $logo-width $logo-height !important;
-    width: $logo-width+30px;
-    height: $logo-height+30px;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        background: #fff url("../images/logo.png") no-repeat 15px 15px;
-        background-size: $logo-width $logo-height;
-    }
+    background-size: $logo-width $logo-height;
+  }
 }
 
 .col-vertical-middle-fixed {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-    margin: auto auto;
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin: auto auto;
 }
 
 .claim {
-    /*border-bottom: 5px solid $blue-dark;*/
-    margin-bottom: 15px;
-    .img-logo {
-        padding: 10px;
-    }
+  /*border-bottom: 5px solid $blue-dark;*/
+  margin-bottom: 15px;
+  .img-logo {
+    padding: 10px;
+  }
 }
 
 .img-responsive {
-    max-width: 100%;
-    width: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .nav-link {
-    color: $blue-primary !important;
-    &:hover {
-        color: $blue-dark !important;
-    }
+  color: $blue-primary !important;
+  &:hover {
+    color: $blue-dark !important;
+  }
 }
 
 .navbar {
@@ -104,4 +104,5 @@ $logo-height: 400px;
 
 .container {
   height: 100%;
+  min-height: 100%;
 }
