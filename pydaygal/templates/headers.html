@@ -40,11 +40,6 @@
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "blog:list" %}">{% trans "Blog" %}</a>
                     </li>
-                    {% if not request.user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "users:sign-in" %}">Login</a>
-                    </li>
-                    {% endif %}
                     {% if request.user.is_staff %}
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "admin:index" %}">Admin</a>
