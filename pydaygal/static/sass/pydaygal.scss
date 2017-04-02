@@ -13,9 +13,12 @@
 @import "common";
 @import "landing";
 @import "sponsors";
+@import "speakers";
 html,
 body {
     min-height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 b,
