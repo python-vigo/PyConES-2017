@@ -1,5 +1,32 @@
 .sponsors {
-  &-img {
-     max-height: 150px;
-  }
+    &-img {
+        min-height: 50px;
+        max-height: 100px;
+    }
+    &-ul {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+    }
+    &-level {
+        border-radius: 20px;
+        padding: 10px;
+        cursor: initial;
+        &-toptier {
+            border: 1px solid darkgoldenrod;
+            color: darkgoldenrod;
+        }
+        &-midtier {
+            border: 1px solid tomato;
+            color: tomato;
+        }
+        &-lowtier {
+            border: 1px solid #949494;
+            color: #949494;
+        }
+    }
+    &-level-block {
+        margin: 50px 0 50px 0;
+    }
 }
