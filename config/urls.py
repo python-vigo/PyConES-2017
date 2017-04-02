@@ -16,8 +16,9 @@ urlpatterns = i18n_patterns(
     url(r'^code-of-conduct/$', TemplateView.as_view(template_name='pages/code_of_conduct.html'), name="code-of-conduct"),
     url(r'^info/$', TemplateView.as_view(template_name='pages/info.html'), name="info"),
     url(r'^blog/', include('pydaygal.blog.urls', namespace="blog")),
-    url(r'^users/', include('pydaygal.users.urls', namespace="users")),
+    url(r'^cfp/', TemplateView.as_view(template_name='pages/cfp.html'), name="cfp"),
     url(r'^speakers/', include('pydaygal.speakers.urls', namespace="speakers")),
+    url(r'^users/', include('pydaygal.users.urls', namespace="users")),
     url(r'^workshops/', include('pydaygal.workshops.urls', namespace="workshops")),
 )
 
