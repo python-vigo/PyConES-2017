@@ -28,6 +28,8 @@
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "info" %}">{% trans "Información del evento" %}</a>
                     </li>
+                    <!-- Commented items until we get everything working -->
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "speakers:list" %}">{% trans "Speakers" %}</a>
                     </li>
@@ -36,6 +38,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "workshops:list" %}">{% trans "Workshops" %}</a>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-left" href="{% url "cfp" %}">{% trans "Call-For-Papers" %}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "blog:list" %}">{% trans "Blog" %}</a>
@@ -60,19 +66,19 @@
 
     {% block footer %}
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-5 offset-md-2">
-                        <ul class="list-unstyled">
-                            <li><a href="{% url "code-of-conduct" %}">{% trans "Código de conducta" %}</a></li>
-                            <li>{% trans "Contacta con nosotros" %}: <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a></li>
-                        </ul>
-                    </div>
+            <div class="container text-center">
+                <div class="row" style="margin-top: 20px;">
                     <div class="col-sm-12 col-md-2">
+                      <a href="{% url "code-of-conduct" %}">{% trans "Código de conducta" %}</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-left">
+                      {% trans "Contacta con nosotros" %}:<a href="mailto:{{ CONTACT_EMAIL }}"> {{ CONTACT_EMAIL }}</a>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
                         <form action="{% url 'set_language' %}" method="post" class="form-inline">{% csrf_token %}
                             <div class="form-group">
                                 <input name="next" type="hidden" value="/" />
-                                <select name="language" class="form-control" onchange="this.form.submit()" style="text-transform: capitalize">
+                                <select name="language" class="form-control" onchange="this.form.submit()" style="text-transform: capitalize;width: 100% !important;">
                                     {% get_current_language as LANGUAGE_CODE %}
                                     {% get_available_languages as LANGUAGES %}
                                     {% get_language_info_list for LANGUAGES as languages %}
@@ -85,10 +91,9 @@
                             </div>
                         </form>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center" style="font-size: 24px;color: white;">
-                        <a href="https://twitter.com/pythonvigo"><i class="fa fa-twitter"></i></a>
+                    <div class="col-sm-12 col-md-1 text-center" style="font-size: 24px;color: white;">
+                        <a href="https://twitter.com/pythonvigo"><i class="fa fa-twitter"></i></a>&nbsp;
+                        <span><a href="https://github.com/pythonvigo"><i class="fa fa-github"></i></a></span>
                     </div>
                 </div>
             </div>
