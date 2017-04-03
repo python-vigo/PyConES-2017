@@ -14,7 +14,7 @@ import markdown
 ROOT_DIR = environ.Path(__file__) - 3
 
 # environ.Path value to the project directory:
-APPS_DIR = ROOT_DIR.path('pycones')
+APPS_DIR = ROOT_DIR.path('pydaygal')
 
 # Absolute filesystem path to the config directory:
 CONFIG_ROOT = str(APPS_DIR.path("config"))
@@ -50,7 +50,7 @@ API_DEBUG = DEBUG
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
 ADMINS = (
-    ("Marcos Gabarda", 'hey@marcosgabarda.com'),
+    ("Ivan Nieto", 'ivan.n.s@tuta.io'),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
@@ -62,14 +62,15 @@ MANAGERS = ADMINS
 TIME_ZONE = 'UTC'
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'es'
-ugettext = lambda s: s
+LANGUAGE_CODE = 'es-gl'
+
+
+def ugettext(s): return s
+
+
 LANGUAGES = (
-    ('es', ugettext(u'Español')),
-    ('ca', ugettext(u'Catalán')),
     ('gl', ugettext(u'Gallego')),
-    ('eu', ugettext(u'Euskera')),
-    ('en', ugettext(u'English')),
+    ('es', ugettext(u'Español')),
 )
 LOCALE_PATHS = (
     str(APPS_DIR.path('locale')),
@@ -89,7 +90,8 @@ USE_TZ = True
 
 # FIXTURE CONFIGURATION
 # ------------------------------------------------------------------------------
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-FIXTURE_DIRS
+# See:
+# https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-FIXTURE_DIRS
 FIXTURE_DIRS = (
     str(APPS_DIR.path('fixtures')),
 )
@@ -112,8 +114,10 @@ MIDDLEWARE = [
 # EMAIL
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
-DEFAULT_FROM_EMAIL = env('DJANGO_DEFAULT_FROM_EMAIL', default='{} <noreply@{}>'.format(PROJECT_NAME, PROJECT_DOMAIN))
-EMAIL_SUBJECT_PREFIX = env('DJANGO_EMAIL_SUBJECT_PREFIX', default='[{}] '.format(PROJECT_NAME))
+DEFAULT_FROM_EMAIL = env('DJANGO_DEFAULT_FROM_EMAIL',
+                         default='{} <noreply@{}>'.format(PROJECT_NAME, PROJECT_DOMAIN))
+EMAIL_SUBJECT_PREFIX = env(
+    'DJANGO_EMAIL_SUBJECT_PREFIX', default='[{}] '.format(PROJECT_NAME))
 SERVER_EMAIL = env('DJANGO_SERVER_EMAIL', default=DEFAULT_FROM_EMAIL)
 
 # TEMPLATE CONFIGURATION
@@ -135,8 +139,8 @@ TEMPLATES = [
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
-                'pycones.utils.context_processors.project_settings',
-                'pycones.configurations.context_processors.options',
+                'pydaygal.utils.context_processors.project_settings',
+                'pydaygal.configurations.context_processors.options',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
@@ -170,14 +174,13 @@ THIRD_PARTY_APPS = tuple(
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
-    'pycones.utils',
-    'pycones.users',
-    'pycones.configurations',
-    'pycones.blog',
-    'pycones.sponsorships',
-    'pycones.proposals',
-    'pycones.reviewers',
-    'pycones.speakers',
+    'pydaygal.utils',
+    'pydaygal.users',
+    'pydaygal.configurations',
+    'pydaygal.blog',
+    'pydaygal.sponsorships',
+    'pydaygal.speakers',
+    'pydaygal.workshops',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -200,12 +203,14 @@ STATIC_ROOT = str(ROOT_DIR('public'))
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
 STATIC_URL = '/static/'
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
+# See:
+# https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
     str(APPS_DIR.path('static')),
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
+# See:
+# https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -235,7 +240,8 @@ AUTH_USER_MODEL = 'users.User'
 
 # PASSWORD VALIDATION
 # ------------------------------------------------------------------------------
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
+# See:
+# https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -287,8 +293,9 @@ INSTALLED_APPS += (
 # PROJECT CUSTOM SETTINGS
 # ------------------------------------------------------------------------------
 # This values may vary during the life of the conference.
-LANDING_GLOBAL_REDIRECT = env.bool('PYCONES_LANDING_GLOBAL_REDIRECT', default=False)
-CONFERENCE_TITLE = "PyConES 2017"
+LANDING_GLOBAL_REDIRECT = env.bool(
+    'PYDAYGAL_LANDING_GLOBAL_REDIRECT', default=False)
+CONFERENCE_TITLE = "PyDay Galicia 2017"
 CONTACT_EMAIL = "contact2017@es.pycon.org"
 SPONSORS_EMAIL = "sponsors2017@es.pycon.org"
 CFP_EMAIL = "cfp2017@es.pycon.org"

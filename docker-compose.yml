@@ -9,7 +9,7 @@ services:
 
   db:
     image: postgres:9.6
-    container_name: pycones-db
+    container_name: pydaygal-db
     volumes:
       - db-data:/var/lib/postgresql
     env_file: .env
@@ -20,8 +20,8 @@ services:
     build:
       context: .
       dockerfile: compose/webapp/Dockerfile
-    image: pycones/webapp
-    container_name: pycones-webapp
+    image: pydaygal/webapp
+    container_name: pydaygal-webapp
     command: /gunicorn.sh
     volumes:
       - .:/app
@@ -35,11 +35,11 @@ services:
     build:
       context: .
       dockerfile: compose/nginx/Dockerfile
-    image: pycones/nginx
-    container_name: pycones-nginx
+    image: pydaygal/nginx
+    container_name: pydaygal-nginx
     volumes:
       - ./public:/public
-      - ./pycones/media:/media
+      - ./pydaygal/media:/media
     ports:
       - "5002:5002"
     depends_on:

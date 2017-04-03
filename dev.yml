@@ -9,11 +9,11 @@ services:
 
   db:
     image: postgres:9.6
-    container_name: pycones-db
+    container_name: pydaygal-db
     volumes:
       - db-data:/var/lib/postgresql
     ports:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: potato
-      POSTGRES_DB: pycones2017
+      POSTGRES_DB: pydaygal2017
