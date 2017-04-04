@@ -68,6 +68,7 @@ venv/
 # Build files
 pydaygal/static/css/*.css
 pydaygal/static/js/bin/*.js
+pydaygal/static/images/dummy*
 public/
 
 
