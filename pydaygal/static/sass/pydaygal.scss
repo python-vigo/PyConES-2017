@@ -19,11 +19,9 @@ html {
     min-height: 100%;
 }
 body {
-    margin: 0 0 100px; /* bottom = footer height */
+    margin: 0 0 200px; /* bottom = footer height */
 }
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-}
+
 
 b,
 strong {
@@ -48,6 +46,9 @@ footer {
         &:hover {
             color: $blue-light
         }
+    }
+    form {
+      display: inline-block;
     }
 }
 
