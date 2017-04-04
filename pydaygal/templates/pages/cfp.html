@@ -1,10 +1,12 @@
 {% extends "container_clean.html" %}
 {% load i18n %}
 {% block content %}
-<div class="container">
-    <h2 class="text-center">Call For Papers</h2>
+<div class="container text-center ">
+    <h1>Call For Papers</h1>
     <hr>
-    <h1>Envía tu propuesta a <span><a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a></span>
-    si deseas tomar parte en el evento como Speaker o Capacitador de Workshops. Queremos escuchar a la comunidad.</1>
+    <br><br>
+    <h3>{% trans "Envía tu propuesta a" %} <span><a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a></span>
+    {% trans "si deseas tomar parte en el evento como Speaker o capacitador de workshops." %}</h3>
+    <h3>{% trans "Queremos escuchar a la comunidad, ¡y te invitamos a participar en ella!" %}</h3>
 </div>
 {% endblock content %}
