@@ -642,15 +642,15 @@ msgstr ""
 
 #: pydaygal/templates/pages/home.html:4
 msgid ""
-"¿Que es PyDay Galicia 2017?"
+"¿Qué es PyDay Galicia 2017?"
 msgstr ""
 "¿Qué é a PyDay Galicia 2017?"
 
 #: pydaygal/templates/pages/home.html:5
 msgid ""
-"PyDay Galicia es la conferencia anual de la comunidad Python gallega, que celebrará su segunda edición el <strong>10 de Junio de 2017</strong> en <strong>Vigo</strong>, tras una primera edición exitosa con muy buena acogida."
+"PyDay Galicia es la conferencia anual de la comunidad Python gallega, que celebrará su segunda edición el <strong>10 de Junio de 2017</strong> en las instalaciones del museo <strong>MARCO</strong>, en <strong>Vigo</strong>, tras una primera edición exitosa con muy buena acogida."
 msgstr ""
-"PyDay Galicia é a conferencia anual da comunidade Python galega, que celebrará a súa segunda edición o <strong>10 de Xuño de 2017</strong> en <strong>Vigo</strong>, tras unha primeira edición exitosa, con moi boa acollida."
+"PyDay Galicia é a conferencia anual da comunidade Python galega, que celebrará a súa segunda edición o <strong>10 de Xuño de 2017</strong> nas instalacións do museo <strong>MARCO</strong> de <strong>Vigo</strong>, tras unha primeira edición exitosa, con moi boa acollida."
 
 #: pydaygal/templates/pages/home.html:10
 msgid ""
@@ -705,7 +705,12 @@ msgid "Folleto (ES)"
 msgstr ""
 
 msgid ""
-"Envíanos tu propuesta a"
+"líneas"
+msgstr ""
+"liñas"
+
+msgid ""
+"Envía tu propuesta a"
 msgstr ""
 "Envíanos a túa proposta a"
 
@@ -713,6 +718,16 @@ msgid ""
 "si deseas tomar parte en el evento como Speaker o capacitador de workshops."
 msgstr ""
 "se desexas tomar parte no evento como Speaker ou capacitador de workshops."
+
+msgid  ""
+"de la propuesta"
+msgstr ""
+"da proposta"
+
+msgid ""
+"Fecha"
+msgstr ""
+"Data"
 
 msgid "Queremos escuchar a la comunidad, ¡y te invitamos a participar en ella!"
 msgstr "Queremos escoitar á comunidade, ¡e convidámoste a participar nela!"
