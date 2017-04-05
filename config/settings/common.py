@@ -62,7 +62,7 @@ MANAGERS = ADMINS
 TIME_ZONE = 'UTC'
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'gl'
+LANGUAGE_CODE = 'es'
 
 
 def ugettext(s): return s
@@ -177,7 +177,6 @@ LOCAL_APPS = (
     'pydaygal.utils',
     'pydaygal.users',
     'pydaygal.configurations',
-    'pydaygal.blog',
     'pydaygal.sponsorships',
     'pydaygal.speakers',
     'pydaygal.workshops',
