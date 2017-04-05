@@ -12,16 +12,18 @@
 // -----------------------------------------------------------------------------
 @import "common";
 @import "landing";
+@import "cfp";
 @import "sponsors";
 @import "speakers";
 html {
     position: relative;
     min-height: 100%;
 }
-body {
-    margin: 0 0 200px; /* bottom = footer height */
-}
 
+body {
+    margin: 0 0 200px;
+    /* bottom = footer height */
+}
 
 b,
 strong {
@@ -29,10 +31,16 @@ strong {
     font-weight: bolder;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
 }
+
 footer {
     background-color: $blue-primary;
     color: $blue-dark;
@@ -47,7 +55,7 @@ footer {
         }
     }
     form {
-      display: inline-block;
+        display: inline-block;
     }
 }
 
@@ -65,6 +73,12 @@ footer {
     }
 }
 
-.form-group {
-  width: 100%;
+.form-group,
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card img {
+    box-shadow: $material-shadow;
 }
