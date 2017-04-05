@@ -12,8 +12,8 @@
                 aria-controls="navbarNav"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
-                style="line-height: 2.5rem;
-                background: rgba(0, 105, 197, 1);">
+                style="background: rgba(0, 105, 197, 1)">
+
             <p class="navbar-btn"><i class="fa fa-bars" aria-hidden="true"></i></p>
         </button>
         <div class="container">
@@ -29,10 +29,11 @@
                         <a class="nav-link hvr-underline-from-left" href="{% url "info" %}">{% trans "Información del evento" %}</a>
                     </li>
                     <!-- Commented items until we get everything working -->
-                    <!--
+
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="{% url "speakers:list" %}">{% trans "Speakers" %}</a>
                     </li>
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-left" href="#">{% trans "Programa" %}</a>
                     </li>
@@ -41,10 +42,7 @@
                     </li>
                     -->
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "cfp" %}">{% trans "Call-For-Papers" %}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "blog:list" %}">{% trans "Blog" %}</a>
+                        <a class="nav-link hvr-underline-from-left" href="{% url "cfp" %}">{% trans "CFP" %}</a>
                     </li>
                     {% if request.user.is_staff %}
                     <li class="nav-item">
@@ -69,7 +67,7 @@
             <div class="container text-center">
                 <nav style="margin:20px auto">
                     <div class="col" style="font-size: 1.2rem; color: white;">
-                      <span><a href="{% url "code-of-conduct" %}" class="nav-item">{% trans "Código de conducta" %}</a>&nbsp;
+                      <a href="{% url "code-of-conduct" %}" class="nav-item">{% trans "Código de conducta" %}</a>&nbsp;
                       <a href="mailto:{{ CONTACT_EMAIL }}" class="nav-item"> {% trans "Contacta con nosotros" %}</a>&nbsp;
                       <a href="https://twitter.com/python_vigo" class="nav-item"><i class="fa fa-twitter"></i></a>&nbsp;
                       <a href="https://github.com/python-vigo" class="nav-item"><i class="fa fa-github"></i></a>
@@ -86,7 +84,6 @@
                             {% endfor %}
                           </select>
                         </form>
-                        </span>
                     </div>
                 </div>
             </div>
