@@ -16,6 +16,5 @@ class TestSettings(TestCase):
         reload_urlconf()
         with self.assertRaises(NoReverseMatch):
             reverse("info")
-            reverse("blog:list")
         response = self.client.get('/admin/login/')
         self.assertEquals(response.status_code, 200)
