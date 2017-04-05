@@ -2,9 +2,15 @@
 {% load i18n %}
 {% load static %}
 {% block body %}
-
+    <div class="landing-cover">
+        <div class="col">
+            <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                <img src="{% static "images/logo.png" %}" class="img-fluid img-logo">
+            </div>
+        </div>
+    </div>
     {% block header %}
-    <nav class="navbar navbar-toggleable-md navbar-inverse">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded navbar-menu">
         <button class="navbar-toggler navbar-toggler-right"
                 type="button"
                 data-toggle="collapse"
@@ -26,32 +32,32 @@
                     </li>
                     {% endif %}
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "info" %}">{% trans "Información del evento" %}</a>
+                        <a class="nav-link hvr-bounce-to-right" href="{% url "info" %}">{% trans "Información del evento" %}</a>
                     </li>
                     <!-- Commented items until we get everything working -->
 
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "speakers:list" %}">{% trans "Speakers" %}</a>
+                        <a class="nav-link hvr-bounce-to-bottom" href="{% url "speakers:list" %}">{% trans "Speakers" %}</a>
                     </li>
                     <!--
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="#">{% trans "Programa" %}</a>
+                        <a class="nav-link hvr-bounce-to-bottom" href="#">{% trans "Programa" %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "workshops:list" %}">{% trans "Workshops" %}</a>
+                        <a class="nav-link hvr-bounce-to-bottom" href="{% url "workshops:list" %}">{% trans "Workshops" %}</a>
                     </li>
                     -->
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "cfp" %}">{% trans "CFP" %}</a>
+                        <a class="nav-link hvr-bounce-to-left" href="{% url "cfp" %}">{% trans "CFP" %}</a>
                     </li>
                     {% if request.user.is_staff %}
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "admin:index" %}">Admin</a>
+                        <a class="nav-link hvr-bounce-to-top" href="{% url "admin:index" %}">Admin</a>
                     </li>
                     {% endif %}
                     {% if request.user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="{% url "users:sign-out" %}">{% trans "Salir" %}</a>
+                        <a class="nav-link hvr-bounce-to-right" href="{% url "users:sign-out" %}">{% trans "Salir" %}</a>
                     </li>
                     {% endif %}
                 </ul>

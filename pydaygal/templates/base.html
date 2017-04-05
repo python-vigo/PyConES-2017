@@ -19,13 +19,15 @@
     <![endif]-->
 
     <!-- This file store project specific CSS -->
+    <link rel="stylesheet" href="{% static "css/hover.css" %}">
     <link rel="stylesheet" href="{% static "css/pydaygal.css" %}">
+
     <!-- Use this to quickly test CSS changes in a template,
         then move to pydaygal.css -->
     {% block extra_css %}{% endblock extra_css %}
 </head>
 
-<body {% block body_attrs %}{% endblock body_attrs %}>
+<body onload="setTimeout(()=>{$('.landing-cover').slideUp()}, 1000);$('.navbar-menu').css('margin-top', '0').css('visibility', 'visible');" {% block body_attrs %}{% endblock body_attrs %}>
 
 {% block body %}{% endblock body %}
 
@@ -34,6 +36,9 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="{% static "js/bin/bundle.js" %}"></script>
+<script>
+  smoothScroll.init();
+</script>
 {% block extra_js %}{% endblock extra_js %}
 
 </body>

@@ -2,12 +2,14 @@
 // -----------------------------------------------------------------------------
 @import "fonts";
 @import "variables";
+@import "nav";
 // Import Bootstrap
 // -----------------------------------------------------------------------------
 @import "bootstrap/scss/bootstrap";
 // Import Font Awesome
 // -----------------------------------------------------------------------------
 @import "font-awesome/font-awesome";
+
 // Project specific
 // -----------------------------------------------------------------------------
 @import "common";
@@ -23,7 +25,8 @@ html {
 body {
     margin: 0 0 200px;
     font-family: 'Open Sans', sans-serif;
-
+    bottom: 200px;
+    font-size: $font-size-root;
     /* bottom = footer height */
 }
 
@@ -75,12 +78,13 @@ footer {
     }
 }
 
-.form-group,
-.card-img-top {
-    width: 100%;
-    height: auto;
+.form-group {
+    box-shadow: $material-shadow;
 }
 
-.card img {
-    box-shadow: $material-shadow;
+.card {
+    &-img-top {
+        width: 100%;
+        height: auto;
+    }
 }
