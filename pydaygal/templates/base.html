@@ -12,11 +12,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    {% block syndication %}
-    <link rel="alternate" type="application/rss+xml" title="{{ CONFERENCE_TITLE }} - RSS" href="{% url "blog:blog_feed" %}">
-    <link rel="alternate" type="application/atom+xml" title="{{ CONFERENCE_TITLE }} - Atom" href="{% url "blog:blog_atom" %}">
-    {% endblock syndication %}
-
     <!-- Le styles -->
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
