@@ -2,6 +2,9 @@
     &-img {
         min-height: 50px;
         max-height: 100px;
+        &:hover {
+          transform: scale(1.2);
+        }
     }
     &-ul {
         text-align: center;
@@ -18,12 +21,12 @@
             color: darkgoldenrod;
         }
         &-midtier {
-            border: 1px solid tomato;
-            color: tomato;
-        }
-        &-lowtier {
             border: 1px solid #949494;
             color: #949494;
+        }
+        &-lowtier {
+            border: 1px solid #8b4513;
+            color: #8b4513;
         }
     }
     &-level-block {
