@@ -1,23 +1,9 @@
 {% extends "headers.html" %}
 {% load static %}
 {% block container %}
-  {% block claim %}
-  <div class="claim acorn-background">
-      <div class="container">
-          <div class="row">
-              <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-                  <img src="{% static "images/logo.png" %}" class="img-fluid img-logo">
-              </div>
-          </div>
-      </div>
-  </div>
-  {% endblock claim %}
-
-<div class="container">
-      <div class="row">
-          <div class="col-12 col-lg-8 offset-lg-2">
-              {% block content %} {% endblock content %}
-          </div>
-      </div>
-  </div>
+<div id="intro">
+  <div class="col">
+     {% block section%} {% endblock section %}
+   </div>
+</div>
 {% endblock container %}

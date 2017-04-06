@@ -1,0 +1,24 @@
+{% extends "container_clean.html" %}
+{% load i18n %}
+{% block section %}
+<div class="container text-center ">
+  <div class="card-container">
+    <h1>Call For Papers</h1>
+    <br>
+    <div class="card col-md-8 offset-md-2">
+      <div class="card-block">
+        <h4 class="card-title">{% trans "Queremos escuchar a la comunidad, ¡y te invitamos a participar en ella!" %}</h4>
+        <p class="card-text">{% trans "Envía tu propuesta a" %} <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>
+          {% trans "si deseas tomar parte en el evento como Speaker o capacitador de workshops." %}
+        </p>
+        <br>
+        <h6 class="card-subtitle mb-2 text-muted">Requisitos de envío de propuestas</h6>
+        <p class="card-text"><strong>Nombre completo, Correo electrónico,
+          Biografía (de 2 líneas como máximo), Fotografía, Título, Tipo (Avanzado, Introductorio, ), Contenido<strong></p>
+        <a href="mailto:{{ CONTACT_EMAIL }}" class="btn btn-primary">{{ CONTACT_EMAIL }}</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock section %}

@@ -1,7 +1,11 @@
-{% extends "container_clean.html" %} {% load i18n %} {% block content %}
-
-<h2>{% trans "Codigo de conducta" %}</h2>
-<p>{% trans "PyDay Galicia es una conferencia hecha por la comunidad pensada para la divulgación y colaboración dentro de la comunidad de desarrolladores." %}</p>
+{% extends "container_clean.html" %}
+{% load i18n %}
+{% block content %}
+<div class="text-center">
+  <h1>{% trans "Codigo de conducta" %}</h1>
+  <hr>
+</div>
+<p>{% trans "PyDay Galicia es una conferencia hecha por la comunidad pensada \para la divulgación y colaboración dentro de la comunidad de desarrolladores." %}</p>
 <p>{% trans "Valoramos la participación de cada miembro de la comunidad Python y queremos que todos los asistentes tengan una experiencia entretenida y satisfactoria. Para ello, se espera que todos los asistentes muestren respeto y cortesía hacia el resto durante la conferencia y todos los eventos relacionados con ella, estén oficialmente auspiciados por PyDay Galicia o no." %}</p>
 <p>{% trans "En concreto, todos los delegados, disertantes, expositores y voluntarios que tomen parte en actividades relacionadas con PyDay Galicia deberán acatar el presente código de conducta. Los organizadores cuidarán del cumplimiento de este código durante el evento." %}</p>
 <p>{% trans "Se entiende por acoso todo comentario ofensivo alusivo al sexo, preferencias sexuales, discapacidades, aspecto físico, etnias y religiones; toda pornografía en espacios públicos; toda intimidación deliberada, acecho o persecución; todo acoso mediante fotografías o grabaciones; toda interrupción constante de charlas u otras actividades; todo contacto físico inapropiado y toda propuesta sexual no deseada." %}</p>
@@ -19,8 +23,11 @@
 <p>{% trans "Gracias por hacer de este un evento abierto a la comunidad y amistoso." %}</p>
 <h3>{% trans "Licencia" %}</h3>
 <p>{% trans "Este Código de Conducta se basa en los siguientes códigos:" %}</p>
-<p>PyCon US 2013 (<a href='https://us.pycon.org/2013/about/code-of-conduct/'>https://us.pycon.org/2013/about/code-of-conduct/</a>)</p>
-<p>PyConAr 2012 (<a href='http://ar.pycon.org/2012/conference/diversity/'>http://ar.pycon.org/2012/conference/diversity/</a>),</p>
+<p>PyCon US 2013 (
+  <a href='https://us.pycon.org/2013/about/code-of-conduct/'>
+  https://us.pycon.org/2013/about/code-of-conduct/</a>)</p>
+<p>PyConAr 2012 (
+  <a href='http://ar.pycon.org/2012/conference/diversity/'>
+  http://ar.pycon.org/2012/conference/diversity/</a>),</p>
 <p>{% trans "y está disponible bajo licencia Creative Commons Atribución 3.0 España." %}</p>
-
 {% endblock content %}

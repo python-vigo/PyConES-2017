@@ -1,0 +1,30 @@
+@import "colors";
+$material-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+0 1px 2px rgba(0, 0, 0, 0.24);
+$material-shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25),
+0 10px 10px rgba(0, 0, 0, 0.22);
+
+.speakers-list {
+    margin: 0;
+}
+
+.speaker-card {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    padding: 1rem 1rem 0 1rem;
+    &:hover {
+        box-shadow: $material-shadow-hover;
+        background: $blue-primary;
+        transform: scale(1.2);
+        z-index: 9;
+    }
+    &-photo {
+        border-radius: 50%;
+        max-width: 100px;
+        box-shadow: $material-shadow;
+        margin-bottom: 1rem;
+        border: 5px solid #e2c672;
+    }
+    &-content {
+        padding: 1rem;
+    }
+}

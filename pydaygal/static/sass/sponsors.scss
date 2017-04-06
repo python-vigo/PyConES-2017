@@ -1,5 +1,54 @@
 .sponsors {
-  &-img {
-     max-height: 150px;
-  }
+    &-img {
+        min-height: 50px;
+        &-gold {
+            transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+            max-height: 200px;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        &-silver {
+            transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+            max-height: 150px;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        &-bronze {
+            transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+            max-height: 100px;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &-ul {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        display: inline-flex;
+        justify-content: center;
+    }
+    &-level {
+        border-radius: 20px;
+        padding: 10px;
+        cursor: initial;
+        &-toptier {
+            border: 1px solid darkgoldenrod;
+            color: darkgoldenrod;
+        }
+        &-midtier {
+            border: 1px solid #949494;
+            color: #949494;
+        }
+        &-lowtier {
+            border: 1px solid #8b4513;
+            color: #8b4513;
+        }
+    }
+    &-level-block {
+        margin: 50px 0 50px 0;
+    }
 }

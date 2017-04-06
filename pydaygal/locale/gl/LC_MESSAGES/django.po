@@ -11,7 +11,6 @@ msgstr ""
 "POT-Creation-Date: 2017-03-16 16:38+0000\n"
 "PO-Revision-Date: 2017-03-16 17:01+0000\n"
 "Last-Translator: Ivan Nieto <ivan.n.s@tuta.io>\n"
-"Language-Team: Galician (http://www.transifex.com/python-espana/web-"
 "pydaygal-2017/language/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -479,7 +478,7 @@ msgstr "Código de comportamento"
 
 #: pydaygal/templates/headers.html:46
 msgid "Contacta con nosotros"
-msgstr "Contacta con nós"
+msgstr "Contacta connosco"
 
 #: pydaygal/templates/pages/code_of_conduct.html:3
 msgid "Codigo de conducta"
@@ -643,31 +642,27 @@ msgstr ""
 
 #: pydaygal/templates/pages/home.html:4
 msgid ""
-"¿Que es PyDay Galicia 2017?"
+"¿Qué es PyDay Galicia 2017?"
 msgstr ""
-"Qué é a PyDay Galicia 2017?"
+"¿Qué é a PyDay Galicia 2017?"
 
 #: pydaygal/templates/pages/home.html:5
 msgid ""
-"PyDay Galicia es la conferencia anual de la comunidad Python gallega, "
-"que celebrará su segunda edición el día <strong>XXXXX de Junio de "
-"2017</strong> en <strong>Vigo</strong>, tras una primera edición exitosa "
-"con muy buena acogida."
+"PyDay Galicia es la conferencia anual de la comunidad Python gallega, que celebrará su segunda edición el <strong>10 de Junio de 2017</strong> en las instalaciones del museo <strong>MARCO</strong>, en <strong>Vigo</strong>, tras una primera edición exitosa con muy buena acogida."
 msgstr ""
-"PyDay Galicia é a conferencia anual da comunidade Python galega, "
-"que celebrará su segunda edición el día <strong>XXXXX de Xuño de "
-"2017</strong> en <strong>Vigo</strong>, tras unha primeira edición exitosa "
-"con moi boa acollida."
+"PyDay Galicia é a conferencia anual da comunidade Python galega, que celebrará a súa segunda edición o <strong>10 de Xuño de 2017</strong> nas instalacións do museo <strong>MARCO</strong> de <strong>Vigo</strong>, tras unha primeira edición exitosa, con moi boa acollida."
 
-#: pydaygal/templates/pages/home.html:6
+#: pydaygal/templates/pages/home.html:10
 msgid ""
-"Este evento se acoge al formato seguido por: "
-"<a href=\"http://2017.es.pycon.org\" target=\"_blank\">PyDay Galicia</a> y "
-"<a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>."
+"PyConEs</a> y <a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>"
 msgstr ""
-"Este evento acóllese ao formato seguido por: "
-"<a href=\"http://2017.es.pycon.org\" target=\"_blank\">PyDay Galicia</a> e "
-"<a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>."
+"PyConEs</a> e <a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>"
+
+#: pydaygal/templates/pages/home.html:10
+msgid ""
+" y "
+msgstr ""
+" e "
 
 #: pydaygal/templates/pages/home.html:9
 msgid "EDICIONES ANTERIORES"
@@ -677,34 +672,71 @@ msgstr "EDICIÓNS ANTERIORES"
 msgid "PATROCINADORES"
 msgstr ""
 
-#: pydaygal/templates/pages/home.html:60
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "                            ¿Quieres ser el primer patrocinador "
-#| "%(level_name)s? <a href=\"mailto:patrocinadores2016@es.pycon.org\" target="
-#| "\"_blank\">¡Contacta con nosotros!</a>\n"
-#| "                        "
+#: pydaygal/templates/pages/home.html:54
 msgid ""
-"\n"
-"                            ¿Quieres ser el primer patrocinador "
-"%(level_name)s? <a href=\"mailto:%(SPONSORS_EMAIL)s\" target=\"_blank"
-"\">¡Contacta con nosotros!</a>\n"
-"                        "
+"¿Quieres ser sponsor?"
 msgstr ""
-"\n"
-"                        ¿Queres selo primeiro patrocinador %(level_name)s? "
-"<a href=\"mailto:patrocinadores2015@es.pycon.org\" target=\"_blank"
-"\">¡Contacta connosco!</a>\n"
-"                        "
+"¿Queres ser sponsor?"
+
+#: pydaygal/templates/pages/home.html:60
+msgid ""
+"Oro"
+msgstr ""
+"Ouro"
+
+#: pydaygal/templates/pages/home.html:60
+msgid ""
+"Plata"
+msgstr ""
+"Prata"
+
+#: pydaygal/templates/pages/home.html
+msgid ""
+"Este evento se acoge al formato seguido por: <a href=\"http://2017.es.pycon.org\" target=\"_blank\"> PyConEs</a> y <a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>. "
+msgstr ""
+"Este evento acóllese ao formato seguido por: <a href=\"http://2017.es.pycon.org\" target=\"_blank\"> PyConEs</a> e <a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>. "
 
 #: pydaygal/templates/pages/home.html:69
-msgid "Folleto (ES)"
+msgid "Folleto (GL)"
 msgstr ""
 
 #: pydaygal/templates/pages/home.html:72
-msgid "Folleto (EN)"
+msgid "Folleto (ES)"
 msgstr ""
+
+msgid ""
+"líneas"
+msgstr ""
+"liñas"
+
+msgid ""
+"Envía tu propuesta a"
+msgstr ""
+"Envíanos a túa proposta a"
+
+msgid ""
+"si deseas tomar parte en el evento como Speaker o capacitador de workshops."
+msgstr ""
+"se desexas tomar parte no evento como Speaker ou capacitador de workshops."
+
+msgid  ""
+"de la propuesta"
+msgstr ""
+"da proposta"
+
+msgid ""
+"Fecha"
+msgstr ""
+"Data"
+
+msgid "Queremos escuchar a la comunidad, ¡y te invitamos a participar en ella!"
+msgstr "Queremos escoitar á comunidade, ¡e convidámoste a participar nela!"
+
+#: pydaygal/templates/pages/info.html:9
+msgid ""
+"¿Cómo llegar?"
+msgstr ""
+"¿Cómo chegar?"
 
 #: pydaygal/templates/pages/info.html:9
 msgid ""

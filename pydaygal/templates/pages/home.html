@@ -1,55 +1,78 @@
-{% extends "container_landing.html" %} {% load i18n %} {% load static %} {% load sponsorship_tags %} {% block content %}
-<div class="row">
-    <div class="col-12">
-        <h2>{% trans "¿Que es PyDay Galicia 2017?" %}</h2>
-        <p class="loud indented">{% trans "PyDay Galicia es la conferencia anual de la comunidad Python gallega, que celebrará su segunda edición el día <strong>XXXXX de Junio de 2017</strong> en <strong>Vigo</strong>, tras una primera edición exitosa con muy buena acogida." %}</p>
-        <p>{% trans "Este evento se acoge al formato seguido por: <a href=\"http://2017.es.pycon.org\" target=\"_blank\">PyDay Galicia</a> y <a href=\"http://pycon.org\" target=\"_blank\">PyCon</a>." %} </p>
-        <h6 class="text-center">{% trans "EDICIONES ANTERIORES" %}:</h6>
-        <p class="text-center loud indented">
-            <a href="https://python-vigo.github.io/pyday-2016/" target="_blank">PyDay Galicia 2016</a>
-        </p>
+{% extends "container_landing.html" %}
+{% load i18n %}
+{% load static %}
+{% load sponsorship_tags %}
+{% block section %}
+<div class="landing-cover">
+    <div class="col">
+        <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+            <img src="{% static "images/logo.png" %}" class="img-fluid img-logo">
+        </div>
     </div>
 </div>
-
-<div class="row">
-    <div class="col-12">
-        <h6 id="sponsors" class="text-center"> {% trans "PATROCINADORES" %}:</h6>
-        {% sponsor_levels as levels %}
-        {% for level in levels %}
-        {% sponsors level.pk as sponsors %}
-        {% if sponsors %}
-        <div class="row">
-            {% for sponsor in sponsors %}
-            <div class="col-lg-3>
-                <a href="{{ sponsor.external_url }}" target="_blank">
-                    <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}" alt="{{ sponsor.name }}" class="img-fluid sponsors-img">
-                </a>
-            </div>
-            {% if forloop.counter|divisibleby:"2" %}
-            <div class="clearfix visible-xs"></div>
-            {% endif %} {% if forloop.counter|divisibleby:"3" %}
-            <div class="clearfix visible-sm"></div>
-            {% endif %}
-            {% endfor %}
-        </div>
-        {% else %}
-        <h3>{{ level.name }}</h3>
-        <p class="loud">
-            {% blocktrans with level_name=level.name|lower %} ¿Quieres ser sponsor {{ level_name }}? <a href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">¡Contacta con nosotros!</a> {% endblocktrans %}
-        </p>
+<div id="info-block" class="container">
+  <div class="col">
+    <div class="card text-center">
+      <div class="card-block">
+        <h1 class="card-title">{% trans "¿Qué es PyDay Galicia 2017?" %}</h1>
+        <hr>
+        <p class="card-text">{% trans "PyDay Galicia es la conferencia anual de la comunidad Python gallega, que celebrará su segunda edición el <strong>10 de Junio de 2017</strong> en las instalaciones del museo <strong>MARCO</strong>, en <strong>Vigo</strong>, tras una primera edición exitosa con muy buena acogida." %}</p>
+        <a href="{% url "info" %}" class="btn btn-primary">{% trans "Información del evento" %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h6 id="sponsors" class="text-center"> {% trans "PATROCINADORES" %}</h6>
+  <br>
+  {% sponsor_levels as levels %}
+  {% for level in levels %}
+    {% sponsors level.pk as sponsors %}
+    {% if sponsors %}
+    <div class="sponsors-level-block">
+      <h5 class="col-md-6 offset-md-3 text-center sponsors-level
+      {% if level.name == 'Oro' or level.name == 'Ouro' %}sponsors-level-toptier{% endif %}
+      {% if level.name == 'Plata' or level.name == 'Prata' %}sponsors-level-midtier{% endif %}
+      {% if level.name == 'Bronce' %}sponsors-level-lowtier{% endif %}">{{ level }}</h5>
+      <ul class="sponsors-ul">
+        {% for sponsor in sponsors %}
+        <li class="vcenter">
+            <a href="{{ sponsor.external_url }}" target="_blank">
+                <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
+                alt="{{ sponsor.name }}" class="img-fluid
+                {% if level.name == 'Oro' or level.name == 'Ouro' %}sponsors-img-gold{% endif %}
+                {% if level.name == 'Plata' or level.name == 'Prata' %}sponsors-img-silver{% endif %}
+                {% if level.name == 'Bronce' %}sponsors-img-bronze{% endif %}">
+            </a>
+        </li>
+        {% if forloop.counter|divisibleby:"2" %}
+        <div class="clearfix visible-xs"></div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:"3" %}
+        <div class="clearfix visible-sm"></div>
         {% endif %}
         {% endfor %}
-        <hr />
-        <p class="text-center loud">
-            <a href="{% static "files/es_brochure_v2.pdf" %}" class="btn btn-primary" target="_blank">
-                <i class="icon-download"></i> {% trans "Folleto (ES)" %}
-            </a>
-        </p>
-        <p class="text-center loud">
-            <a href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">
-                    {{ SPONSORS_EMAIL }}
-                </a>
-        </p>
+      </ul>
     </div>
+    {% endif %}
+  {% endfor %}
+  <p class="loud text-center">
+    {% trans "¿Quieres ser sponsor?" %}
+    <a href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">{{ SPONSORS_EMAIL }}</a>
+  </p>
+  <br><br>
+  <!--
+  <p class="text-center loud">
+      <a href="{% static "files/es_brochure_v2.pdf" %}" class="btn btn-primary" target="_blank">
+          <i class="icon-download"></i> {% trans "Folleto (ES)" %}
+      </a>
+  </p>
+  -->
+  <hr><br>
+  <h6 class="text-center">{% trans "EDICIONES ANTERIORES" %}:</h6>
+  <p class="text-center loud indented">
+      <a href="https://python-vigo.github.io/pyday-2016/"
+      target="_blank">PyDay Galicia 2016</a>
+  </p>
 </div>
-{% endblock content %}
+{% endblock section %}
