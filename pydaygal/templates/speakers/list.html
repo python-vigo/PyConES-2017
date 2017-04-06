@@ -1,7 +1,7 @@
 {% extends "speakers/container.html" %}
 {% load i18n %}
 
-{% block content %}
+{% block section %}
 {% comment %}For loop to display more results than the db content{% endcomment %}
   {% for i in '0123456789'|make_list %}
       {% for speaker in speakers %}
@@ -14,4 +14,4 @@
           </div>
       {% endfor %}
   {% endfor %}
-{% endblock content %}
+{% endblock section %}

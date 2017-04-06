@@ -17,13 +17,13 @@
 @import "cfp";
 @import "sponsors";
 @import "speakers";
+@import "workshops";
 html {
     position: relative;
     min-height: 100%;
 }
 
 body {
-    margin: 0 0 200px;
     font-family: 'Open Sans', sans-serif;
     bottom: 200px;
     font-size: $font-size-root;
@@ -87,4 +87,13 @@ footer {
         width: 100%;
         height: auto;
     }
+}
+
+.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.blend {
+  mix-blend-mode: multiply;
 }

@@ -1,43 +1,24 @@
 {% extends "container_clean.html" %}
 {% load i18n %}
-{% block content %}
+{% block section %}
 <div class="container text-center ">
   <div class="card-container">
     <h1>Call For Papers</h1>
-    <div class="container">
-      <hr>
-    </div>
-    <div clas="cfp-text">
-      <br><br>
-      <p>{% trans "Envía tu propuesta a" %} <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>
-      {% trans "si deseas tomar parte en el evento como Speaker o capacitador de workshops." %}</p>
-      <br>
-      <h3>{% trans "Queremos escuchar a la comunidad, ¡y te invitamos a participar en ella!" %}</h3>
-      <br><br>
-    </div>
-    <div class="cfp-req col">
-      <table class="table">
-        <thead>
-          <tr>
-            <td><strong>Requisitos</strong></td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Nombre completo</td>
-          </tr>
-          <tr>
-            <td>Correo electrónico</td>
-          </tr>
-          <tr><td>Biografía (2 {% trans "líneas" %} como máximo)</td></tr>
-          <tr><td>Fotografía</td></tr>
-          <tr><td>Nivel {% trans "de la propuesta" %}</td></tr>
-          <tr><td>Título {% trans "de la propuesta" %}</td></tr>
-        </tbody>
-      </table>
-      <br>
-      <a href="mailto:{{ CONTACT_EMAIL }}" class="btn btn-default">{{ CONTACT_EMAIL }}</a>
+    <br>
+    <div class="card col-md-8 offset-md-2">
+      <div class="card-block">
+        <h4 class="card-title">{% trans "Queremos escuchar a la comunidad, ¡y te invitamos a participar en ella!" %}</h4>
+        <p class="card-text">{% trans "Envía tu propuesta a" %} <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>
+          {% trans "si deseas tomar parte en el evento como Speaker o capacitador de workshops." %}
+        </p>
+        <br>
+        <h6 class="card-subtitle mb-2 text-muted">Requisitos de envío de propuestas</h6>
+        <p class="card-text"><strong>Nombre completo, Correo electrónico,
+          Biografía (de 2 líneas como máximo), Fotografía, Título, Tipo (Avanzado, Introductorio, ), Contenido<strong></p>
+        <a href="mailto:{{ CONTACT_EMAIL }}" class="btn btn-primary">{{ CONTACT_EMAIL }}</a>
+
+      </div>
     </div>
   </div>
 </div>
-{% endblock content %}
+{% endblock section %}

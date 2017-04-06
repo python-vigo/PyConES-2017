@@ -1,35 +1,45 @@
 @import "colors";
 .landing {
-
-  @extend .acorn-background;
-
-  .container {
-    height:100%;
-    min-height: 100%;
-  }
-  &-cover {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    background: $blue-dark;
-    padding-top: 200px;
-
-  }
-  &-claim {
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    margin-bottom: 100px;
-  }
-  @media (max-width: 768px) {
-    &-claim {
-      left: 10%;
-      transform: translate(-5%, -50%);
+    @extend .acorn-background;
+    .container {
+        height: 100%;
+        min-height: 100%;
     }
-  }
+    &-cover {
+        position: absolute;
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        background: url("../images/landing-bg.jpg");
+          background-color: #386c9d;
+        background-blend-mode: multiply;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        padding-top: 200px;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+    }
+    &-claim {
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        margin-bottom: 100px;
+    }
+    @media (max-width: 768px) {
+        &-claim {
+            left: 10%;
+            transform: translate(-5%, -50%);
+        }
+    }
+}
 
+#info-block {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }

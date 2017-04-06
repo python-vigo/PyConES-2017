@@ -2,9 +2,16 @@
 {% load i18n %}
 {% load static %}
 {% load sponsorship_tags %}
-{% block content %}
-<div class="container">
-  <div class="col" style="margin: 180px 0 180px 0;">
+{% block section %}
+<div class="landing-cover">
+    <div class="col">
+        <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+            <img src="{% static "images/logo.png" %}" class="img-fluid img-logo">
+        </div>
+    </div>
+</div>
+<div id="info-block" class="container">
+  <div class="col">
     <div class="card text-center">
       <div class="card-block">
         <h1 class="card-title">{% trans "¿Qué es PyDay Galicia 2017?" %}</h1>
@@ -68,4 +75,4 @@
       target="_blank">PyDay Galicia 2016</a>
   </p>
 </div>
-{% endblock content %}
+{% endblock section %}

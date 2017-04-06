@@ -1,16 +1,18 @@
-{% extends "workshops/base.html" %}
+{% extends "workshops/container.html" %}
 {% load i18n %}
 
-{% block content %}
-{% for i in '0123456789'|make_list %}
-{% for workshop in workshops %}
-    {% include "workshops/_workshop.html" %}
-    {% empty %}
-    <div class="row" style="min-height: 150px; padding-top: 50px">
-        <div class="col-12 text-center">
-            <h2>{% trans "¡Aún no hay ningun workshop!" %}</h2>
-        </div>
-    </div>
-{% endfor %}
-{% endfor %}
-{% endblock content %}
+{% block section %}
+{% comment %}For loop to display more results than the db content{% endcomment %}
+  {% for i in '0123456789'|make_list %}
+      {% for workshop in workshops %}
+          {% include "workshops/_workshop.html" %}
+            {% empty %}
+            <div class="row workshops-list">
+                <div class="col-12 text-center">
+                    <h2>{% trans "¡Aún no hay ningun workshop!" %}</h2>
+                </div>
+            </div>
+      {% endfor %}
+
+  {% endfor %}
+{% endblock section %}
