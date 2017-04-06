@@ -3,12 +3,14 @@
 
 {% block content %}
 
-<h2>{% trans "Acceso de usuarios" %}</h2>
+<h2>{% blocktrans %}Acceso de usuarios{% endblocktrans %}</h2>
 
 {% if messages %}
     {% for message in messages %}
         <div class="alert {{ message.tags }} alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
             {{ message }}
         </div>
     {% endfor %}
@@ -28,10 +30,12 @@
     {% endfor %}
     <div class="form-group row">
         <div class="offset-sm-2 col-sm-10">
-            <button type="submit" class="btn btn-primary">{% trans "Entrar" %}</button>
+            <button type="submit" class="btn btn-primary">{% blocktrans %}Entrar{% endblocktrans %}</button>
         </div>
         <div class="offset-sm-2 col-sm-10 text-center" style="margin-top: 30px">
-            <a href="{% url "users:request-restore-password" %}">{% trans "¿No tienes contraseña o la has olvidado?" %}</a>
+            <a href="{% url "users:request-restore-password" %}">
+              {% blocktrans %}¿No tienes contraseña o la has olvidado?{% endblocktrans %}
+              </a>
         </div>
     </div>
 </form>

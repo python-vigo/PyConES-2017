@@ -5,10 +5,10 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h1>{% trans "Perfil de ponente" %}</h1>
+            <h1>{% blocktrans %}Perfil de ponente{% endblocktrans %}</h1>
         </div>
         <div class="col-sm-8">
-            <h2>{% trans "Datos personales" %}</h2>
+            <h2>{% blocktrans %}Datos personales{% endblocktrans %}</h2>
             <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                 {% csrf_token %}
                 {% for field in form %}
@@ -35,14 +35,14 @@
                 {% endfor %}
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-9">
-                        <button type="submit" class="btn btn-success">{% trans "Guardar" %}</button>
+                        <button type="submit" class="btn btn-success">{% blocktrans %}Guardar{% endblocktrans %}</button>
                     </div>
                 </div>
             </form>
         </div>
         <div class="col-sm-4">
-            <h2>{% trans "Charlas/Talleres" %}</h2>
-            <p>{% trans "Lista de las propuestas que tienes acepatadas. Puedes pinchar en ellas para acceder a un formario que te permitirá <strong>subir el fichero de la presentación</strong>." %}</p>
+            <h2>{% blocktrans %}Charlas/Talleres{% endblocktrans %}</h2>
+            <p>{% blocktrans %}Lista de las propuestas que tienes acepatadas. Puedes pinchar en ellas para acceder a un formario que te permitirá <strong>subir el fichero de la presentación</strong>.{% endblocktrans %}</p>
             <ul>
                 {% for presentation in presentations %}
                     <li><a href="{% url "schedule:edit-presentation" presentation.pk %}">{{ presentation.get_title }} ({{ presentation.slot.day.date|date:"l j F" }}, {{ presentation.slot.start }})</a></li>
