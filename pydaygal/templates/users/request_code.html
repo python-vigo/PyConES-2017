@@ -2,7 +2,7 @@
 {% load i18n %}
 {% block content %}
 
-<h2>{% trans "Establece o restaura tu contraseña" %}</h2>
+<h2>{% blocktrans %}Establece o restaura tu contraseña{% endblocktrans %}</h2>
 
 {% if messages %}
     {% for message in messages %}
@@ -28,7 +28,7 @@
     {% endfor %}
     <div class="form-group row">
         <div class="offset-sm-4 col-sm-8">
-            <button type="submit" class="btn btn-primary">{% trans "Enviar" %}</button>
+            <button type="submit" class="btn btn-primary">{% blocktrans %}Enviar{% endblocktrans %}</button>
         </div>
     </div>
 </form>
