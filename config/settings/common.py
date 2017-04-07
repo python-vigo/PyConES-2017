@@ -62,7 +62,7 @@ MANAGERS = ADMINS
 TIME_ZONE = 'UTC'
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'gl'
 
 
 def ugettext(s): return s
