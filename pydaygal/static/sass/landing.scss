@@ -13,14 +13,16 @@
         background: url("../images/landing-bg.jpg");
           background-color: #386c9d;
         background-blend-mode: multiply;
-        background-position: 50%;
+        background-position-x:  50%;
+        background-position-y: 70%;
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0 auto;
-        padding-top: 200px;
         z-index: 999999;
         top: 0;
         left: 0;
+        display: flex;
+        align-items: center;
     }
     &-claim {
         background: #fff;
