@@ -1,16 +1,16 @@
 {% extends "headers.html" %}
 {% load static %}
-{% load i18n %}
 {% block container %}
-<div class="container section">
-  <div class="speakers-list container" style="text-align: center;">
-      <h1>{% blocktrans %}Workshops{% endblocktrans %}</h1>
-      <hr>
-      <br>
-      <div class="row" style="margin:0;padding:0;">
-      {% block section %} {% endblock section %}
-      </div>
+<section id="workshops">
+  <div class="container section">
+    <div class="workshops-list container" style="text-align: center;">
+        <h1>workshops</h1>
+        <hr>
+        <br>
+        <div class="row" style="margin:0;padding:0;">
+        {% block section %} {% endblock section %}
+        </div>
+    </div>
   </div>
-</div>
+  </section>
 {% endblock container %}
-

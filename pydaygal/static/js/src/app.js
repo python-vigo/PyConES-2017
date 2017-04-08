@@ -1,4 +1,4 @@
 // Include bootstrap 4
-import tether from 'tether';
+var tether = require('tether');
 window.Tether = tether;
 var bootstrap = require('bootstrap');

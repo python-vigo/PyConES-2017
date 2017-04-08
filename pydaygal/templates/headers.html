@@ -3,15 +3,16 @@
 {% load static %}
 {% block body %}
     {% block header %}
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded navbar-menu">
+    <nav class="navbar navbar-toggleable-md navbar-light navbar-menu">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="{% url "home" %}">
+        <img src="{%static "images/logo.svg" %}" class="img-responsive" style="max-width: 50px">
+      </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-          <a class="navbar-brand" href="{% url "home" %}">
-            <img src="{%static "images/logo.svg" %}" class="img-responsive" style="max-width: 50px">
-          </a>
+
           {% if request.user.is_authenticated %}
           <li class="nav-item active">
             <p class="nav-link">{{ request.user }}</a>
@@ -32,11 +33,20 @@
           </li>
           -->
           <li class="nav-item">
-              <a class="nav-link hvr-bounce-to-left" href="{% url "cfp" %}">{% blocktrans %}CFP{% endblocktrans %}</a>
+            <a class="nav-link hvr-bounce-to-left" href="{% url "cfp" %}">{% blocktrans %}CFP{% endblocktrans %}</a>
+          </li>
+          <li class="nav-item hidden-md-up">
+            <a href="mailto:{{ CONTACT_EMAIL }}" class="nav-link"> {% blocktrans %}Contacta con nosotros{% endblocktrans %}</a>
+          </li>
+          <li class="nav-item hidden-md-up">
+            <a href="https://twitter.com/python_vigo" class="nav-link"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="nav-item hidden-md-up">
+            <a href="https://github.com/python-vigo" class="nav-link"><i class="fa fa-github"></i></a>
           </li>
           {% if request.user.is_staff %}
           <li class="nav-item">
-              <a class="nav-link hvr-bounce-to-top" href="{% url "admin:index" %}">Admin</a>
+            <a class="nav-link hvr-bounce-to-top" href="{% url "admin:index" %}">Admin</a>
           </li>
           {% endif %}
           {% if request.user.is_authenticated %}
@@ -45,6 +55,19 @@
           </li>
           {% endif %}
         </ul>
+        <form action="{% url "set_language" %}" method="post" class="form-inline justify-content-center hidden-md-up">{% csrf_token %}
+          <input name="next" type="hidden" value="/" />
+          <select name="language" class="form-control" onchange="this.form.submit()" style="text-transform: capitalize; width: auto !important;">
+          {% get_current_language as LANGUAGE_CODE %}
+          {% get_available_languages as LANGUAGES %}
+          {% get_language_info_list for LANGUAGES as languages %}
+          {% for language in languages %}
+              <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                  {{ language.name_local }}
+              </option>
+          {% endfor %}
+        </select>
+        </form>
       </div>
     </nav>
     {% endblock header %}
@@ -52,31 +75,35 @@
     {% block container %}{% endblock container %}
 
     {% block footer %}
-    <footer>
-        <div class="container text-center">
-            <nav style="margin:20px auto">
-                <div class="col" style="font-size: 1.2rem; color: white;">
-                  <a href="{% url "code-of-conduct" %}" class="nav-item">{% blocktrans %}Código de conducta{% endblocktrans %}</a>&nbsp;
-                  <a href="mailto:{{ CONTACT_EMAIL }}" class="nav-item"> {% blocktrans %}Contacta con nosotros{% endblocktrans %}</a>&nbsp;
-                  <a href="https://twitter.com/python_vigo" class="nav-item"><i class="fa fa-twitter"></i></a>&nbsp;
-                  <a href="https://github.com/python-vigo" class="nav-item"><i class="fa fa-github"></i></a>
-                  <form action="{% url 'set_language' %}" method="post" class="nav-item">{% csrf_token %}
-                    <input name="next" type="hidden" value="/" />
-                    <select name="language" class="form-control" onchange="this.form.submit()" style="text-transform: capitalize; width: auto !important;">
-                        {% get_current_language as LANGUAGE_CODE %}
-                        {% get_available_languages as LANGUAGES %}
-                        {% get_language_info_list for LANGUAGES as languages %}
-                        {% for language in languages %}
-                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
-                                {{ language.name_local }}
-                            </option>
-                        {% endfor %}
-                      </select>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <footer class="hidden-md-down">
+      <div class="container text-center">
+        <nav class="navbar navbar-toggleable-md navbar-light">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item">
+              <a href="mailto:{{ CONTACT_EMAIL }}" class="nav-link"> {% blocktrans %}Contacta con nosotros{% endblocktrans %}</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/python_vigo" class="nav-link"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/python-vigo" class="nav-link"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+          <form action="{% url 'set_language' %}" method="post" class="form-inline">{% csrf_token %}
+            <input name="next" type="hidden" value="/" />
+            <select name="language" class="form-control" onchange="this.form.submit()" style="text-transform: capitalize; width: auto !important;">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                                    {{ language.name_local }}
+                                </option>
+                            {% endfor %}
+                          </select>
+          </form>
+        </nav>
+      </div>
     </footer>
     {% endblock footer %}
-
 {% endblock body %}

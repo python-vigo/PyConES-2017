@@ -1,25 +1,48 @@
 {% extends "container_clean.html" %}
 {% load i18n %}
 {% block section %}
-<div class="container text-center ">
-  <div class="card-container">
-    <h1>Call For Papers</h1>
-    <br>
-    <div class="card col-md-8 offset-md-2">
-      <div class="card-block">
-        <h4 class="card-title">{% blocktrans %}Queremos escuchar a la comunidad,
-          ¡y te invitamos a participar en ella!{% endblocktrans %}</h4>
-        <p class="card-text">{% blocktrans %}Envía tu propuesta a
-          <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>
-          si deseas tomar parte en el evento como Speaker o ser capacitador de workshops.<{% endblocktrans %}
-        </p>
-        <br>
-        <h6 class="card-subtitle mb-2 text-muted">{% blocktrans %}Requisitos de envío de propuestas{% endblocktrans %}</h6>
-        <p class="card-text"><strong>{% blocktrans %}Nombre completo, Correo electrónico,
-          Biografía (de 2 líneas como máximo), Fotografía, Título, Tipo (Avanzado, Introductorio, ), Contenido</strong>{% endblocktrans %}</p>
-        <a href="mailto:{{ CONTACT_EMAIL }}" class="btn btn-primary">{{ CONTACT_EMAIL }}</a>
+<section id="cfp" class="vertical-center">
+  <div class="container text-center ">
+    <div class="card-container">
+      <h1>Call For Papers</h1>
+      <hr><br>
+      <div class="card col-md-8 offset-md-2">
+        <div class="card-block">
+          <h4 class="card-title">
+            {% blocktrans %}
+            Queremos escuchar a la comunidad,
+            <br>
+            ¡y te invitamos a participar en ella!
+            {% endblocktrans %}
+          </h4>
+          <p class="card-text">
+            {% blocktrans %}
+            Envía tu propuesta si deseas tomar
+            parte en el evento como Speaker o
+            ser capacitador
+            de workshops.
+            {% endblocktrans %}
+          </p>
+          <br>
+          <h6 class="card-subtitle mb-2">
+            {% blocktrans %}
+            Requisitos de envío de propuestas
+            {% endblocktrans %}
+          </h6>
+          <p class="card-text">
+            <strong>
+              {% blocktrans %}
+              Nombre completo, Correo electrónico, Biografía
+              (de 2 líneas como máximo), Fotografía, Título,
+              Tipo (Avanzado, Introductorio, Workshop),
+              Contenido
+              {% endblocktrans %}
+            </strong>
+          </p>
+          <a class="btn btn-primary" href="mailto: {{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 {% endblock section %}

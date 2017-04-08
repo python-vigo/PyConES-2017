@@ -3,58 +3,74 @@
 {% load i18n %}
 
 {% block section %}
-<div class="container">
-  <h1 class="text-center">{% blocktrans %}Información del evento{% endblocktrans %}</h1>
-  <hr>
-  <br>
-  <h2 class="text-center">{% blocktrans %}Fecha{% endblocktrans %}</h2>
-  <br>
-  <h1 class="text-center" style="font-size: 3rem; color: #6eb3e4;">{% blocktrans %}10 de Junio de 2017{% endblocktrans %}</h1>
-  <br>
-  <br>
-  <h2 class="text-center">{% blocktrans %}Localización{% endblocktrans %}</h2>
-  <br>
-  <div class="card" style="width: 100%;">
-    <img class="card-img-top" src="{% static "images/marco-fachada.jpg" %}" alt="">
-    <div class="maps">
-          <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23634.93099075203!2d-8.757732023591526!3d42.22798519661654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2bf3edcb59caa0c9!2sMARCO+(Museo+de+Arte+Contempor%C3%A1nea)!5e0!3m2!1ses!2ses!4v1491388909460" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<section id="info" class="section-bg">
+  <div class="container section">
+    <h1 class="text-center">{% blocktrans %}Información del evento{% endblocktrans %}</h1>
+    <hr>
+    <br>
+    <div class="card text-center">
+      <div class="card-block">
+        <h2 class="card-title"><i class="fa fa-calendar fa-4" aria-hidden="true"></i>&nbsp;{% blocktrans %}Fecha{% endblocktrans %}</h2>
+        <hr>
+        <h1 class="card-text">{% blocktrans %}10 de Junio de 2017{% endblocktrans %}</h1>
+      </div>
     </div>
-    <div class="card-block text-center">
-      <h4 class="card-title">Museo de Arte Contemporáneo MARCO</h4>
+    <br>
+    <br>
+    <div class="card">
+      <div class="card-block">
+        <h2 class="card-title text-center"><i class="fa fa-map-marker fa-4" aria-hidden="true"></i>&nbsp;{% blocktrans %}Localización{% endblocktrans %}</h2>
+        <hr>
+        <div class="maps" onclick="$('.maps').css('pointer-events', 'auto !important;');">
+          <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23634.93099075203!2d-8.757732023591526!3d42.22798519661654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2bf3edcb59caa0c9!2sMARCO+(Museo+de+Arte+Contempor%C3%A1nea)!5e0!3m2!1ses!2ses!4v1491388909460"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="card-block text-center">
+          <h4 class="card-title">Museo de Arte Contemporáneo MARCO</h4>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="card text-center">
+      <div class="card-block">
+        <h2 class="card-title">
+          <i class="fa fa-handshake-o fa-4" aria-hidden="true"></i>&nbsp;
+          {% blocktrans %}Codigo de conducta{% endblocktrans %}
+        </h2>
+        <hr>
+        <div class="card-text">
+          {% blocktrans %}
+          <br>
+          <p>PyDay Galicia aspira a crear un ambiente libre de acosos o discriminaciones por razón de género, orientación sexual, discapacidad,
+            aspecto físico, etnia o religión. No se tolerará discriminación alguna
+            bajo ninguna circunstancia.
+          </p>
+          <p>
+            Todo el contenido de la conferencia deberá ajustarse a una
+            audiencia profesional integrada por personas procedentes de sectores diferentes.
+            Tanto el lenguaje como las imágenes sexualmente explícitos son inapropiados en
+            la conferencia y en las charlas.
+          </p>
+          <p>
+            Sé amable con los demás. No insultes o humilles a otros
+            asistentes. Compórtate de manera profesional. Recuerda que las bromas sexistas,
+            racistas o discriminatorias están prohibidas en la PyDay Galicia.
+          </p>
+          <p>
+            Los asistentes que incumplan estas reglas podrán -a discreción
+            de los organizadores- ser sancionados o expulsados de la conferencia sin derecho
+            a reembolso.
+          </p>
+          <p>Gracias por ayudarnos a hacer este evento amistoso y abierto para todos.
+          </p>
+        {% endblocktrans %}
+        </div>
+        <a class="btn btn-primary" href="{% url "code-of-conduct" %}">
+          {% blocktrans %}Código de Conducta Completo{% endblocktrans %}
+        </a>
+      </div>
     </div>
   </div>
-  <br>
-  <br>
-  <h2 class="text-center">{% blocktrans %}Codigo de conducta{% endblocktrans %}</h2>
-  <hr>
-  <br>
-  <p class="loud">
-    {% blocktrans %}PyDay Galicia aspira a crear un ambiente libre de acosos
-    o discriminaciones por razón de género, orientación sexual, discapacidad,
-    aspecto físico, etnia o religión. No se tolerará discriminación alguna
-    bajo ninguna circunstancia.{% endblocktrans %}
-  </p>
-  <p class="loud">
-    {% blocktrans %}Todo el contenido de la conferencia deberá ajustarse a una
-    audiencia profesional integrada por personas procedentes de sectores diferentes.
-    Tanto el lenguaje como las imágenes sexualmente explícitos son inapropiados en
-    la conferencia y en las charlas.{% endblocktrans %}
-  </p>
-  <p class="loud">
-    {% blocktrans %}Sé amable con los demás. No insultes o humilles a otros
-    asistentes. Compórtate de manera profesional. Recuerda que las bromas sexistas,
-    racistas o discriminatorias están prohibidas en la PyDay Galicia.{% endblocktrans %}
-  </p>
-  <p class="loud">
-    {% blocktrans %}Los asistentes que incumplan estas reglas podrán -a discreción
-    de los organizadores- ser sancionados o expulsados de la conferencia sin derecho
-    a reembolso.{% endblocktrans %}
-  </p>
-  <p class="loud">{% blocktrans %}Gracias por ayudarnos a hacer este evento amistoso
-    y abierto para todos.{% endblocktrans %}</p>
-
-  <a class="text-center" href="{% url "code-of-conduct" %}">
-    {% blocktrans %}Código de Conducta Completo{% endblocktrans %}
-  </a>
-</div>
+</section>
 {% endblock section %}
