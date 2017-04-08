@@ -12,13 +12,24 @@
 </div>
 <section id="home" class="section-bg">
   <div class="container vertical-center">
-    <div class="col">
+    <div class="col col-lg-10 offset-lg-1">
       <div class="card text-center hvr-bounce-to-bottom">
         <div class="card-block">
-          <h1 class="card-title">{% blocktrans %}¿Qué es PyDay Galicia 2017?{% endblocktrans %}</h1>
+          <h1 class="card-title">{% trans "¿Qué es PyDay Galicia 2017?" %}</h1>
           <hr>
-          <p class="card-text">{% blocktrans %}PyDay Galicia es la conferencia anual de la comunidad Python gallega, que celebrará su segunda edición el <strong>10 de Junio de 2017</strong> en las instalaciones del museo <strong>MARCO</strong>, en <strong>Vigo</strong>, tras una primera edición exitosa con muy buena acogida.{% endblocktrans %}</p>
-          <a href="{% url "info" %}" class="btn btn-primary">{% blocktrans %}Información del evento{% endblocktrans %}</a>
+          {% blocktrans %}
+          <p class="card-text">
+            PyDay Galicia es la conferencia anual de la comunidad Python gallega,
+            que celebrará su segunda edición el <strong>10 de Junio de 2017</strong>
+            en las instalaciones del museo <strong>MARCO</strong>, en <strong>Vigo</strong>,
+            tras una primera edición exitosa, con muy buena acogida.
+          </p>
+          <p class="card-text">
+            Como novedad en esta edición, contaremos con dos tracks de conferencias,<br>
+            para todos los niveles, y talleres sobre diversas tecnologías.
+          </p>
+          {% endblocktrans %}
+          <a href="{% url "info" %}" class="btn btn-primary">{% trans "Información del evento" %}</a>
         </div>
       </div>
     </div>
@@ -26,7 +37,7 @@
 </section>
 <section id="sponsors" class="section">
   <div class="container">
-    <h2 class="text-center"> {% blocktrans %}PATROCINADORES{% endblocktrans %}</h2>
+    <h2 class="text-center"> {% trans "PATROCINADORES" %}</h2>
     <hr><br>
     {% sponsor_levels as levels %}
     {% for level in levels %}
