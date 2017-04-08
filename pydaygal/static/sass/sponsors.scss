@@ -23,13 +23,11 @@
             }
         }
     }
-    &-ul {
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding-left: 0;
-        display: inline-flex;
-        justify-content: center;
+    &-list {
+          text-align: center;
+          display: inline-flex;
+          justify-content: center;
+          list-style-type: none;
     }
     &-level {
         border-radius: 20px;

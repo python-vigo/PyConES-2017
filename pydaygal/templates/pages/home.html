@@ -10,7 +10,7 @@
         </div>
     </div>
 </div>
-<div id="info-block" class="container">
+<div class="container vertical-center">
   <div class="col">
     <div class="card text-center">
       <div class="card-block">
@@ -29,14 +29,13 @@
   {% for level in levels %}
     {% sponsors level.pk as sponsors %}
     {% if sponsors %}
-    <div class="sponsors-level-block">
-      <h5 class="col-md-6 offset-md-3 text-center sponsors-level
+      {% comment %}<h5 class="col-md-6 offset-md-3 text-center sponsors-level
       {% if level.name == 'Oro' or level.name == 'Ouro' %}sponsors-level-toptier{% endif %}
       {% if level.name == 'Plata' or level.name == 'Prata' %}sponsors-level-midtier{% endif %}
-      {% if level.name == 'Bronce' %}sponsors-level-lowtier{% endif %}">{{ level }}</h5>
-      <ul class="sponsors-ul">
+      {% if level.name == 'Bronce' %}sponsors-level-lowtier{% endif %}">{{ level }}</h5>{% endcomment %}
+      <ul class="sponsors-list">
         {% for sponsor in sponsors %}
-        <li class="vcenter">
+        <li class="nav-item">
             <a href="{{ sponsor.external_url }}" target="_blank">
                 <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
                 alt="{{ sponsor.name }}" class="img-fluid
@@ -53,9 +52,15 @@
         {% endif %}
         {% endfor %}
       </ul>
-    </div>
     {% endif %}
   {% endfor %}
+  {% comment %}
+  <p class="text-center loud">
+      <a href="{% static "files/es_brochure_v2.pdf" %}" class="btn btn-primary" target="_blank">
+          <i class="icon-download"></i> {% blocktrans %}Folleto (ES){% endblocktrans %}
+      </a>
+  </p>
+  {% endcomment %}
   <p class="loud text-center">
     {% blocktrans %}¿Quieres ser sponsor?{% endblocktrans %}
     <a href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">{{ SPONSORS_EMAIL }}</a>
@@ -68,7 +73,6 @@
       </a>
   </p>
   -->
-  <hr><br>
   <h6 class="text-center">{% blocktrans %}EDICIONES ANTERIORES{% endblocktrans %}</h6>
   <p class="text-center loud indented">
       <a href="https://python-vigo.github.io/pyday-2016/"
