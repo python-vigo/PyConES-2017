@@ -34,6 +34,9 @@ $logo-height: 400px;
 
 .btn-primary {
   background: transparent;
+  &:hover {
+    background-color: $blue-dark;
+  }
 }
 
 .nav-link {
