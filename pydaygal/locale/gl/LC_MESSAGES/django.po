@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyDay Galicia 2017 Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-08 16:27+0000\n"
-"PO-Revision-Date: 2017-04-08 18:33+0200\n"
+"POT-Creation-Date: 2017-04-08 16:59+0000\n"
+"PO-Revision-Date: 2017-04-08 19:00+0200\n"
 "Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: Python Vigo\n"
 "Language: gl\n"
@@ -26,7 +26,7 @@ msgstr "Galego"
 msgid "Español"
 msgstr ""
 
-#: config/urls.py:37
+#: config/urls.py:38
 #, python-format
 msgid "%s Admin"
 msgstr "[%s] Establece o teu contrasinal"
@@ -426,26 +426,30 @@ msgid "Información del evento"
 msgstr "Información do evento"
 
 #: pydaygal/templates/headers.html:27
+msgid "Registro"
+msgstr ""
+
+#: pydaygal/templates/headers.html:30
 msgid "Speakers"
 msgstr ""
 
-#: pydaygal/templates/headers.html:31
+#: pydaygal/templates/headers.html:34
 msgid "Programa"
 msgstr ""
 
-#: pydaygal/templates/headers.html:34
+#: pydaygal/templates/headers.html:37
 msgid "Workshops"
 msgstr ""
 
-#: pydaygal/templates/headers.html:38
+#: pydaygal/templates/headers.html:41
 msgid "CFP"
 msgstr ""
 
-#: pydaygal/templates/headers.html:41 pydaygal/templates/headers.html:85
+#: pydaygal/templates/headers.html:44 pydaygal/templates/headers.html:88
 msgid "Contacta con nosotros"
 msgstr "Contacta connosco"
 
-#: pydaygal/templates/headers.html:56
+#: pydaygal/templates/headers.html:59
 msgid "Salir"
 msgstr "Saír"
 
@@ -754,6 +758,20 @@ msgid ""
 msgstr ""
 "Estamos preparando a nova edición da PyDay Galicia,\n"
 "          dentro de pouco haberá máis novidades."
+
+#: pydaygal/templates/pages/registry.html:7
+msgid "REGISTRO"
+msgstr ""
+
+#: pydaygal/templates/pages/registry.html:12
+msgid ""
+"\n"
+"            !Regístrate aquí!\n"
+"            "
+msgstr ""
+"\n"
+"            !Rexístrate aquí!\n"
+"            "
 
 #: pydaygal/templates/speakers/edit.html:8
 #: pydaygal/templates/workshops/edit.html:8

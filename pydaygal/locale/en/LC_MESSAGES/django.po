@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-08 16:27+0000\n"
+"POT-Creation-Date: 2017-04-08 16:59+0000\n"
 "PO-Revision-Date: 2016-07-23 17:43+0200\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: \n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Español"
 msgstr "Spanish"
 
-#: config/urls.py:37
+#: config/urls.py:38
 #, python-format
 msgid "%s Admin"
 msgstr ""
@@ -422,26 +422,30 @@ msgid "Información del evento"
 msgstr "About the event"
 
 #: pydaygal/templates/headers.html:27
+msgid "Registro"
+msgstr ""
+
+#: pydaygal/templates/headers.html:30
 msgid "Speakers"
 msgstr ""
 
-#: pydaygal/templates/headers.html:31
+#: pydaygal/templates/headers.html:34
 msgid "Programa"
 msgstr ""
 
-#: pydaygal/templates/headers.html:34
+#: pydaygal/templates/headers.html:37
 msgid "Workshops"
 msgstr ""
 
-#: pydaygal/templates/headers.html:38
+#: pydaygal/templates/headers.html:41
 msgid "CFP"
 msgstr ""
 
-#: pydaygal/templates/headers.html:41 pydaygal/templates/headers.html:85
+#: pydaygal/templates/headers.html:44 pydaygal/templates/headers.html:88
 msgid "Contacta con nosotros"
 msgstr "Contact"
 
-#: pydaygal/templates/headers.html:56
+#: pydaygal/templates/headers.html:59
 msgid "Salir"
 msgstr "Logout"
 
@@ -739,6 +743,17 @@ msgid ""
 "Estamos preparando la nueva edición de la PyDay Galicia,\n"
 "          dentro de poco habrá más novedades."
 msgstr "We are preparing the new edition of PyDay Galicia, coming soon!"
+
+#: pydaygal/templates/pages/registry.html:7
+msgid "REGISTRO"
+msgstr ""
+
+#: pydaygal/templates/pages/registry.html:12
+msgid ""
+"\n"
+"            !Regístrate aquí!\n"
+"            "
+msgstr ""
 
 #: pydaygal/templates/speakers/edit.html:8
 #: pydaygal/templates/workshops/edit.html:8

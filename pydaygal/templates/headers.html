@@ -3,7 +3,7 @@
 {% load static %}
 {% block body %}
     {% block header %}
-    <nav class="navbar navbar-toggleable-md navbar-light navbar-menu">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-menu">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,6 +22,9 @@
           {% endif %}
           <li class="nav-item">
             <a class="nav-link hvr-bounce-to-bottom" href="{% url "info" %}">{% blocktrans %}Información del evento{% endblocktrans %}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-bounce-to-bottom" href="{% url "reg" %}">{% blocktrans %}Registro{% endblocktrans %}</a>
           </li>
           <li class="nav-item">
               <a class="nav-link hvr-bounce-to-bottom" href="{% url "speakers:list" %}">{% blocktrans %}Speakers{% endblocktrans %}</a>
