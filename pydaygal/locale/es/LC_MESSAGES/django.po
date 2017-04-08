@@ -3,33 +3,33 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-08 12:52+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2017-04-08 16:27+0000\n"
+"PO-Revision-Date: 2017-04-08 18:45+0200\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: config/settings/common.py:72
 msgid "Galego"
-msgstr ""
+msgstr "Gallego\t"
 
 #: config/settings/common.py:73 pydaygal/proposals/__init__.py:16
 msgid "Español"
-msgstr ""
+msgstr "Español"
 
 #: config/urls.py:37
 #, python-format
 msgid "%s Admin"
-msgstr ""
+msgstr "%s Admin"
 
 #: pydaygal/configurations/__init__.py:9
 msgid "Float"
@@ -57,15 +57,15 @@ msgstr ""
 
 #: pydaygal/proposals/__init__.py:10
 msgid "Básico"
-msgstr ""
+msgstr "Básico"
 
 #: pydaygal/proposals/__init__.py:11
 msgid "Intermedio"
-msgstr ""
+msgstr "Intermedio"
 
 #: pydaygal/proposals/__init__.py:12
 msgid "Avanzado"
-msgstr ""
+msgstr "Avanzado"
 
 #: pydaygal/proposals/__init__.py:17
 msgid "Inglés"
@@ -73,27 +73,27 @@ msgstr ""
 
 #: pydaygal/proposals/__init__.py:21
 msgid "15 minutos"
-msgstr ""
+msgstr "15 minutos"
 
 #: pydaygal/proposals/__init__.py:22
 msgid "30 minutos"
-msgstr ""
+msgstr "30 minutos"
 
 #: pydaygal/proposals/admin.py:51 pydaygal/reviewers/admin.py:37
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: pydaygal/proposals/admin.py:55
 msgid "Revisiones completadas"
-msgstr ""
+msgstr "Revisiones completadas"
 
 #: pydaygal/proposals/admin.py:59
 msgid "Revisiones asignadas"
-msgstr ""
+msgstr "Revisiones asignadas"
 
 #: pydaygal/proposals/admin.py:63
 msgid "Lista de etiquetas"
-msgstr ""
+msgstr "Lista de etiquetas"
 
 #: pydaygal/proposals/admin.py:67
 msgid "O0"
@@ -105,7 +105,7 @@ msgstr ""
 
 #: pydaygal/proposals/forms.py:43
 msgid "Este campo no puede estar vacío."
-msgstr ""
+msgstr "Este campo no puede estar vacío."
 
 #: pydaygal/proposals/forms.py:46
 msgid ""
@@ -113,52 +113,57 @@ msgid ""
 "al equipo organizador a seleccionar tu charla indicando un breve esquema, si "
 "habrá demos en directo o qué conocimientos previos debería tener la audiencia"
 msgstr ""
+"¡El resumen es demasiado corto! Tiene que tener al menos 80 palabras. Ayuda "
+"al equipo organizador a seleccionar tu charla indicando un breve esquema, si "
+"habrá demos en directo o qué conocimientos previos debería tener la audiencia"
 
 #: pydaygal/proposals/models.py:23
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: pydaygal/proposals/models.py:34
 msgid "Nivel de la audiencia"
-msgstr ""
+msgstr "Nivel de la audiencia"
 
 #: pydaygal/proposals/models.py:41
 msgid "Idioma"
-msgstr ""
+msgstr "Idioma"
 
 #: pydaygal/proposals/models.py:47
 msgid "Duración"
-msgstr ""
+msgstr "Duración"
 
 #: pydaygal/proposals/models.py:54
 msgid "Etiquetas"
-msgstr ""
+msgstr "Etiquetas"
 
 #: pydaygal/proposals/models.py:55
 msgid "Lista de etiquetas separadas por comas."
-msgstr ""
+msgstr "Lista de etiquetas separadas por comas."
 
 #: pydaygal/proposals/models.py:59
 msgid "Tipo de propuesta"
-msgstr ""
+msgstr "Tipo de propuesta"
 
 #: pydaygal/proposals/models.py:61
 msgid "Título"
-msgstr ""
+msgstr "Título"
 
 #: pydaygal/proposals/models.py:63
 msgid "Breve descripción"
-msgstr ""
+msgstr "Breve descripción"
 
 #: pydaygal/proposals/models.py:65
 msgid ""
 "Si tu propuesta se acepta esto se hará público, y se incluirá en el "
 "programa. Debería ser un párrafo, con un máximo de 500 caracteres."
 msgstr ""
+"Si tu propuesta se acepta esto se hará público, y se incluirá en el "
+"programa. Debería ser un párrafo, con un máximo de 500 caracteres."
 
 #: pydaygal/proposals/models.py:69
 msgid "Resumen detallado"
-msgstr ""
+msgstr "Resumen detallado"
 
 #: pydaygal/proposals/models.py:73
 msgid ""
@@ -166,10 +171,13 @@ msgid ""
 "<a href='http://daringfireball.net/projects/markdown/basics' "
 "target='_blank'>Markdown</a>."
 msgstr ""
+"Resumen detallado. Se hará pública si la propuesta se acepta. Edita usando "
+"<a href='http://daringfireball.net/projects/markdown/basics' "
+"target='_blank'>Markdown</a>."
 
 #: pydaygal/proposals/models.py:78
 msgid "Notas adicionales"
-msgstr ""
+msgstr "Notas adicionales"
 
 #: pydaygal/proposals/models.py:82
 msgid ""
@@ -178,28 +186,32 @@ msgid ""
 "Edita usando <a href='http://daringfireball.net/projects/markdown/basics' "
 "target='_blank'>Markdown</a>."
 msgstr ""
+"Cualquier cosa que te gustaría hacer saber a los revisores para que la "
+"tengan en cuenta al ahora de hacer la selección. Esto no se hará público. "
+"Edita usando <a href='http://daringfireball.net/projects/markdown/basics' "
+"target='_blank'>Markdown</a>."
 
 #: pydaygal/proposals/models.py:92
 msgid "Aceptada"
-msgstr ""
+msgstr "Aceptada"
 
 #: pydaygal/proposals/models.py:93
 msgid "Notificación de aceptación enviada"
-msgstr ""
+msgstr "Notificación de aceptación enviada"
 
 #: pydaygal/proposals/models.py:164
 #, python-format
 msgid "[%s] Confirmación de propuesta de charla"
-msgstr ""
+msgstr "[%s] Confirmación de propuesta de charla"
 
 #: pydaygal/proposals/models.py:183
 #, python-format
 msgid "[%s] Notificación de propuesta de charla"
-msgstr ""
+msgstr "[%s] Notificación de propuesta de charla"
 
 #: pydaygal/reviewers/admin.py:46
 msgid "Revisiones"
-msgstr ""
+msgstr "Revisiones"
 
 #: pydaygal/reviewers/forms.py:33
 msgid "Debes puntuar entre 1 y 10"
@@ -253,46 +265,48 @@ msgstr ""
 
 #: pydaygal/schedules/models.py:235
 msgid "URL de la presentación o del código"
-msgstr ""
+msgstr "URL de la presentación o del código"
 
 #: pydaygal/schedules/models.py:236
 msgid "Fichero de presentación"
-msgstr ""
+msgstr "Fichero de presentación"
 
 #: pydaygal/schedules/views.py:90 pydaygal/speakers/views.py:71
 #: pydaygal/workshops/views.py:66
 msgid "Datos actualizados correctamente"
-msgstr ""
+msgstr "Datos actualizados correctamente"
 
 #: pydaygal/speakers/models.py:20 pydaygal/workshops/models.py:23
 msgid "Nombre"
-msgstr ""
+msgstr "Nombre"
 
 #: pydaygal/speakers/models.py:23 pydaygal/workshops/models.py:26
 msgid "Tal como quieres que apareza en el programa de la conferencia."
-msgstr ""
+msgstr "Tal como quieres que apareza en el programa de la conferencia."
 
 #: pydaygal/speakers/models.py:26
 msgid "Biografía"
-msgstr ""
+msgstr "Biografía"
 
 #: pydaygal/speakers/models.py:30
 msgid ""
 "Unas palabras sobre ti. Edita usando <a href='http://warpedvisions.org/"
 "projects/markdown-cheat-sheet/target='_blank'>Markdown</a>."
 msgstr ""
+"Unas palabras sobre ti. Edita usando <a href='http://warpedvisions.org/"
+"projects/markdown-cheat-sheet/target='_blank'>Markdown</a>."
 
 #: pydaygal/speakers/models.py:36
 msgid "Foto"
-msgstr ""
+msgstr "Foto"
 
 #: pydaygal/sponsorships/__init__.py:10
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: pydaygal/sponsorships/__init__.py:11
 msgid "File"
-msgstr ""
+msgstr "Archivo"
 
 #: pydaygal/sponsorships/__init__.py:12
 msgid "Web Logo"
@@ -304,31 +318,31 @@ msgstr ""
 
 #: pydaygal/sponsorships/models.py:18 pydaygal/sponsorships/models.py:134
 msgid "name"
-msgstr ""
+msgstr "nombre"
 
 #: pydaygal/sponsorships/models.py:19
 msgid "order"
-msgstr ""
+msgstr "orden"
 
 #: pydaygal/sponsorships/models.py:20
 msgid "cost"
-msgstr ""
+msgstr "coste"
 
 #: pydaygal/sponsorships/models.py:21 pydaygal/sponsorships/models.py:135
 msgid "description"
-msgstr ""
+msgstr "descripción"
 
 #: pydaygal/sponsorships/models.py:21
 msgid "This is private."
-msgstr ""
+msgstr "Esto es privado"
 
 #: pydaygal/sponsorships/models.py:25
 msgid "sponsor level"
-msgstr ""
+msgstr "nivel de sponsor"
 
 #: pydaygal/sponsorships/models.py:26
 msgid "sponsor levels"
-msgstr ""
+msgstr "niveles de sponsor"
 
 #: pydaygal/sponsorships/models.py:39
 msgid "applicant"
@@ -336,31 +350,31 @@ msgstr ""
 
 #: pydaygal/sponsorships/models.py:41
 msgid "Sponsor Name"
-msgstr ""
+msgstr "Nombre de sponsor"
 
 #: pydaygal/sponsorships/models.py:42
 msgid "external URL"
-msgstr ""
+msgstr "URL externa"
 
 #: pydaygal/sponsorships/models.py:43
 msgid "annotation"
-msgstr ""
+msgstr "anotación"
 
 #: pydaygal/sponsorships/models.py:44
 msgid "Contact Name"
-msgstr ""
+msgstr "Nombre de contacto"
 
 #: pydaygal/sponsorships/models.py:45
 msgid "Contact Email"
-msgstr ""
+msgstr "Email de contacto"
 
 #: pydaygal/sponsorships/models.py:46 pydaygal/sponsorships/models.py:146
 msgid "level"
-msgstr ""
+msgstr "nivel"
 
 #: pydaygal/sponsorships/models.py:48 pydaygal/users/models.py:33
 msgid "active"
-msgstr ""
+msgstr "activo"
 
 #: pydaygal/sponsorships/models.py:60 pydaygal/sponsorships/models.py:162
 msgid "sponsor"
@@ -372,106 +386,137 @@ msgstr ""
 
 #: pydaygal/sponsorships/models.py:136
 msgid "type"
-msgstr ""
+msgstr "tipo"
 
 #: pydaygal/sponsorships/models.py:145 pydaygal/sponsorships/models.py:163
 msgid "benefit"
-msgstr ""
+msgstr "beneficio"
 
 #: pydaygal/sponsorships/models.py:149 pydaygal/sponsorships/models.py:167
 msgid "max words"
-msgstr ""
+msgstr "max palabras"
 
 #: pydaygal/sponsorships/models.py:150 pydaygal/sponsorships/models.py:168
 msgid "other limits"
-msgstr ""
+msgstr "otros límites"
 
 #: pydaygal/sponsorships/models.py:172
 msgid "text"
-msgstr ""
+msgstr "texto"
 
 #: pydaygal/sponsorships/models.py:173
 msgid "file"
-msgstr ""
+msgstr "archivo"
 
 #: pydaygal/templates/blog/list.html:11
 msgid "¡Aún no hay ninguna entrada en el blog!"
-msgstr ""
+msgstr "¡Aún no hay ninguna entrada en el blog!"
 
 #: pydaygal/templates/emails/users/restore_email.html:3
 msgid "Entra en este enlace para establecer tu contraseña:"
-msgstr ""
+msgstr "Entra en este enlace para establecer tu contraseña:"
 
-#: pydaygal/templates/headers.html:21 pydaygal/templates/pages/home.html:21
+#: pydaygal/templates/headers.html:20
+msgid "Hola"
+msgstr "Hola"
+
+#: pydaygal/templates/headers.html:24 pydaygal/templates/pages/home.html:21
 #: pydaygal/templates/pages/info.html:8
 msgid "Información del evento"
-msgstr ""
+msgstr "Información del evento"
 
-#: pydaygal/templates/headers.html:24
+#: pydaygal/templates/headers.html:27
 msgid "Speakers"
 msgstr ""
 
-#: pydaygal/templates/headers.html:28
-msgid "Programa"
-msgstr ""
-
 #: pydaygal/templates/headers.html:31
-#: pydaygal/templates/workshops/container.html:7
+msgid "Programa"
+msgstr "Programa"
+
+#: pydaygal/templates/headers.html:34
 msgid "Workshops"
 msgstr ""
 
-#: pydaygal/templates/headers.html:35
+#: pydaygal/templates/headers.html:38
 msgid "CFP"
 msgstr ""
 
-#: pydaygal/templates/headers.html:44
-msgid "Salir"
-msgstr ""
-
-#: pydaygal/templates/headers.html:59
-msgid "Código de conducta"
-msgstr ""
-
-#: pydaygal/templates/headers.html:60
+#: pydaygal/templates/headers.html:41 pydaygal/templates/headers.html:85
 msgid "Contacta con nosotros"
-msgstr ""
+msgstr "Contacta con nosotros"
 
-#: pydaygal/templates/pages/cfp.html:11
+#: pydaygal/templates/headers.html:56
+msgid "Salir"
+msgstr "Salir"
+
+#: pydaygal/templates/pages/cfp.html:12
 msgid ""
-"Queremos escuchar a la comunidad,\n"
-"            ¡y te invitamos a participar en ella!"
+"\n"
+"            Queremos escuchar a la comunidad,\n"
+"            <br>\n"
+"            ¡y te invitamos a participar en ella!\n"
+"            "
 msgstr ""
-
-#: pydaygal/templates/pages/cfp.html:13
-#, python-format
-msgid ""
-"Envía tu propuesta a\n"
-"            <a href=\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>\n"
-"            si deseas tomar parte en el evento como Speaker o ser "
-"capacitador de workshops.<"
-msgstr ""
-
-#: pydaygal/templates/pages/cfp.html:18
-msgid "Requisitos de envío de propuestas"
-msgstr ""
+"\n"
+"            Queremos escuchar a la comunidad,\n"
+"            <br>\n"
+"            ¡y te invitamos a participar en ella!\n"
+"            "
 
 #: pydaygal/templates/pages/cfp.html:19
 msgid ""
-"Nombre completo, Correo electrónico,\n"
-"            Biografía (de 2 líneas como máximo), Fotografía, Título, Tipo "
-"(Avanzado, Introductorio, Workshop), Contenido</strong>"
+"\n"
+"            Envía tu propuesta si deseas tomar\n"
+"            parte en el evento como Speaker o\n"
+"            ser capacitador\n"
+"            de workshops.\n"
+"            "
 msgstr ""
+"\n"
+"            Envía tu propuesta si deseas tomar\n"
+"            parte en el evento como Speaker o\n"
+"            ser capacitador\n"
+"            de workshops.\n"
+"            "
 
-#: pydaygal/templates/pages/code_of_conduct.html:5
-#: pydaygal/templates/pages/info.html:29
-msgid "Codigo de conducta"
+#: pydaygal/templates/pages/cfp.html:28
+msgid ""
+"\n"
+"            Requisitos de envío de propuestas\n"
+"            "
 msgstr ""
+"\n"
+"            Requisitos de envío de propuestas\n"
+"            "
+
+#: pydaygal/templates/pages/cfp.html:34
+msgid ""
+"\n"
+"              Nombre completo, Correo electrónico, Biografía\n"
+"              (de 2 líneas como máximo), Fotografía, Título,\n"
+"              Tipo (Avanzado, Introductorio, Workshop),\n"
+"              Contenido\n"
+"              "
+msgstr ""
+"\n"
+"              Nombre completo, Correo electrónico, Biografía\n"
+"              (de 2 líneas como máximo), Fotografía, Título,\n"
+"              Tipo (Avanzado, Introductorio, Workshop),\n"
+"              Contenido\n"
+"              "
+
+#: pydaygal/templates/pages/code_of_conduct.html:6
+#: pydaygal/templates/pages/info.html:39
+msgid "Codigo de conducta"
+msgstr "Codigo de conducta"
 
 #: pydaygal/templates/pages/code_of_conduct.html:8
 msgid ""
 "PyDay Galicia es una conferencia hecha por la comunidad pensada \\para la "
 "divulgación y colaboración dentro de la comunidad de desarrolladores."
 msgstr ""
+"PyDay Galicia es una conferencia hecha por la comunidad pensada \\para la "
+"divulgación y colaboración dentro de la comunidad de desarrolladores."
 
 #: pydaygal/templates/pages/code_of_conduct.html:9
 msgid ""
@@ -481,6 +526,11 @@ msgid ""
 "hacia el resto durante la conferencia y todos los eventos relacionados con "
 "ella, estén oficialmente auspiciados por PyDay Galicia o no."
 msgstr ""
+"Valoramos la participación de cada miembro de la comunidad Python y queremos "
+"que todos los asistentes tengan una experiencia entretenida y satisfactoria. "
+"Para ello, se espera que todos los asistentes muestren respeto y cortesía "
+"hacia el resto durante la conferencia y todos los eventos relacionados con "
+"ella, estén oficialmente auspiciados por PyDay Galicia o no."
 
 #: pydaygal/templates/pages/code_of_conduct.html:10
 msgid ""
@@ -489,6 +539,10 @@ msgid ""
 "presente código de conducta. Los organizadores cuidarán del cumplimiento de "
 "este código durante el evento."
 msgstr ""
+"En concreto, todos los delegados, disertantes, expositores y voluntarios que "
+"tomen parte en actividades relacionadas con PyDay Galicia deberán acatar el "
+"presente código de conducta. Los organizadores cuidarán del cumplimiento de "
+"este código durante el evento."
 
 #: pydaygal/templates/pages/code_of_conduct.html:11
 msgid ""
@@ -499,12 +553,20 @@ msgid ""
 "interrupción constante de charlas u otras actividades; todo contacto físico "
 "inapropiado y toda propuesta sexual no deseada."
 msgstr ""
+"Se entiende por acoso todo comentario ofensivo alusivo al sexo, preferencias "
+"sexuales, discapacidades, aspecto físico, etnias y religiones; toda "
+"pornografía en espacios públicos; toda intimidación deliberada, acecho o "
+"persecución; todo acoso mediante fotografías o grabaciones; toda "
+"interrupción constante de charlas u otras actividades; todo contacto físico "
+"inapropiado y toda propuesta sexual no deseada."
 
 #: pydaygal/templates/pages/code_of_conduct.html:12
 msgid ""
 "Los participantes que sean apercibidos deberán desistir inmediatamente de su "
 "actitud."
 msgstr ""
+"Los participantes que sean apercibidos deberán desistir inmediatamente de su "
+"actitud."
 
 #: pydaygal/templates/pages/code_of_conduct.html:13
 msgid ""
@@ -515,6 +577,12 @@ msgid ""
 "deberían utilizar uniformes o vestimentas sexistas, puesto que se crearía un "
 "ambiente sexualizado."
 msgstr ""
+"Los expositores, las casetas o pabellones de patrocinadores o empresas y "
+"actividades similares también están sujetas a la política antiacoso. En "
+"particular, los expositores no deberían utilizar material o llevar a cabo "
+"actividades sexistas. El personal de las casetas (incluyendo voluntarios) no "
+"deberían utilizar uniformes o vestimentas sexistas, puesto que se crearía un "
+"ambiente sexualizado."
 
 #: pydaygal/templates/pages/code_of_conduct.html:14
 msgid ""
@@ -522,6 +590,9 @@ msgid ""
 "en general podrían ofender a otras personas. El lenguaje excesivamente soez "
 "y las bromas ofensivas son inapropiadas en PyDay Galicia."
 msgstr ""
+"Cuida tu lenguaje. Recuerda que las bromas sexistas, racistas y excluyentes "
+"en general podrían ofender a otras personas. El lenguaje excesivamente soez "
+"y las bromas ofensivas son inapropiadas en PyDay Galicia."
 
 #: pydaygal/templates/pages/code_of_conduct.html:15
 msgid ""
@@ -529,10 +600,13 @@ msgid ""
 "podrá tomar las medidas que considere adecuadas, como la amonestación o la "
 "expulsión sin derecho a reembolso."
 msgstr ""
+"Si algún participante infringiera este código de conducta, la organización "
+"podrá tomar las medidas que considere adecuadas, como la amonestación o la "
+"expulsión sin derecho a reembolso."
 
 #: pydaygal/templates/pages/code_of_conduct.html:16
 msgid "Información de contacto"
-msgstr ""
+msgstr "Información de contacto"
 
 #: pydaygal/templates/pages/code_of_conduct.html:17
 msgid ""
@@ -543,12 +617,20 @@ msgid ""
 "puedes hablar con el personal del lugar y pedir que se te ponga en contacto "
 "con el responsable de la conferencia - Juan Luis Cano.'"
 msgstr ""
+"'Si estás siendo objeto de acoso, notas que alguien está siendo acosado, o "
+"tienes cualquier otra preocupación, por favor ponte en contacto con un "
+"miembro del personal de la conferencia. El personal de la conferencia "
+"vestirá camisetas con la inscripción \"Personal PyDay Galicia\". Además "
+"puedes hablar con el personal del lugar y pedir que se te ponga en contacto "
+"con el responsable de la conferencia - Juan Luis Cano.'"
 
 #: pydaygal/templates/pages/code_of_conduct.html:18
 msgid ""
 "Si se trata de una cuestión especialmente urgente, dirígete a cualquiera de "
 "estas personas:"
 msgstr ""
+"Si se trata de una cuestión especialmente urgente, dirígete a cualquiera de "
+"estas personas:"
 
 #: pydaygal/templates/pages/code_of_conduct.html:22
 msgid ""
@@ -558,26 +640,32 @@ msgid ""
 "víctimas de acoso para que puedan sentirse seguras durante el desarrollo de "
 "la conferencia. Tu bienestar es una de nuestras prioridades."
 msgstr ""
+"El personal de la conferencia ayudará gustosamente a los participantes a que "
+"se pongan en contacto con el personal de seguridad del lugar o la policía "
+"local, y proporcionará escolta o socorrerá de cualquier otra forma a las "
+"víctimas de acoso para que puedan sentirse seguras durante el desarrollo de "
+"la conferencia. Tu bienestar es una de nuestras prioridades."
 
 #: pydaygal/templates/pages/code_of_conduct.html:23
 msgid "Gracias por hacer de este un evento abierto a la comunidad y amistoso."
-msgstr ""
+msgstr "Gracias por hacer de este un evento abierto a la comunidad y amistoso."
 
 #: pydaygal/templates/pages/code_of_conduct.html:24
 msgid "Licencia"
-msgstr ""
+msgstr "Licencia"
 
 #: pydaygal/templates/pages/code_of_conduct.html:25
 msgid "Este Código de Conducta se basa en los siguientes códigos:"
-msgstr ""
+msgstr "Este Código de Conducta se basa en los siguientes códigos:"
 
 #: pydaygal/templates/pages/code_of_conduct.html:32
 msgid "y está disponible bajo licencia Creative Commons Atribución 3.0 España."
 msgstr ""
+"y está disponible bajo licencia Creative Commons Atribución 3.0 España."
 
 #: pydaygal/templates/pages/home.html:18
 msgid "¿Qué es PyDay Galicia 2017?"
-msgstr ""
+msgstr "¿Qué es PyDay Galicia 2017?"
 
 #: pydaygal/templates/pages/home.html:20
 msgid ""
@@ -586,107 +674,141 @@ msgid ""
 "instalaciones del museo <strong>MARCO</strong>, en <strong>Vigo</strong>, "
 "tras una primera edición exitosa con muy buena acogida."
 msgstr ""
+"PyDay Galicia es la conferencia anual de la comunidad Python gallega, que "
+"celebrará su segunda edición el <strong>10 de Junio de 2017</strong> en las "
+"instalaciones del museo <strong>MARCO</strong>, en <strong>Vigo</strong>, "
+"tras una primera edición exitosa con muy buena acogida."
 
 #: pydaygal/templates/pages/home.html:29
 msgid "PATROCINADORES"
-msgstr ""
+msgstr "PATROCINADORES"
 
 #: pydaygal/templates/pages/home.html:70
 msgid "¿Quieres ser sponsor?"
-msgstr ""
+msgstr "¿Quieres ser sponsor?"
 
 #: pydaygal/templates/pages/home.html:77
 msgid "Folleto (ES)"
-msgstr ""
+msgstr "Folleto (ES)"
 
 #: pydaygal/templates/pages/home.html:81
 msgid "EDICIONES ANTERIORES"
-msgstr ""
-
-#: pydaygal/templates/pages/info.html:11
-msgid "Fecha"
-msgstr ""
+msgstr "EDICIONES ANTERIORES"
 
 #: pydaygal/templates/pages/info.html:13
+msgid "Fecha"
+msgstr "Fecha"
+
+#: pydaygal/templates/pages/info.html:15
 msgid "10 de Junio de 2017"
-msgstr ""
+msgstr "10 de Junio de 2017"
 
-#: pydaygal/templates/pages/info.html:16
+#: pydaygal/templates/pages/info.html:22
 msgid "Localización"
-msgstr ""
+msgstr "Localización"
 
-#: pydaygal/templates/pages/info.html:33
+#: pydaygal/templates/pages/info.html:43
 msgid ""
-"PyDay Galicia aspira a crear un ambiente libre de acosos\n"
-"      o discriminaciones por razón de género, orientación sexual, "
-"discapacidad,\n"
-"      aspecto físico, etnia o religión. No se tolerará discriminación "
+"\n"
+"          <br>\n"
+"          <p>PyDay Galicia aspira a crear un ambiente libre de acosos o "
+"discriminaciones por razón de género, orientación sexual, discapacidad,\n"
+"            aspecto físico, etnia o religión. No se tolerará discriminación "
 "alguna\n"
-"      bajo ninguna circunstancia."
-msgstr ""
-
-#: pydaygal/templates/pages/info.html:39
-msgid ""
-"Todo el contenido de la conferencia deberá ajustarse a una\n"
-"      audiencia profesional integrada por personas procedentes de sectores "
-"diferentes.\n"
-"      Tanto el lenguaje como las imágenes sexualmente explícitos son "
+"            bajo ninguna circunstancia.\n"
+"          </p>\n"
+"          <p>\n"
+"            Todo el contenido de la conferencia deberá ajustarse a una\n"
+"            audiencia profesional integrada por personas procedentes de "
+"sectores diferentes.\n"
+"            Tanto el lenguaje como las imágenes sexualmente explícitos son "
 "inapropiados en\n"
-"      la conferencia y en las charlas."
+"            la conferencia y en las charlas.\n"
+"          </p>\n"
+"          <p>\n"
+"            Sé amable con los demás. No insultes o humilles a otros\n"
+"            asistentes. Compórtate de manera profesional. Recuerda que las "
+"bromas sexistas,\n"
+"            racistas o discriminatorias están prohibidas en la PyDay "
+"Galicia.\n"
+"          </p>\n"
+"          <p>\n"
+"            Los asistentes que incumplan estas reglas podrán -a discreción\n"
+"            de los organizadores- ser sancionados o expulsados de la "
+"conferencia sin derecho\n"
+"            a reembolso.\n"
+"          </p>\n"
+"          <p>Gracias por ayudarnos a hacer este evento amistoso y abierto "
+"para todos.\n"
+"          </p>\n"
+"        "
 msgstr ""
+"\n"
+"          <br>\n"
+"          <p>PyDay Galicia aspira a crear un ambiente libre de acosos o "
+"discriminaciones por razón de género, orientación sexual, discapacidad,\n"
+"            aspecto físico, etnia o religión. No se tolerará discriminación "
+"alguna\n"
+"            bajo ninguna circunstancia.\n"
+"          </p>\n"
+"          <p>\n"
+"            Todo el contenido de la conferencia deberá ajustarse a una\n"
+"            audiencia profesional integrada por personas procedentes de "
+"sectores diferentes.\n"
+"            Tanto el lenguaje como las imágenes sexualmente explícitos son "
+"inapropiados en\n"
+"            la conferencia y en las charlas.\n"
+"          </p>\n"
+"          <p>\n"
+"            Sé amable con los demás. No insultes o humilles a otros\n"
+"            asistentes. Compórtate de manera profesional. Recuerda que las "
+"bromas sexistas,\n"
+"            racistas o discriminatorias están prohibidas en la PyDay "
+"Galicia.\n"
+"          </p>\n"
+"          <p>\n"
+"            Los asistentes que incumplan estas reglas podrán -a discreción\n"
+"            de los organizadores- ser sancionados o expulsados de la "
+"conferencia sin derecho\n"
+"            a reembolso.\n"
+"          </p>\n"
+"          <p>Gracias por ayudarnos a hacer este evento amistoso y abierto "
+"para todos.\n"
+"          </p>\n"
+"        "
 
-#: pydaygal/templates/pages/info.html:45
-msgid ""
-"Sé amable con los demás. No insultes o humilles a otros\n"
-"      asistentes. Compórtate de manera profesional. Recuerda que las bromas "
-"sexistas,\n"
-"      racistas o discriminatorias están prohibidas en la PyDay Galicia."
-msgstr ""
-
-#: pydaygal/templates/pages/info.html:50
-msgid ""
-"Los asistentes que incumplan estas reglas podrán -a discreción\n"
-"      de los organizadores- ser sancionados o expulsados de la conferencia "
-"sin derecho\n"
-"      a reembolso."
-msgstr ""
-
-#: pydaygal/templates/pages/info.html:54
-msgid ""
-"Gracias por ayudarnos a hacer este evento amistoso\n"
-"      y abierto para todos."
-msgstr ""
-
-#: pydaygal/templates/pages/info.html:58
+#: pydaygal/templates/pages/info.html:70
 msgid "Código de Conducta Completo"
-msgstr ""
+msgstr "Código de Conducta Completo"
 
 #: pydaygal/templates/pages/landing.html:16
 msgid ""
 "Estamos preparando la nueva edición de la PyDay Galicia,\n"
 "          dentro de poco habrá más novedades."
 msgstr ""
+"Estamos preparando la nueva edición de la PyDay Galicia,\n"
+"          dentro de poco habrá más novedades."
 
 #: pydaygal/templates/speakers/edit.html:8
 #: pydaygal/templates/workshops/edit.html:8
 msgid "Perfil de ponente"
-msgstr ""
+msgstr "Perfil de ponente"
 
 #: pydaygal/templates/speakers/edit.html:11
 #: pydaygal/templates/workshops/edit.html:11
 msgid "Datos personales"
-msgstr ""
+msgstr "Datos personales"
 
 #: pydaygal/templates/speakers/edit.html:38
 #: pydaygal/templates/users/restore.html:41
 #: pydaygal/templates/workshops/edit.html:39
 msgid "Guardar"
-msgstr ""
+msgstr "Guardar"
 
 #: pydaygal/templates/speakers/edit.html:44
 #: pydaygal/templates/workshops/edit.html:46
 msgid "Charlas/Talleres"
-msgstr ""
+msgstr "Charlas/Talleres"
 
 #: pydaygal/templates/speakers/edit.html:45
 msgid ""
@@ -694,35 +816,38 @@ msgid ""
 "acceder a un formario que te permitirá <strong>subir el fichero de la "
 "presentación</strong>."
 msgstr ""
+"Lista de las propuestas que tienes acepatadas. Puedes pinchar en ellas para "
+"acceder a un formario que te permitirá <strong>subir el fichero de la "
+"presentación</strong>."
 
 #: pydaygal/templates/speakers/list.html:13
 msgid "¡Aún no hay ningun speaker!"
-msgstr ""
+msgstr "¡Aún no hay ningun speaker!"
 
 #: pydaygal/templates/users/request_code.html:5
 #: pydaygal/templates/users/restore.html:5
 msgid "Establece o restaura tu contraseña"
-msgstr ""
+msgstr "Establece o restaura tu contraseña"
 
 #: pydaygal/templates/users/request_code.html:31
 msgid "Enviar"
-msgstr ""
+msgstr "Enviar"
 
 #: pydaygal/templates/users/restore.html:19
 msgid "Email de usuario"
-msgstr ""
+msgstr "Email de usuario"
 
 #: pydaygal/templates/users/sign_in.html:6
 msgid "Acceso de usuarios"
-msgstr ""
+msgstr "Acceso de usuarios"
 
 #: pydaygal/templates/users/sign_in.html:33
 msgid "Entrar"
-msgstr ""
+msgstr "Entrar"
 
 #: pydaygal/templates/users/sign_in.html:37
 msgid "¿No tienes contraseña o la has olvidado?"
-msgstr ""
+msgstr "¿No tienes contraseña o la has olvidado?"
 
 #: pydaygal/templates/workshops/edit.html:47
 msgid ""
@@ -731,18 +856,26 @@ msgid ""
 "permitirá\n"
 "              <strong>subir el fichero de la presentación</strong>."
 msgstr ""
+"Lista de las propuestas que tienes acepatadas.\n"
+"              Puedes pinchar en ellas para acceder a un formario que te "
+"permitirá\n"
+"              <strong>subir el fichero de la presentación</strong>."
+
+#: pydaygal/templates/workshops/list.html:13
+msgid "¡Aún no hay ningun workshop!"
+msgstr "¡Aún no hay ningun workshop!"
 
 #: pydaygal/users/admin.py:20
 msgid "Personal info"
-msgstr ""
+msgstr "Información personal"
 
 #: pydaygal/users/admin.py:21
 msgid "Permissions"
-msgstr ""
+msgstr "Permisos"
 
 #: pydaygal/users/admin.py:23
 msgid "Important dates"
-msgstr ""
+msgstr "Fechas importantes"
 
 #: pydaygal/users/forms.py:14 pydaygal/users/forms.py:17
 #: pydaygal/users/forms.py:52 pydaygal/users/forms.py:93
@@ -752,56 +885,56 @@ msgstr ""
 
 #: pydaygal/users/forms.py:22
 msgid "El email es obligatorio"
-msgstr ""
+msgstr "El email es obligatorio"
 
 #: pydaygal/users/forms.py:27 pydaygal/users/forms.py:54
 #: pydaygal/users/forms.py:57
 msgid "Contraseña"
-msgstr ""
+msgstr "Contraseña"
 
 #: pydaygal/users/forms.py:29
 msgid "La contraseña es obligatoria"
-msgstr ""
+msgstr "La contraseña es obligatoria"
 
 #: pydaygal/users/forms.py:35 pydaygal/users/forms.py:70
 msgid "El email no existe"
-msgstr ""
+msgstr "El email no existe"
 
 #: pydaygal/users/forms.py:44
 msgid "La contraseña no es correcta"
-msgstr ""
+msgstr "La contraseña no es correcta"
 
 #: pydaygal/users/forms.py:60 pydaygal/users/forms.py:63
 msgid "Repita la contraseña"
-msgstr ""
+msgstr "Repita la contraseña"
 
 #: pydaygal/users/forms.py:77
 msgid "Las contraseñas no son iguales"
-msgstr ""
+msgstr "Las contraseñas no son iguales"
 
 #: pydaygal/users/forms.py:84 pydaygal/users/forms.py:87
 msgid "Código de restauración no válido"
-msgstr ""
+msgstr "Código de restauración no válido"
 
 #: pydaygal/users/models.py:22
 msgid "email address"
-msgstr ""
+msgstr "email address"
 
 #: pydaygal/users/models.py:24
 msgid "first name"
-msgstr ""
+msgstr "first name"
 
 #: pydaygal/users/models.py:25
 msgid "last name"
-msgstr ""
+msgstr "last name"
 
 #: pydaygal/users/models.py:28
 msgid "staff status"
-msgstr ""
+msgstr "staff status"
 
 #: pydaygal/users/models.py:30
 msgid "Designates whether the user can log into this admin site."
-msgstr ""
+msgstr "Designates whether the user can log into this admin site."
 
 #: pydaygal/users/models.py:36
 msgid ""
@@ -824,35 +957,39 @@ msgstr ""
 #: pydaygal/users/models.py:75
 #, python-format
 msgid "[%s] Establece tu contraseña"
-msgstr ""
+msgstr "[%s] Establece tu contraseña"
 
 #: pydaygal/users/views.py:90
 msgid "Se ha establecido la nueva contraseña"
-msgstr ""
+msgstr "Se ha establecido la nueva contraseña"
 
 #: pydaygal/users/views.py:117
 msgid "No se ha encontrado el correo electrónico."
-msgstr ""
+msgstr "No se ha encontrado el correo electrónico."
 
 #: pydaygal/users/views.py:120
 msgid ""
 "Se ha enviado un correo a tu dirección con un enlace para establecer tu "
 "contraseña."
 msgstr ""
+"Se ha enviado un correo a tu dirección con un enlace para establecer tu "
+"contraseña."
 
 #: pydaygal/workshops/models.py:29
 msgid "Contenido del workshop"
-msgstr ""
+msgstr "Contenido del workshop"
 
 #: pydaygal/workshops/models.py:33
 msgid ""
 "Unas palabras sobre el workshop. Edita usando <a href='http://warpedvisions."
 "org/projects/markdown-cheat-sheet/target='_blank'>Markdown</a>."
 msgstr ""
+"Unas palabras sobre el workshop. Edita usando <a href='http://warpedvisions."
+"org/projects/markdown-cheat-sheet/target='_blank'>Markdown</a>."
 
 #: pydaygal/workshops/models.py:39
 msgid "Imagen"
-msgstr ""
+msgstr "Imagen"
 
 #: pydaygal/workshops/models.py:49
 msgid "workshop"
