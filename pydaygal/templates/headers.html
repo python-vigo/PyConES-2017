@@ -7,19 +7,21 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="{% url "home" %}">
+      <a class="navbar-brand hidden-md-up" href="{% url "home" %}">
         <img src="{%static "images/logo.svg" %}" class="img-responsive" style="max-width: 50px">
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-
+          <a class="navbar-brand nav-item hidden-md-down" href="{% url "home" %}">
+            <img src="{%static "images/logo.svg" %}" class="img-responsive" style="max-width: 50px">
+          </a>
           {% if request.user.is_authenticated %}
-          <li class="nav-item active">
-            <p class="nav-link">{{ request.user }}</a>
+          <li class="nav-item active hvr-bounce-to-bottom">
+            <a href="javascript:(0);" class="nav-link">{% trans "Hola" %} {{ request.user.first_name }}</a>
           </li>
           {% endif %}
           <li class="nav-item">
-            <a class="nav-link hvr-bounce-to-right" href="{% url "info" %}">{% blocktrans %}Información del evento{% endblocktrans %}</a>
+            <a class="nav-link hvr-bounce-to-bottom" href="{% url "info" %}">{% blocktrans %}Información del evento{% endblocktrans %}</a>
           </li>
           <li class="nav-item">
               <a class="nav-link hvr-bounce-to-bottom" href="{% url "speakers:list" %}">{% blocktrans %}Speakers{% endblocktrans %}</a>
@@ -33,25 +35,25 @@
           </li>
           -->
           <li class="nav-item">
-            <a class="nav-link hvr-bounce-to-left" href="{% url "cfp" %}">{% blocktrans %}CFP{% endblocktrans %}</a>
+            <a class="nav-link hvr-bounce-to-bottom" href="{% url "cfp" %}">{% blocktrans %}CFP{% endblocktrans %}</a>
           </li>
-          <li class="nav-item hidden-md-up">
+          <li class="nav-item hidden-md-up hvr-bounce-to-bottom">
             <a href="mailto:{{ CONTACT_EMAIL }}" class="nav-link"> {% blocktrans %}Contacta con nosotros{% endblocktrans %}</a>
           </li>
-          <li class="nav-item hidden-md-up">
+          <li class="nav-item hidden-md-up hvr-bounce-to-bottom">
             <a href="https://twitter.com/python_vigo" class="nav-link"><i class="fa fa-twitter"></i></a>
           </li>
-          <li class="nav-item hidden-md-up">
+          <li class="nav-item hidden-md-up hvr-bounce-to-bottom">
             <a href="https://github.com/python-vigo" class="nav-link"><i class="fa fa-github"></i></a>
           </li>
           {% if request.user.is_staff %}
           <li class="nav-item">
-            <a class="nav-link hvr-bounce-to-top" href="{% url "admin:index" %}">Admin</a>
+            <a class="nav-link hvr-bounce-to-bottom" href="{% url "admin:index" %}">Admin</a>
           </li>
           {% endif %}
           {% if request.user.is_authenticated %}
           <li class="nav-item">
-              <a class="nav-link hvr-bounce-to-right" href="{% url "users:sign-out" %}">{% blocktrans %}Salir{% endblocktrans %}</a>
+              <a class="nav-link hvr-bounce-to-bottom" href="{% url "users:sign-out" %}">{% blocktrans %}Salir{% endblocktrans %}</a>
           </li>
           {% endif %}
         </ul>
