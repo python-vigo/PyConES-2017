@@ -3,36 +3,39 @@
 @import "fonts";
 @import "variables";
 @import "nav";
+@import "cards";
 // Import Bootstrap
 // -----------------------------------------------------------------------------
 @import "bootstrap/scss/bootstrap";
 // Import Font Awesome
 // -----------------------------------------------------------------------------
 @import "font-awesome/font-awesome";
-
 // Project specific
 // -----------------------------------------------------------------------------
 @import "common";
+@import "bgs";
+@import "shadows";
 @import "landing";
 @import "cfp";
 @import "sponsors";
 @import "speakers";
 @import "workshops";
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    bottom: 200px;
-    font-size: $font-size-root;
-    /* bottom = footer height */}
+  font-family: 'Open Sans', sans-serif;
+  bottom: 200px;
+  font-size: $font-size-root;
+  color: white;
+}
 
 b,
 strong {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: bolder;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bolder;
 }
 
 h1,
@@ -41,62 +44,54 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
 }
 
 footer {
-    background-color: $blue-primary;
+  background-color: white;
+  color: $blue-dark;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  a {
     color: $blue-dark;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    a {
-        color: $blue-dark;
-        &:hover {
-            color: $blue-light
-        }
+    &:hover {
+      color: $blue-light
     }
-    form {
-        display: inline-block;
-    }
+  }
 }
 
 @media (min-width: 768px) {
-    .navbar-nav {
-        margin: 0 0 0 auto;
-        display: inherit;
-        float: none;
-    }
+  .navbar-nav {
+    margin: 0 0 0 auto;
+    display: inherit;
+    float: none;
+  }
 }
 
 @media (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-    }
+  .navbar-nav {
+    text-align: center;
+  }
 }
 
 .form-group {
-    box-shadow: $material-shadow;
+  box-shadow: $material-shadow;
 }
 
 .card {
-    &-img-top {
-        width: 100%;
-        height: auto;
-    }
+  &-img-top {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .section {
-  padding-top: 120px;
+  padding-top: 140px;
   padding-bottom: 200px;
 }
 
 .blend {
   mix-blend-mode: multiply;
-}
-
-.maps {
-  pointer-events: none !important;
 }

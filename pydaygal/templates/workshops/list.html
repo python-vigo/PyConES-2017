@@ -6,13 +6,12 @@
   {% for i in '0123456789'|make_list %}
       {% for workshop in workshops %}
           {% include "workshops/_workshop.html" %}
-            {% empty %}
-            <div class="row workshops-list">
-                <div class="col-12 text-center">
-                    <h2>:( ¡Baleiro!</h2>
-                </div>
-            </div>
-            {% endif %}
+          {% empty %}
+          <div class="row workshops-list">
+              <div class="col-12 text-center">
+                  <h2>{% blocktrans %}¡Aún no hay ningun workshop!{% endblocktrans %}</h2>
+              </div>
+          </div>
       {% endfor %}
   {% endfor %}
 {% endblock section %}

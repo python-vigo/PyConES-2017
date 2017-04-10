@@ -1,0 +1,25 @@
+{% extends "container_clean.html" %}
+{% load i18n %}
+{% block section %}
+<section id="reg" class="vertical-center">
+  <div class="container text-center">
+    <div class="card-container">
+      <h1>{% trans "REGISTRO" %}</h1>
+      <hr><br>
+      <div class="card col-md-8 offset-md-2 hvr-bounce-to-bottom">
+        <div class="card-block">
+          <h2 class="card-title">
+            {% blocktrans %}
+            !Regístrate aquí!
+            {% endblocktrans %}
+          </h2>
+          <br>
+          <div class="card-subtitle">
+            <a class="btn btn-primary" href="mailto: {{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock section %}

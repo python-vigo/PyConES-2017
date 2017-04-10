@@ -1,8 +1,5 @@
 @import "colors";
-$material-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-0 1px 2px rgba(0, 0, 0, 0.24);
-$material-shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25),
-0 10px 10px rgba(0, 0, 0, 0.22);
+@import "shadows";
 
 .speakers-list {
     margin: 0;
@@ -14,7 +11,7 @@ $material-shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25),
     &:hover {
         box-shadow: $material-shadow-hover;
         background: $blue-primary;
-        transform: scale(1.2);
+        transform: scale(1.1);
         z-index: 9;
     }
     &-photo {

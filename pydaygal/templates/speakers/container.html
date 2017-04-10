@@ -1,14 +1,16 @@
 {% extends "headers.html" %}
 {% load static %}
 {% block container %}
-<div class="container section">
-  <div class="speakers-list container" style="text-align: center;">
-      <h1>Speakers</h1>
-      <hr>
-      <br>
-      <div class="row" style="margin:0;padding:0;">
-      {% block section %} {% endblock section %}
-      </div>
+<section id="speakers">
+  <div class="container section">
+    <div class="speakers-list" style="text-align: center;">
+        <h1>Speakers</h1>
+        <hr>
+        <br>
+        <div class="row" style="margin:0;padding:0;">
+        {% block section %} {% endblock section %}
+        </div>
+    </div>
   </div>
-</div>
+  </section>
 {% endblock container %}

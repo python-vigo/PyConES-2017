@@ -6,3 +6,10 @@
     visibility: hidden;
   }
 }
+
+.nav-link {
+  color: $blue-primary !important;
+  &:hover {
+    color: $blue-dark !important;
+  }
+}
