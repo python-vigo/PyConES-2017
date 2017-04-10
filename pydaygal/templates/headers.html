@@ -17,7 +17,7 @@
           </a>
           {% if request.user.is_authenticated %}
           <li class="nav-item active hvr-bounce-to-bottom">
-            <a href="javascript:(0);" class="nav-link">{% trans "Hola" %} {{ request.user.first_name }}</a>
+            <a href="javascript:void(0);" class="nav-link">{% trans "Hola" %} {{ request.user.first_name }}</a>
           </li>
           {% endif %}
           <li class="nav-item">
