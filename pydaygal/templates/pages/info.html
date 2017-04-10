@@ -2,7 +2,7 @@
 {% load static %}
 {% load i18n %}
 
-{% block section %}
+{% block content %}
 <section id="info" class="section-bg">
   <div class="container section">
     <h1 class="text-center">{% blocktrans %}Información del evento{% endblocktrans %}</h1>
@@ -12,7 +12,7 @@
       <div class="card-block">
         <h2 class="card-title"><i class="fa fa-calendar fa-4" aria-hidden="true"></i>&nbsp;{% blocktrans %}Fecha{% endblocktrans %}</h2>
 
-        <h3 class="card-text"><a class="btn btn-primary" href="javascript:(0);">{% blocktrans %}10 de Junio de 2017{% endblocktrans %}</a></h3>
+        <h3 class="card-text"><a class="btn btn-primary" href="javascript:void(0);">{% blocktrans %}10 de Junio de 2017{% endblocktrans %}</a></h3>
       </div>
     </div>
     <br>
@@ -76,4 +76,4 @@
     </div>
   </div>
 </section>
-{% endblock section %}
+{% endblock content %}
