@@ -70,9 +70,30 @@ footer {
   }
 }
 
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &#home {
+    padding: 0px;
+  }
+}
+
 @media (max-width: 767px) {
+  body {
+    font-size: .9rem;
+  }
+  nav {
+    padding: 10px !important;
+  }
   .navbar-nav {
     text-align: center;
+  }
+}
+
+@media (max-width: 459px) {
+  section #home {
+    padding-top: 140px;
+    padding-bottom: 200px;
   }
 }
 
@@ -85,11 +106,6 @@ footer {
     width: 100%;
     height: auto;
   }
-}
-
-.section {
-  padding-top: 140px;
-  padding-bottom: 200px;
 }
 
 .blend {

@@ -19,6 +19,14 @@ $logo-height: 400px;
   }
 }
 
+button {
+  line-height: inherit !important;
+  color: white;
+  &:focus {
+    outline: none;
+  }
+}
+
 .claim {
   /*border-bottom: 5px solid $blue-dark;*/
   margin-bottom: 15px;
