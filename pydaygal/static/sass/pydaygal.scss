@@ -1,6 +1,5 @@
 // Import own SCSS files that override Bootstrap
 // -----------------------------------------------------------------------------
-@import "fonts";
 @import "variables";
 @import "nav";
 @import "cards";
@@ -26,16 +25,17 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  bottom: 200px;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
   font-size: $font-size-root;
+  bottom: 200px;
   color: white;
 }
 
 b,
-strong {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: bolder;
+bolder strong {
+  font-family: $body-font-family;
+  font-weight: $headings-font-weight;
 }
 
 h1,
