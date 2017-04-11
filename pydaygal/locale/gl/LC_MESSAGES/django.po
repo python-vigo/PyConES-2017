@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyDay Galicia 2017 Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-08 19:15+0000\n"
-"PO-Revision-Date: 2017-04-08 21:30+0200\n"
+"POT-Creation-Date: 2017-04-11 11:43+0000\n"
+"PO-Revision-Date: 2017-04-11 13:47+0200\n"
 "Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: Python Vigo\n"
 "Language: gl\n"
@@ -437,7 +437,7 @@ msgstr "Speakers"
 msgid "Programa"
 msgstr "Programa"
 
-#: pydaygal/templates/headers.html:37
+#: pydaygal/templates/headers.html:38
 msgid "Workshops"
 msgstr "Workshops"
 
@@ -573,10 +573,10 @@ msgid ""
 "      miembro del personal de la conferencia.</p>\n"
 "    <p>Si se trata de una cuestión especialmente urgente,\n"
 "      dirígete a cualquiera de estas personas:</p>\n"
-"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Miguel Sánchez - "
-"664 123 456</a>\n"
-"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Ivan Nieto - 636 "
-"170 871</a>\n"
+"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Miguel Sánchez "
+"- 664 123 456</a>\n"
+"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Ivan Nieto - "
+"636 170 871</a>\n"
 "    <br><br>\n"
 "    <p>El personal de la conferencia ayudará gustosamente a los "
 "participantes\n"
@@ -658,10 +658,10 @@ msgstr ""
 "      membro do persoal da conferencia.</p>\n"
 "    <p>Se trátase dunha cuestión especialmente urxente,\n"
 "      diríxete a calquera destas persoas:</p>\n"
-"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Miguel Sánchez - "
-"664 123 456</a>\n"
-"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Ivan Nieto - 636 "
-"170 871</a>\n"
+"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Miguel Sánchez "
+"- 664 123 456</a>\n"
+"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Ivan Nieto - "
+"636 170 871</a>\n"
 "    <br><br>\n"
 "    <p>O persoal da conferencia axudará gustosamente ós participantes\n"
 "      a que se poñan en contacto co persoal de seguridade do lugar ou\n"
@@ -725,19 +725,23 @@ msgstr ""
 "          </p>\n"
 "          "
 
-#: pydaygal/templates/pages/home.html:40
+#: pydaygal/templates/pages/home.html:37
+msgid "¿Quién hace este evento posible?"
+msgstr "¿Quen fai este evento posible?"
+
+#: pydaygal/templates/pages/home.html:44
 msgid "PATROCINADORES"
 msgstr "PATROCINADORES"
 
-#: pydaygal/templates/pages/home.html:81
+#: pydaygal/templates/pages/home.html:85
 msgid "¿Quieres ser sponsor?"
 msgstr "¿Queres ser sponsor?"
 
-#: pydaygal/templates/pages/home.html:88
+#: pydaygal/templates/pages/home.html:93
 msgid "Folleto (ES)"
 msgstr "Folleto (ES)"
 
-#: pydaygal/templates/pages/home.html:92
+#: pydaygal/templates/pages/home.html:97
 msgid "EDICIONES ANTERIORES"
 msgstr "EDICIÓNS ANTERIORES"
 
@@ -883,9 +887,17 @@ msgstr ""
 "acceder a un formario que te permitirá <strong>subir el fichero de la "
 "presentación</strong>."
 
-#: pydaygal/templates/speakers/list.html:13
-msgid "¡Aún no hay ningun speaker!"
-msgstr "¡Aínda non temos speakers! :("
+#: pydaygal/templates/speakers/list.html:10
+msgid "¡Aún no hay ningun speaker que mostrar!"
+msgstr "¡Aínda non hai ningún speaker que amosar!"
+
+#: pydaygal/templates/speakers/list.html:11
+msgid "Estamos trabajando para ofrecer ponentes de primera."
+msgstr "Estamos a traballar para ofertar poñentes de primeira."
+
+#: pydaygal/templates/speakers/list.html:12
+msgid "¿Quieres ofrecer una charla? !Apúntate en el CFP! "
+msgstr "¿Queres dar unha charla? !Apúntate no CFP! "
 
 #: pydaygal/templates/users/request_code.html:5
 #: pydaygal/templates/users/restore.html:5
@@ -924,9 +936,17 @@ msgstr ""
 "permitirá\n"
 "              <strong>subir el fichero de la presentación</strong>."
 
-#: pydaygal/templates/workshops/list.html:13
-msgid "¡Aún no hay ningun workshop!"
-msgstr "¡Aínda non temos workshops! :("
+#: pydaygal/templates/workshops/list.html:10
+msgid "¡Aún no hay ningun workshop que mostrar!"
+msgstr "¡Aínda non hai workshops que amosar!"
+
+#: pydaygal/templates/workshops/list.html:11
+msgid "Estamos trabajando para ofrecer talleres interesantes"
+msgstr "Estamos a traballar para ofertar workshops interesantes"
+
+#: pydaygal/templates/workshops/list.html:12
+msgid "¿Quieres ofrecer un taller? Apúntate en el CFP "
+msgstr "¿Queres capacitar un workshop? !Apúntate no CFP! "
 
 #: pydaygal/users/admin.py:20
 msgid "Personal info"
