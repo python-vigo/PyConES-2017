@@ -1,10 +1,10 @@
-{% extends "headers.html" %}
-{% load static %}
-{% block container %}
-<section id="workshops">
+{% extends "container_clean.html" %}
+{% load i18n %}
+{% block content %}
+<section id="workshops" class="vertical-center">
   <div class="container section">
     <div class="workshops-list" style="text-align: center;">
-        <h1>workshops</h1>
+        <h1>Workshops</h1>
         <hr>
         <br>
         <div class="row" style="margin:0;padding:0;">
@@ -12,5 +12,5 @@
         </div>
     </div>
   </div>
-  </section>
-{% endblock container %}
+</section>
+{% endblock content %}

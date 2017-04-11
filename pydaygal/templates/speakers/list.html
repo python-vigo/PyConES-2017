@@ -2,16 +2,15 @@
 {% load i18n %}
 
 {% block section %}
-{% comment %}For loop to display more results than the db content{% endcomment %}
-  {% for i in '0123456789'|make_list %}
-      {% for speaker in speakers %}
-          {% include "speakers/_speaker.html" %}
-          {% empty %}
-          <div class="row speakers-list">
-              <div class="col-12 text-center">
-                  <h2>{% blocktrans %}¡Aún no hay ningun speaker!{% endblocktrans %}</h2>
-              </div>
-          </div>
-      {% endfor %}
+  {% for speaker in speakers %}
+    {% include "speakers/_speaker.html" %}
+    {% empty %}
+    <div class="speakers-list" style="width:100%;">
+      <div class="col text-center">
+        <h2>{% blocktrans %}¡Aún no hay ningun speaker que mostrar!{% endblocktrans %}</h2>
+        <p>{% trans "Estamos trabajando para ofrecer ponentes de primera." %}</p>
+        <p>{% trans "¿Quieres ofrecer una charla? !Apúntate en el CFP! " %}</p><span><a class="btn btn-primary" href="{% url "cfp" %}">CALL FOR PAPERS</a></span>
+      </div>
+    </div>
   {% endfor %}
 {% endblock section %}

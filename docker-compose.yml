@@ -41,7 +41,7 @@ services:
       - ./public:/public
       - ./pydaygal/media:/media
     ports:
-      - "5002:5002"
+      - "80:80"
     depends_on:
       - webapp
     networks:
