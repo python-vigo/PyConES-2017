@@ -11,8 +11,8 @@
         max-width: 100%;
         height: 100vh;
         background: url("../images/pyday2016/pyday16-grupo.jpg");
-        background-color: $blue-dark;
-        background-blend-mode: multiply;
+        background-color: $blend-bg-color;
+        background-blend-mode: exclusion;
         background-position-x:  50%;
         background-position-y: 70%;
         background-repeat: no-repeat;

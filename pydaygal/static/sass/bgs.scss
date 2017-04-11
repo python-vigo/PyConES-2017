@@ -1,4 +1,4 @@
-$blend-bg-color: #516d8a;
+@import "colors";
 
 #home {
   background: url("../images/pyday2016/pyday16-publico02.jpg");
@@ -49,13 +49,12 @@ $blend-bg-color: #516d8a;
 }
 
 #sponsors {
-  background: url("../images/pyday2016/pyday16-speakers02.jpg");
+  background: url("../images/pyday2016/pyday16-speakers01.jpg");
   background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-
 }
 
 #coc {
@@ -68,7 +67,7 @@ $blend-bg-color: #516d8a;
 }
 
 #workshops {
-  background: url("../images/pyday2016/pyday16-speakers03.jpg");
+  background: url("../images/pyday2016/pyday16-speakers02.jpg");
   background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-repeat: no-repeat;
