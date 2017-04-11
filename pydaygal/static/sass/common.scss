@@ -19,11 +19,22 @@ $logo-height: 400px;
   }
 }
 
+a:focus {
+  box-shadow: none;
+  color: white;
+}
+
 button {
   line-height: inherit !important;
   color: white;
   &:focus {
     outline: none;
+  }
+}
+
+.btn, .btn-primary{
+  &:focus {
+    box-shadow: none;
   }
 }
 

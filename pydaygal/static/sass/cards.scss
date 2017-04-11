@@ -2,17 +2,21 @@
 @import "colors";
 
 .card {
-  background-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
   transition: all 0.7s cubic-bezier(.25, .8, .25, 1);
+  color: black !important;
   a {
-    color: white !important;
+    color:  $blue-dark !important;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid $blue-dark;
+    &:hover  {
+      color: white !important;
+    }
   }
   &:hover {
     box-shadow: $material-shadow-hover;
-    background: $blue-primary !important;
-    transform: scale(1.1);
+    background: white !important;
+    transform: scale(1.01);
     z-index: 9;
   }
 }
