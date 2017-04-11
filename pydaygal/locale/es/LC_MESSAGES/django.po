@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-11 11:43+0000\n"
-"PO-Revision-Date: 2017-04-11 13:44+0200\n"
+"POT-Creation-Date: 2017-04-11 14:13+0000\n"
+"PO-Revision-Date: 2017-04-11 16:14+0200\n"
 "Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -570,13 +570,13 @@ msgid ""
 "acosado,\n"
 "      o tienes cualquier otra preocupación, por favor ponte en contacto con "
 "un\n"
-"      miembro del personal de la conferencia.</p>\n"
+"      miembro del personal de la conferencia, que distinguirás por portar "
+"elementos \n"
+"      identificativos.</p>\n"
 "    <p>Si se trata de una cuestión especialmente urgente,\n"
-"      dirígete a cualquiera de estas personas:</p>\n"
-"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Miguel Sánchez "
-"- 664 123 456</a>\n"
-"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Ivan Nieto - "
-"636 170 871</a>\n"
+"      dirígete a cualquiera de los integrantes de la organización para que "
+"te indiquen \n"
+"      como proceder.</p>\n"
 "    <br><br>\n"
 "    <p>El personal de la conferencia ayudará gustosamente a los "
 "participantes\n"
@@ -660,13 +660,13 @@ msgstr ""
 "acosado,\n"
 "      o tienes cualquier otra preocupación, por favor ponte en contacto con "
 "un\n"
-"      miembro del personal de la conferencia.</p>\n"
+"      miembro del personal de la conferencia, que distinguirás por portar "
+"elementos \n"
+"      identificativos.</p>\n"
 "    <p>Si se trata de una cuestión especialmente urgente,\n"
-"      dirígete a cualquiera de estas personas:</p>\n"
-"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Miguel Sánchez "
-"- 664 123 456</a>\n"
-"    <a href=\"javascript:void(0);\" class=\"btn btn-primary\">Ivan Nieto - "
-"636 170 871</a>\n"
+"      dirígete a cualquiera de los integrantes de la organización para que "
+"te indiquen \n"
+"      como proceder.</p>\n"
 "    <br><br>\n"
 "    <p>El personal de la conferencia ayudará gustosamente a los "
 "participantes\n"
@@ -751,7 +751,7 @@ msgstr "Folleto (ES)"
 msgid "EDICIONES ANTERIORES"
 msgstr "EDICIONES ANTERIORES"
 
-#: pydaygal/templates/pages/info.html:13
+#: pydaygal/templates/pages/info.html:14
 msgid "Fecha"
 msgstr "Fecha"
 
@@ -759,15 +759,15 @@ msgstr "Fecha"
 msgid "10 de Junio de 2017"
 msgstr "10 de Junio de 2017"
 
-#: pydaygal/templates/pages/info.html:22
+#: pydaygal/templates/pages/info.html:19
 msgid "Localización"
 msgstr "Localización"
 
-#: pydaygal/templates/pages/info.html:42
+#: pydaygal/templates/pages/info.html:52
 msgid "Codigo de conducta"
 msgstr "Codigo de conducta"
 
-#: pydaygal/templates/pages/info.html:46
+#: pydaygal/templates/pages/info.html:56
 msgid ""
 "\n"
 "          <br>\n"
@@ -837,7 +837,7 @@ msgstr ""
 "          </p>\n"
 "        "
 
-#: pydaygal/templates/pages/info.html:73
+#: pydaygal/templates/pages/info.html:83
 msgid "Código de Conducta Completo"
 msgstr "Código de Conducta Completo"
 
