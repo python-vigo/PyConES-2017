@@ -39,7 +39,7 @@
     </div>
   </div>
 </section>
-<section id="sponsors" class="section">
+<section id="sponsors">
   <div class="container">
     <h2 class="text-center"> {% trans "PATROCINADORES" %}</h2>
     <hr><br>
@@ -81,7 +81,8 @@
     {% endcomment %}
     <p class="loud text-center">
       {% blocktrans %}¿Quieres ser sponsor?{% endblocktrans %}
-      <a href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">{{ SPONSORS_EMAIL }}</a>
+      <br>
+      <a class="btn btn-primary" href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">{{ SPONSORS_EMAIL }}</a>
     </p>
     <br><br>
     <!--
