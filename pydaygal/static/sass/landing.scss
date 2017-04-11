@@ -1,4 +1,3 @@
-@import "colors";
 .landing {
     @extend .acorn-background;
     .container {
@@ -11,7 +10,7 @@
         max-width: 100%;
         height: 100vh;
         background: url("../images/pyday2016/pyday16-grupo.jpg");
-        background-color: $blend-bg-color;
+        background-color: #496788;
         background-blend-mode: exclusion;
         background-position-x:  50%;
         background-position-y: 70%;
