@@ -1,6 +1,8 @@
+$blend-bg-color: #516d8a;
+
 #home {
   background: url("../images/pyday2016/pyday16-publico02.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-position-x: 50%;
   background-position-y: 70%;
@@ -10,7 +12,7 @@
 
 #cfp {
   background: url("../images/pyday2016/pyday16-sonrisas.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -20,7 +22,7 @@
 
 #registro {
   background: url("../images/pyday2016/pyday16-registro.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-position-x: 50%;
   background-position-y: 70%;
@@ -30,7 +32,7 @@
 
 #speakers {
   background: url("../images/pyday2016/pyday16-speakers.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -39,7 +41,7 @@
 
 #info {
   background: url("../images/pyday2016/pyday16-camisetas.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -48,7 +50,7 @@
 
 #sponsors {
   background: url("../images/pyday2016/pyday16-speakers02.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -58,7 +60,7 @@
 
 #coc {
   background: url("../images/pyday2016/pyday16-publico02.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -67,7 +69,7 @@
 
 #workshops {
   background: url("../images/pyday2016/pyday16-speakers03.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -76,7 +78,7 @@
 
 #reg {
   background: url("../images/pyday2016/pyday16-registro.jpg");
-  background-color: #3d73a7;
+  background-color: $blend-bg-color;
   background-blend-mode: exclusion;
   background-repeat: no-repeat;
   background-attachment: fixed;
