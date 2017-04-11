@@ -1,7 +1,7 @@
-{% extends "headers.html" %}
-{% load static %}
-{% block container %}
-<section id="speakers">
+{% extends "container_clean.html" %}
+{% load i18n %}
+{% block content %}
+<section id="cfp" class="vertical-center">
   <div class="container section">
     <div class="speakers-list" style="text-align: center;">
         <h1>Speakers</h1>
@@ -12,5 +12,5 @@
         </div>
     </div>
   </div>
-  </section>
-{% endblock container %}
+</section>
+{% endblock content %}
