@@ -5,12 +5,10 @@
   {% for speaker in speakers %}
     {% include "speakers/_speaker.html" %}
     {% empty %}
-    <div class="speakers-list">
-      <div class="col text-center">
-        <h2>{% blocktrans %}¡Aún no hay ningun speaker que mostrar!{% endblocktrans %}</h2>
-        <p>{% trans "Estamos trabajando para ofrecer ponentes de primera." %}</p>
-        <p>{% trans "¿Quieres ofrecer una charla? !Apúntate en el CFP! " %}</p><span><a class="btn btn-primary" href="{% url "cfp" %}">CALL FOR PAPERS</a></span>
-      </div>
+    <div class="col speakers-list text-center">
+        <h3>{% trans "¡En breves podréis conocer a nuestros ponentes de primera!" %}</h3>
+        <p>{% trans "¿Quieres ofrecer una charla? !Apúntate en el CFP! " %}</p><span>
+          <a class="btn btn-primary" href="{% url "cfp" %}">CALL FOR PAPERS</a></span>
     </div>
   {% endfor %}
 {% endblock section %}
