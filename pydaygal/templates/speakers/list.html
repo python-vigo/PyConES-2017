@@ -5,7 +5,7 @@
   {% for speaker in speakers %}
     {% include "speakers/_speaker.html" %}
     {% empty %}
-    <div class="speakers-list" style="width:100%;">
+    <div class="speakers-list">
       <div class="col text-center">
         <h2>{% blocktrans %}¡Aún no hay ningun speaker que mostrar!{% endblocktrans %}</h2>
         <p>{% trans "Estamos trabajando para ofrecer ponentes de primera." %}</p>

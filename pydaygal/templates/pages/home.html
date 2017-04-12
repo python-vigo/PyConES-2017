@@ -13,7 +13,7 @@
 <section id="home" class="section-bg">
   <div class="container vertical-center">
     <div class="col col-lg-10 offset-lg-1">
-      <div class="card text-center hvr-bounce-to-bottom">
+      <div class="card text-center">
         <div class="card-block">
           <h1 class="card-title">{% trans "¿Qué es PyDay Galicia 2017?" %}</h1>
           <hr>
@@ -41,22 +41,46 @@
 </section>
 <section id="sponsors">
   <div class="container">
+    <h2 class="text-center">COLABORAN</h2>
+    <hr><br>
+    {% sponsor_levels as levels %}
+    {% for level in levels %}
+      {% if level.name == 'Colaborador' %}
+      {% sponsors level.pk as sponsors %}
+      {% if sponsors %}
+      <ul class="sponsors-list" style="-webkit-padding-start: 0;">
+          {% for sponsor in sponsors %}
+          <li class="nav-item">
+              <a href="{{ sponsor.external_url }}" target="_blank">
+                  <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
+                  alt="{{ sponsor.name }}" class="img-fluid sponsors-img-gold">
+              </a>
+          </li>
+          {% if forloop.counter|divisibleby:"2" %}
+          <div class="clearfix visible-xs"></div>
+          {% endif %}
+          {% if forloop.counter|divisibleby:"3" %}
+          <div class="clearfix visible-sm"></div>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
     <h2 class="text-center"> {% trans "PATROCINADORES" %}</h2>
     <hr><br>
     {% sponsor_levels as levels %}
     {% for level in levels %}
+      {% if level.name != 'Colaborador' %}
       {% sponsors level.pk as sponsors %}
       {% if sponsors %}
-        {% comment %}<h5 class="col-md-6 offset-md-3 text-center sponsors-level
-        {% if level.name == 'Oro' or level.name == 'Ouro' %}sponsors-level-toptier{% endif %}
-        {% if level.name == 'Plata' or level.name == 'Prata' %}sponsors-level-midtier{% endif %}
-        {% if level.name == 'Bronce' %}sponsors-level-lowtier{% endif %}">{{ level }}</h5>{% endcomment %}
-        <ul class="sponsors-list">
+      <ul class="sponsors-list" style="-webkit-padding-start: 0;">
           {% for sponsor in sponsors %}
           <li class="nav-item">
               <a href="{{ sponsor.external_url }}" target="_blank">
                   <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
                   alt="{{ sponsor.name }}" class="img-fluid
+                  {% if level.name == 'Colaborador' %}sponsors-img-gold{% endif %}
                   {% if level.name == 'Oro' or level.name == 'Ouro' %}sponsors-img-gold{% endif %}
                   {% if level.name == 'Plata' or level.name == 'Prata' %}sponsors-img-silver{% endif %}
                   {% if level.name == 'Bronce' %}sponsors-img-bronze{% endif %}">
@@ -71,30 +95,17 @@
           {% endfor %}
         </ul>
       {% endif %}
+      {% endif %}
     {% endfor %}
-    {% comment %}
-    <p class="text-center loud">
-        <a href="{% static "files/es_brochure_v2.pdf" %}" class="btn btn-primary" target="_blank">
-            <i class="icon-download"></i> {% blocktrans %}Folleto (ES){% endblocktrans %}
-        </a>
-    </p>
-    {% endcomment %}
-    <p class="loud text-center">
+    <p class="text-center">
       {% blocktrans %}¿Quieres ser sponsor?{% endblocktrans %}
       <br>
       <a class="btn btn-primary" href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">{{ SPONSORS_EMAIL }}</a>
     </p>
     <br><br>
-    <!--
-    <p class="text-center loud">
-        <a href="{% static "files/es_brochure_v2.pdf" %}" class="btn btn-primary" target="_blank">
-            <i class="icon-download"></i> {% blocktrans %}Folleto (ES){% endblocktrans %}
-        </a>
-    </p>
-    -->
     <h6 class="text-center">{% blocktrans %}EDICIONES ANTERIORES{% endblocktrans %}</h6>
-    <p class="text-center loud indented">
-        <a href="https://python-vigo.github.io/pyday-2016/"
+    <p class="text-center indented">
+        <a class="btn btn-primary" href="https://python-vigo.github.io/pyday-2016/"
         target="_blank">PyDay Galicia 2016</a>
     </p>
   </div>
