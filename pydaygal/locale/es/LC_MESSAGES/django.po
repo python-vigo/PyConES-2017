@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-11 22:41+0000\n"
-"PO-Revision-Date: 2017-04-12 00:41+0200\n"
+"POT-Creation-Date: 2017-04-12 18:19+0000\n"
+"PO-Revision-Date: 2017-04-12 20:20+0200\n"
 "Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -441,15 +441,15 @@ msgstr "Programa"
 msgid "Workshops"
 msgstr "Workshops"
 
-#: pydaygal/templates/headers.html:41
+#: pydaygal/templates/headers.html:42
 msgid "CFP"
 msgstr "CFP"
 
-#: pydaygal/templates/headers.html:44 pydaygal/templates/headers.html:88
+#: pydaygal/templates/headers.html:45 pydaygal/templates/headers.html:89
 msgid "Contacta con nosotros"
 msgstr "Contacta con nosotros"
 
-#: pydaygal/templates/headers.html:59
+#: pydaygal/templates/headers.html:60
 msgid "Salir"
 msgstr "Salir"
 
@@ -471,19 +471,17 @@ msgstr ""
 msgid ""
 "\n"
 "            Envía tu propuesta si deseas tomar\n"
-"            parte en el evento como Speaker o\n"
-"            ser capacitador\n"
-"            de workshops.\n"
+"            parte en el evento como ponente, \n"
+"            o ser capacitador de workshops.\n"
 "            "
 msgstr ""
 "\n"
 "            Envía tu propuesta si deseas tomar\n"
-"            parte en el evento como Speaker o\n"
-"            ser capacitador\n"
-"            de workshops.\n"
+"            parte en el evento como ponente, \n"
+"            o ser capacitador de workshops.\n"
 "            "
 
-#: pydaygal/templates/pages/cfp.html:28
+#: pydaygal/templates/pages/cfp.html:27
 msgid ""
 "\n"
 "            Requisitos de envío de propuestas\n"
@@ -493,21 +491,9 @@ msgstr ""
 "            Requisitos de envío de propuestas\n"
 "            "
 
-#: pydaygal/templates/pages/cfp.html:34
-msgid ""
-"\n"
-"              Nombre completo, Correo electrónico, Biografía\n"
-"              (de 2 líneas como máximo), Fotografía, Título,\n"
-"              Tipo (Avanzado, Introductorio, Workshop),\n"
-"              Contenido\n"
-"              "
-msgstr ""
-"\n"
-"              Nombre completo, Correo electrónico, Biografía\n"
-"              (de 2 líneas como máximo), Fotografía, Título,\n"
-"              Tipo (Avanzado, Introductorio, Workshop),\n"
-"              Contenido\n"
-"              "
+#: pydaygal/templates/pages/cfp.html:33
+msgid "Nombre, título y una breve descripción de la propuesta."
+msgstr "Nombre, título y una breve descripción de la propuesta."
 
 #: pydaygal/templates/pages/code_of_conduct.html:8
 msgid ""
@@ -738,39 +724,45 @@ msgstr ""
 msgid "¿Quién hace este evento posible?"
 msgstr "¿Quién hace este evento posible?"
 
-#: pydaygal/templates/pages/home.html:44
-msgid "PATROCINADORES"
-msgstr "PATROCINADORES"
-
-#: pydaygal/templates/pages/home.html:85
+#: pydaygal/templates/pages/home.html:113
 msgid "¿Quieres ser sponsor?"
 msgstr "¿Quieres ser sponsor?"
 
-#: pydaygal/templates/pages/home.html:93
-msgid "Folleto (ES)"
-msgstr "Folleto (ES)"
-
-#: pydaygal/templates/pages/home.html:97
+#: pydaygal/templates/pages/home.html:118
 msgid "EDICIONES ANTERIORES"
 msgstr "EDICIONES ANTERIORES"
 
-#: pydaygal/templates/pages/info.html:14
-msgid "Fecha"
-msgstr "Fecha"
-
-#: pydaygal/templates/pages/info.html:15
-msgid "10 de Junio de 2017"
-msgstr "10 de Junio de 2017"
-
-#: pydaygal/templates/pages/info.html:19
+#: pydaygal/templates/pages/info.html:18
 msgid "Localización"
 msgstr "Localización"
 
-#: pydaygal/templates/pages/info.html:49
+#: pydaygal/templates/pages/info.html:33
+msgid "Fecha y horarios"
+msgstr "Fecha y horarios"
+
+#: pydaygal/templates/pages/info.html:36
+msgid ""
+"10 de Junio de 2017 | \n"
+"              <i class=\"fa fa-clock-o fa-4\" aria-hidden=\"true\"></i> De "
+"09:00. a 19:00h."
+msgstr ""
+"10 de Junio de 2017 | \n"
+"              <i class=\"fa fa-clock-o fa-4\" aria-hidden=\"true\"></i> De "
+"09:00. a 19:00h."
+
+#: pydaygal/templates/pages/info.html:40
+msgid "¿Cómo llegar?"
+msgstr "¿Cómo llegar?"
+
+#: pydaygal/templates/pages/info.html:44
+msgid "C1 4A 4C 5A 9A 9B 11 12A 12B 15 16 18 24"
+msgstr "C1 4A 4C 5A 9A 9B 11 12A 12B 15 16 18 24"
+
+#: pydaygal/templates/pages/info.html:65
 msgid "Codigo de conducta"
 msgstr "Codigo de conducta"
 
-#: pydaygal/templates/pages/info.html:53
+#: pydaygal/templates/pages/info.html:69
 msgid ""
 "\n"
 "          <br>\n"
@@ -840,7 +832,7 @@ msgstr ""
 "          </p>\n"
 "        "
 
-#: pydaygal/templates/pages/info.html:80
+#: pydaygal/templates/pages/info.html:96
 msgid "Código de Conducta Completo"
 msgstr "Código de Conducta Completo"
 
@@ -891,15 +883,11 @@ msgstr ""
 "acceder a un formario que te permitirá <strong>subir el fichero de la "
 "presentación</strong>."
 
+#: pydaygal/templates/speakers/list.html:9
+msgid "¡En breves podréis conocer a nuestros ponentes de primera!"
+msgstr "¡En breves podréis conocer a nuestros ponentes de primera!"
+
 #: pydaygal/templates/speakers/list.html:10
-msgid "¡Aún no hay ningun speaker que mostrar!"
-msgstr "¡Aún no hay ningun speaker que mostrar!"
-
-#: pydaygal/templates/speakers/list.html:11
-msgid "Estamos trabajando para ofrecer ponentes de primera."
-msgstr "Estamos trabajando para ofrecer ponentes de primera."
-
-#: pydaygal/templates/speakers/list.html:12
 msgid "¿Quieres ofrecer una charla? !Apúntate en el CFP! "
 msgstr "¿Quieres ofrecer una charla? !Apúntate en el CFP! "
 
@@ -1087,6 +1075,39 @@ msgstr "workshop"
 #: pydaygal/workshops/models.py:50
 msgid "workshops"
 msgstr "workshops"
+
+#~ msgid ""
+#~ "\n"
+#~ "              Nombre completo, Correo electrónico, Biografía\n"
+#~ "              (de 2 líneas como máximo), Fotografía, Título,\n"
+#~ "              Tipo (Avanzado, Introductorio, Workshop),\n"
+#~ "              Contenido\n"
+#~ "              "
+#~ msgstr ""
+#~ "\n"
+#~ "              Nombre completo, Correo electrónico, Biografía\n"
+#~ "              (de 2 líneas como máximo), Fotografía, Título,\n"
+#~ "              Tipo (Avanzado, Introductorio, Workshop),\n"
+#~ "              Contenido\n"
+#~ "              "
+
+#~ msgid "PATROCINADORES"
+#~ msgstr "PATROCINADORES"
+
+#~ msgid "Folleto (ES)"
+#~ msgstr "Folleto (ES)"
+
+#~ msgid "Fecha"
+#~ msgstr "Fecha"
+
+#~ msgid "10 de Junio de 2017"
+#~ msgstr "10 de Junio de 2017"
+
+#~ msgid "¡Aún no hay ningun speaker que mostrar!"
+#~ msgstr "¡Aún no hay ningun speaker que mostrar!"
+
+#~ msgid "Estamos trabajando para ofrecer ponentes de primera."
+#~ msgstr "Estamos trabajando para ofrecer ponentes de primera."
 
 #~ msgid ""
 #~ "\n"
