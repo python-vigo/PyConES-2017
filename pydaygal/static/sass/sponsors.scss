@@ -26,8 +26,13 @@
     &-list {
           text-align: center;
           display: flex;
+          align-items: center;
           justify-content: center;
           list-style-type: none;
+          flex-wrap: wrap;
+          & .nav-item {
+              margin-bottom: 20px;
+          }
     }
     &-level {
         border-radius: 20px;
