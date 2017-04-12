@@ -18,9 +18,8 @@
           <p class="card-text">
             {% blocktrans %}
             Envía tu propuesta si deseas tomar
-            parte en el evento como Speaker o
-            ser capacitador
-            de workshops.
+            parte en el evento como ponente, 
+            o ser capacitador de workshops.
             {% endblocktrans %}
           </p>
           <br>
@@ -31,12 +30,7 @@
           </h6>
           <p class="card-text">
             <strong>
-              {% blocktrans %}
-              Nombre completo, Correo electrónico, Biografía
-              (de 2 líneas como máximo), Fotografía, Título,
-              Tipo (Avanzado, Introductorio, Workshop),
-              Contenido
-              {% endblocktrans %}
+              {% trans "Nombre, título y una breve descripción de la propuesta." %}
             </strong>
           </p>
           <a class="btn btn-primary" href="mailto: {{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>

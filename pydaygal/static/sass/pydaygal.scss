@@ -6,6 +6,10 @@
 // Import Bootstrap
 // -----------------------------------------------------------------------------
 @import "bootstrap/scss/bootstrap";
+
+// Import HoverCSS
+// -----------------------------------------------------------------------------
+@import "hover";
 // Import Font Awesome
 // -----------------------------------------------------------------------------
 @import "font-awesome/font-awesome";
@@ -111,4 +115,8 @@ section {
 
 .blend {
   mix-blend-mode: multiply;
+}
+
+.maps {
+  width: 100%;
 }
