@@ -1,16 +1,29 @@
 .sponsors {
+    p {
+      color: $blue-dark;
+    }
+    a {
+      color: $blue-dark !important;
+      padding: 10px;
+      border: 1px solid $blue-dark;
+      &:hover {
+        color: white !important;
+      }
+    }
     &-img {
         min-height: 50px;
         &-gold {
             transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-            max-height: 200px;
+            max-height: 150px;
+            padding: 20px;
             &:hover {
                 transform: scale(1.2);
             }
         }
         &-silver {
             transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-            max-height: 150px;
+            max-height: 120px;
+            padding: 20px;
             &:hover {
                 transform: scale(1.2);
             }
@@ -18,6 +31,7 @@
         &-bronze {
             transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
             max-height: 100px;
+            padding: 20px;
             &:hover {
                 transform: scale(1.2);
             }
