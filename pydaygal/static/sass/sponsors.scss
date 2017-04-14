@@ -1,52 +1,53 @@
+@import "_mixins";
+@import "colors";
+#sponsors {
+    p {
+        color: $blue-dark;
+    }
+    .btn {
+        border-color: $blue-dark;
+        &-primary {
+            color: $blue-dark;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
 .sponsors {
     p {
-      color: $blue-dark;
+        color: $blue-dark;
     }
     a {
-      color: $blue-dark !important;
-      padding: 10px;
-      border: 1px solid $blue-dark;
-      &:hover {
-        color: white !important;
-      }
+        color: $blue-dark !important;
+        padding: 10px;
+        border: 1px solid $blue-dark;
+        &:hover {
+            color: white !important;
+        }
     }
     &-img {
         min-height: 50px;
         &-gold {
-            transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+            @include sponsor_img();
             max-height: 150px;
-            padding: 20px;
-            &:hover {
-                transform: scale(1.2);
-            }
         }
         &-silver {
-            transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+            @include sponsor_img();
             max-height: 120px;
-            padding: 20px;
-            &:hover {
-                transform: scale(1.2);
-            }
         }
         &-bronze {
-            transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+            @include sponsor_img();
             max-height: 100px;
-            padding: 20px;
-            &:hover {
-                transform: scale(1.2);
-            }
         }
     }
     &-list {
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          list-style-type: none;
-          flex-wrap: wrap;
-          & .nav-item {
-              margin-bottom: 20px;
-          }
+        text-align: center;
+        @include flex_vertical();
+        & .nav-item {
+            margin-bottom: 20px;
+        }
     }
     &-level {
         border-radius: 20px;
