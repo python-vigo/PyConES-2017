@@ -1,74 +1,89 @@
 @import "colors";
 .acorn-background {
-  background: url("../images/landing-bg.jpg");
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 70%;
+    background: url("../images/landing-bg.jpg");
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 70%;
 }
 
 $logo-width: 495px;
 $logo-height: 400px;
 .logo {
-  background: #fff url("../images/logo.svg") no-repeat 15px 15px;
-  background-size: $logo-width $logo-height !important;
-  width: $logo-width+30px;
-  height: $logo-height+30px;
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: #fff url("../images/logo.svg") no-repeat 15px 15px;
-    background-size: $logo-width $logo-height;
-  }
+    background-size: $logo-width $logo-height !important;
+    width: $logo-width+30px;
+    height: $logo-height+30px;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: #fff url("../images/logo.svg") no-repeat 15px 15px;
+        background-size: $logo-width $logo-height;
+    }
 }
 
 a:focus {
-  box-shadow: none;
-  color: white;
+    box-shadow: none;
+    color: white;
 }
 
 button {
-  line-height: inherit !important;
-  color: white;
-  &:focus {
-    outline: none;
-  }
-}
-
-.btn, .btn-primary{
-  &:focus {
-    box-shadow: none;
-  }
-}
-
-.claim {
-  /*border-bottom: 5px solid $blue-dark;*/
-  margin-bottom: 15px;
-  .img-logo {
-    padding: 10px;
-  }
-}
-
-.img-responsive {
-  max-width: 100%;
-  width: 100%;
+    line-height: inherit !important;
+    color: white;
+    &:focus {
+        outline: none;
+    }
 }
 
 .btn-primary {
-  background-color: transparent;
-  border-color: white;
-  &:hover {
-    background-color: $blue-dark;
-    border-color: $blue-dark;
-  }
+    background-color: transparent;
+    border-color: white;
+    &:hover {
+        background-color: $blue-dark;
+        border-color: $blue-dark;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.blend {
+    mix-blend-mode: multiply;
+}
+
+.card {
+    &-img-top {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.claim {
+    margin-bottom: 15px;
+    .img-logo {
+        padding: 10px;
+    }
+}
+
+.form-group {
+    box-shadow: $material-shadow;
+}
+
+.img-responsive {
+    max-width: 100%;
+    width: 100%;
 }
 
 .nav-link {
-  color: $blue-primary !important;
-  &:hover {
-    color: $blue-dark !important;
-  }
+    color: $blue-primary !important;
+    &:hover {
+        color: $blue-dark !important;
+    }
+}
+
+.maps {
+    width: 100%;
 }
 
 .vertical-center {
-  display: flex;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
