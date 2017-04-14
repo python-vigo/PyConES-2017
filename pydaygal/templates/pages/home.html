@@ -72,7 +72,7 @@
     <hr><br>
     {% sponsor_levels as levels %}
     {% for level in levels %}
-      {% if level.name != 'Colaborador' %}
+      {% if level.name == 'Oro' or level.name == 'Plata' or level.name == 'Bronce' %}
       {% sponsors level.pk as sponsors %}
       {% if sponsors %}
       <ul class="sponsors-list" style="-webkit-padding-start: 0;">
@@ -101,13 +101,30 @@
     <br>
     <h2 class="text-center">Organiza</h2>
     <hr><br>
-    <ul class="sponsors-list" style="-webkit-padding-start: 0;">
-      <li class="nav-item">
-        <a href="{{ sponsor.external_url }}" target="_blank">
-          <img src="/media/sponsor_files/python-vigo-transparentel.png" alt="Python Vigo" class="img-fluid sponsors-img-gold">
-        </a>
-      </li>
-    </ul>
+    {% sponsor_levels as levels %}
+    {% for level in levels %}
+      {% sponsors level.pk as sponsors %}
+      {% if sponsors %}
+        {% if level.name == 'Organizador' %}
+        <ul class="sponsors-list" style="-webkit-padding-start: 0;">
+            {% for sponsor in sponsors %}
+            <li class="nav-item">
+                <a href="{{ sponsor.external_url }}" target="_blank">
+                    <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-gold">
+                </a>
+            </li>
+            {% if forloop.counter|divisibleby:"2" %}
+            <div class="clearfix visible-xs"></div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:"3" %}
+            <div class="clearfix visible-sm"></div>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
     <br>
     <p class="text-center">
       {% blocktrans %}¿Quieres ser sponsor?{% endblocktrans %}
