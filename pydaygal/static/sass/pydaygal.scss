@@ -72,6 +72,20 @@ section {
     &#home {
         padding: 0px;
     }
+    #sponsors {
+      p {
+          color: $blue-dark !important;
+      }
+      .btn {
+          border-color: $blue-dark !important;
+          &.btn-primary {
+              color: $blue-dark !important;
+              &:hover {
+                  color: white !important;
+              }
+         }
+      }
+   }
 }
 
 @media (min-width: 768px) {
