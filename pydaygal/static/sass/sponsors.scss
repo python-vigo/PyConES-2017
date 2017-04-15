@@ -1,19 +1,5 @@
 @import "_mixins";
 @import "colors";
-#sponsors {
-    p {
-        color: $blue-dark;
-    }
-    .btn {
-        border-color: $blue-dark;
-        &-primary {
-            color: $blue-dark;
-            &:hover {
-                color: white;
-            }
-        }
-    }
-}
 
 .sponsors {
     p {
