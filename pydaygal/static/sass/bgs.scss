@@ -1,83 +1,37 @@
+@import "_mixins";
 @import "colors";
-
 #home {
-  background: url("../images/pyday2016/pyday16-publico02.jpg");
-  background-color: $blend-bg-color;
-  background-blend-mode: exclusion;
-  background-position-x: 50%;
-  background-position-y: 70%;
-  background-repeat: no-repeat;
-  background-size: cover;
+    @include bg_mixin($blend-bg-color, "../images/pyday2016/pyday16-publico02.jpg");
 }
 
 #cfp {
-  background: url("../images/pyday2016/pyday16-sonrisas.jpg");
-  background-color: $blend-bg-color;
-  background-blend-mode: exclusion;
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+    @include bg_mixin($blend-bg-color, "../images/pyday2016/pyday16-sonrisas.jpg");
 }
 
 #registro {
-  background: url("../images/pyday2016/pyday16-registro.jpg");
-  background-color: $blend-bg-color;
-  background-blend-mode: exclusion;
-  background-position-x: 50%;
-  background-position-y: 70%;
-  background-repeat: no-repeat;
-  background-size: cover;
+    @include bg_mixin($blend-bg-color, "../images/pyday2016/pyday16-registro.jpg");
 }
 
 #speakers {
-  background: url("../images/pyday2016/pyday16-speakers.jpg");
-  background-color: $blend-bg-color;
-  background-blend-mode: exclusion;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+    @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-speakers.jpg");
 }
 
 #info {
-  background: url("../images/pyday2016/pyday16-camisetas.jpg");
-  background-color: $blend-bg-color;
-  background-blend-mode: exclusion;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+    @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-camisetas.jpg");
 }
 
 #sponsors {
-  background-color: white;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+    @include bg_mixin_fixed(white, null);
 }
 
 #coc {
-  background: url("../images/pyday2016/pyday16-publico02.jpg");
-  background-color: $blend-bg-color;
-  background-blend-mode: exclusion;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+    @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-publico02.jpg");
 }
 
 #workshops {
-  background: url("../images/pyday2016/pyday16-speakers02.jpg");
-  background-color: $blend-bg-color;
-  background-blend-mode: exclusion;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+    @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-speakers02.jpg");
 }
 
 #reg {
-  background: url("../images/pyday2016/pyday16-registro.jpg");
-  background-color: $blend-bg-color;
-  background-blend-mode: exclusion;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+    @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-registro.jpg");
 }

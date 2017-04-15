@@ -6,7 +6,6 @@
 // Import Bootstrap
 // -----------------------------------------------------------------------------
 @import "bootstrap/scss/bootstrap";
-
 // Import HoverCSS
 // -----------------------------------------------------------------------------
 @import "hover";
@@ -24,22 +23,22 @@
 @import "speakers";
 @import "workshops";
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  font-family: $body-font-family;
-  font-weight: $body-font-weight;
-  font-size: $font-size-root;
-  bottom: 200px;
-  color: white;
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+    font-size: $font-size-root;
+    bottom: 200px;
+    color: white;
 }
 
 b,
 bolder strong {
-  font-family: $body-font-family;
-  font-weight: $headings-font-weight;
+    font-family: $body-font-family;
+    font-weight: $headings-font-weight;
 }
 
 h1,
@@ -48,75 +47,56 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
 }
 
 footer {
-  background-color: white;
-  color: $blue-dark;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  a {
+    background-color: white;
     color: $blue-dark;
-    &:hover {
-      color: $blue-light
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    a {
+        color: $blue-dark;
+        &:hover {
+            color: $blue-light
+        }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-nav {
-    margin: 0 0 0 auto;
-    display: inherit;
-    float: none;
-  }
 }
 
 section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  min-height: 100vh;
-  &#home {
-    padding: 0px;
-  }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    &#home {
+        padding: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin: 0 0 0 auto;
+        display: inherit;
+        float: none;
+    }
 }
 
 @media (max-width: 767px) {
-  body {
-    font-size: .9rem;
-  }
-  nav {
-    padding: 10px !important;
-  }
-  .navbar-nav {
-    text-align: center;
-  }
+    body {
+        font-size: .9rem;
+    }
+    nav {
+        padding: 10px !important;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
 }
 
 @media (max-width: 459px) {
-  section #home {
-    padding-top: 140px;
-    padding-bottom: 200px;
-  }
-}
-
-.form-group {
-  box-shadow: $material-shadow;
-}
-
-.card {
-  &-img-top {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.blend {
-  mix-blend-mode: multiply;
-}
-
-.maps {
-  width: 100%;
+    section #home {
+        padding-top: 140px;
+        padding-bottom: 200px;
+    }
 }
