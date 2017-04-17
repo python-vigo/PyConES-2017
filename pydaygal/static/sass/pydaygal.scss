@@ -69,23 +69,20 @@ section {
     padding-top: 100px;
     padding-bottom: 100px;
     min-height: 100vh;
-    &#home {
+    & #home {
         padding: 0px;
     }
-    #sponsors {
-      p {
-          color: $blue-dark !important;
-      }
-      .btn {
-          border-color: $blue-dark !important;
-          &.btn-primary {
-              color: $blue-dark !important;
-              &:hover {
-                  color: white !important;
-              }
-         }
-      }
-   }
+}
+
+#sponsors {
+	color: $blue-dark !important;
+    	& .btn-primary {		
+		color: $blue-dark !important;
+		border-color: $blue-dark !important;
+    		&:hover {
+        		color: white !important;
+     		}
+    	}
 }
 
 @media (min-width: 768px) {
