@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-12 18:19+0000\n"
-"PO-Revision-Date: 2017-04-12 20:20+0200\n"
+"POT-Creation-Date: 2017-04-17 20:53+0000\n"
+"PO-Revision-Date: 2017-04-17 22:53+0200\n"
 "Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -724,11 +724,11 @@ msgstr ""
 msgid "¿Quién hace este evento posible?"
 msgstr "¿Quién hace este evento posible?"
 
-#: pydaygal/templates/pages/home.html:113
+#: pydaygal/templates/pages/home.html:130
 msgid "¿Quieres ser sponsor?"
 msgstr "¿Quieres ser sponsor?"
 
-#: pydaygal/templates/pages/home.html:118
+#: pydaygal/templates/pages/home.html:135
 msgid "EDICIONES ANTERIORES"
 msgstr "EDICIONES ANTERIORES"
 
@@ -888,8 +888,8 @@ msgid "¡En breves podréis conocer a nuestros ponentes de primera!"
 msgstr "¡En breves podréis conocer a nuestros ponentes de primera!"
 
 #: pydaygal/templates/speakers/list.html:10
-msgid "¿Quieres ofrecer una charla? !Apúntate en el CFP! "
-msgstr "¿Quieres ofrecer una charla? !Apúntate en el CFP! "
+msgid "¿Quieres ofrecer una charla? ¡Apúntate en el CFP!"
+msgstr "¿Quieres ofrecer una charla? ¡Apúntate en el CFP!"
 
 #: pydaygal/templates/users/request_code.html:5
 #: pydaygal/templates/users/restore.html:5
