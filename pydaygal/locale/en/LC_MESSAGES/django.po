@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-12 18:19+0000\n"
+"POT-Creation-Date: 2017-04-17 20:53+0000\n"
 "PO-Revision-Date: 2016-07-23 17:43+0200\n"
 "Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
 "Language-Team: \n"
@@ -605,11 +605,11 @@ msgstr ""
 msgid "¿Quién hace este evento posible?"
 msgstr ""
 
-#: pydaygal/templates/pages/home.html:113
+#: pydaygal/templates/pages/home.html:130
 msgid "¿Quieres ser sponsor?"
 msgstr ""
 
-#: pydaygal/templates/pages/home.html:118
+#: pydaygal/templates/pages/home.html:135
 msgid "EDICIONES ANTERIORES"
 msgstr ""
 
@@ -738,7 +738,7 @@ msgid "¡En breves podréis conocer a nuestros ponentes de primera!"
 msgstr ""
 
 #: pydaygal/templates/speakers/list.html:10
-msgid "¿Quieres ofrecer una charla? !Apúntate en el CFP! "
+msgid "¿Quieres ofrecer una charla? ¡Apúntate en el CFP!"
 msgstr ""
 
 #: pydaygal/templates/users/request_code.html:5
