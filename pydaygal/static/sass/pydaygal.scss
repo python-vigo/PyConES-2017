@@ -1,7 +1,6 @@
 // Import own SCSS files that override Bootstrap
 // -----------------------------------------------------------------------------
 @import "variables";
-@import "nav";
 @import "cards";
 // Import Bootstrap
 // -----------------------------------------------------------------------------
@@ -14,6 +13,7 @@
 @import "font-awesome/font-awesome";
 // Project specific
 // -----------------------------------------------------------------------------
+@import "nav";
 @import "common";
 @import "bgs";
 @import "shadows";
@@ -76,7 +76,7 @@ section {
 
 #sponsors {
 	color: $blue-dark !important;
-    	& .btn-primary {		
+    	& .btn-primary {
 		color: $blue-dark !important;
 		border-color: $blue-dark !important;
     		&:hover {
