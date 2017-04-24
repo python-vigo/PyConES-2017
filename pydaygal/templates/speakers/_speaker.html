@@ -5,10 +5,22 @@
         <hr>
         <p class="hidden-xs-down">{{ speaker.annotation }}</p>
         <p>
-            <a href="#" alt="github"><i class="fa fa-github" style="color:black"></i></a>&nbsp;
-            <a href="#" alt="twitter"><i class="fa fa-twitter" style="color:black"></i></a>&nbsp;
-            <a href="#" alt="blog"><i class="fa fa-medium" style="color:black"></i></a>&nbsp;
-            <a href="#" alt="email"><i class="fa fa-address-card-o" style="color:black"></i></a>
+            {% if speaker.url_github %}
+            <a href="{{ speaker.url_github }}" alt="github" target="_blank">
+              <i class="fa fa-github" style="color:black"></i>
+            </a>&nbsp;{% endif %}
+            {% if speaker.url_twitter %}
+            <a href="{{ speaker.url_twitter }}" alt="twitter">
+              <i class="fa fa-twitter" style="color:black" target="_blank"></i>
+            </a>&nbsp;{% endif %}
+            {% if speaker.url_blog %}
+            <a href="{{ speaker.url_blog }}" alt="blog">
+              <i class="fa fa-medium" style="color:black" target="_blank"></i>
+            </a>&nbsp;{% endif %}
+            {% if speaker.url_mail %}
+            <a href="{{ speaker.url_mail }}" alt="email">
+              <i class="fa fa-address-card-o" style="color:black" target="_blank"></i>
+            </a>{% endif %}
         </p>
         <br>
         <p class="hidden-sm-down">{{ speaker.biography }}</p>

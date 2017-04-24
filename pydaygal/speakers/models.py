@@ -38,12 +38,14 @@ class Speaker(TimeStampedModel):
         blank=True,
         null=True
     )
-
+    url_github = models.TextField(default="", blank=True)
+    url_blog = models.TextField(default="", blank=True)
+    url_mail = models.TextField(default="", blank=True)
+    url_twitter = models.TextField(default="", blank=True)
     track = models.IntegerField(default=0)
     presentations = []
     annotation = models.TextField(default="", blank=True)
     is_keynoter = models.BooleanField(default=False)
-
     objects = SpeakersManager()
 
     class Meta:
@@ -62,6 +64,10 @@ class Speaker(TimeStampedModel):
             return self.user.email
         else:
             return self.invite_email
+    @property
+    def get_contact_urls(self):
+        if self.contact_urls:
+            return self.contact_urls
 
     @property
     def all_presentations(self):

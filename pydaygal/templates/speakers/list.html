@@ -1,5 +1,6 @@
 {% extends "speakers/container.html" %}
 {% load i18n %}
+{% load static %}
 
 {% block section %}
   {% for speaker in speakers %}
@@ -12,4 +13,14 @@
       <a class="btn btn-primary" href="{% url "cfp" %}">CALL FOR PAPERS</a>
     </div>
   {% endfor %}
+      <div class="col-xs-8 offset-xs-2 col-md-6 col-lg-4 card speaker-card">
+        <div class="speaker-card-content">
+          <img class="img-responsive speaker-card-photo hvr-grow-rotate" src="{% static "images/who.png" %}">
+          <p>{% trans "¡Iremos desvelando poco a poco a nuestros próximos ponentes!" %}</p>
+          <p>{% trans "¿Quieres ofrecer una charla? ¡Apúntate en el CFP!" %}</p>
+          <br>
+          <a class="btn btn-primary" href="{% url "cfp" %}">CALL FOR PAPERS</a>
+        </div>
+    </div>
+
 {% endblock section %}
