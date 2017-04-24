@@ -41,33 +41,7 @@
 </section>
 <section id="sponsors">
   <div class="container">
-    <h2 class="text-center">Colaboradores</h2>
-    <hr><br>
-    {% sponsor_levels as levels %}
-    {% for level in levels %}
-      {% sponsors level.pk as sponsors %}
-      {% if sponsors %}
-        {% if level.name == 'Colaborador' %}
-        <ul class="sponsors-list" style="-webkit-padding-start: 0;">
-            {% for sponsor in sponsors %}
-            <li class="nav-item">
-                <a href="{{ sponsor.external_url }}" target="_blank">
-                    <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-gold">
-                </a>
-            </li>
-            {% if forloop.counter|divisibleby:"2" %}
-            <div class="clearfix visible-xs"></div>
-            {% endif %}
-            {% if forloop.counter|divisibleby:"3" %}
-            <div class="clearfix visible-sm"></div>
-            {% endif %}
-            {% endfor %}
-          </ul>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    <br>
+
     <h2 class="text-center">Patrocinadores</h2>
     <hr><br>
     {% sponsor_levels as levels %}
@@ -106,6 +80,33 @@
       {% sponsors level.pk as sponsors %}
       {% if sponsors %}
         {% if level.name == 'Organizador' %}
+        <ul class="sponsors-list" style="-webkit-padding-start: 0;">
+            {% for sponsor in sponsors %}
+            <li class="nav-item">
+                <a href="{{ sponsor.external_url }}" target="_blank">
+                    <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-gold">
+                </a>
+            </li>
+            {% if forloop.counter|divisibleby:"2" %}
+            <div class="clearfix visible-xs"></div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:"3" %}
+            <div class="clearfix visible-sm"></div>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    <br>
+    <h2 class="text-center">Colaboradores</h2>
+    <hr><br>
+    {% sponsor_levels as levels %}
+    {% for level in levels %}
+      {% sponsors level.pk as sponsors %}
+      {% if sponsors %}
+        {% if level.name == 'Colaborador' %}
         <ul class="sponsors-list" style="-webkit-padding-start: 0;">
             {% for sponsor in sponsors %}
             <li class="nav-item">
