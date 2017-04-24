@@ -1,16 +1,30 @@
 @import "colors";
-
 .navbar {
   transition: .8s cubic-bezier(0.39, 0.575, 0.565, 1) ease-in;
   &-menu {
     margin-top: -200px;
-    background: $blue-dark !important;
+    background: white !important;
     visibility: hidden;
+  }
+  &-brand {
+    display: inline-block;
+    padding: 1rem;
+    margin-right: 16px;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  &-toggler {
+    color: $blue-dark;
+    padding: 1rem !important;
   }
 }
 
 .nav-link {
   color: $blue-primary !important;
+  padding: 1rem !important;
+    font-size: 1.25rem;
   &:hover {
     color: $blue-dark !important;
   }
