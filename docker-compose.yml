@@ -42,6 +42,7 @@ services:
       - ./pydaygal/media:/media
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - webapp
     networks:
