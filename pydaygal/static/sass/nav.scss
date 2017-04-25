@@ -3,6 +3,7 @@
   transition: .8s cubic-bezier(0.39, 0.575, 0.565, 1) ease-in;
   &-menu {
     margin-top: -200px;
+    height: 80px;
     background: white !important;
     visibility: hidden;
   }
@@ -19,13 +20,13 @@
     color: $blue-dark;
     padding: 1rem !important;
   }
-}
-
-.nav-link {
+  &-link {
   color: $blue-primary !important;
   padding: 1rem !important;
-    font-size: 1.25rem;
-  &:hover {
+  font-size: 1.25rem;
+    &:hover {
     color: $blue-dark !important;
+    }
   }
 }
+
