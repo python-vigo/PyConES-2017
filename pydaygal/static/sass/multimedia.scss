@@ -1,0 +1,14 @@
+@import "_mixins";
+.m-box {
+  @include bg_base_mixin();
+  display: inline-block;
+  color: black;
+  vertical-align: top;
+  &-text {
+    position: absolute;
+  }
+  &-img {
+    width: 100%;
+    min-height: 200px;
+  }
+}
