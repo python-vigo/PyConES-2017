@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-24 10:21+0000\n"
-"PO-Revision-Date: 2017-04-24 12:22+0200\n"
+"POT-Creation-Date: 2017-04-24 16:53+0000\n"
+"PO-Revision-Date: 2017-04-24 18:56+0200\n"
 "Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -420,12 +420,12 @@ msgstr "Entra en este enlace para establecer tu contraseña:"
 msgid "Hola"
 msgstr "Hola"
 
-#: pydaygal/templates/headers.html:24 pydaygal/templates/pages/home.html:32
+#: pydaygal/templates/headers.html:24 pydaygal/templates/pages/home.html:35
 #: pydaygal/templates/pages/info.html:8
 msgid "Información del evento"
 msgstr "Información del evento"
 
-#: pydaygal/templates/headers.html:27
+#: pydaygal/templates/headers.html:27 pydaygal/templates/pages/registry.html:7
 msgid "Registro"
 msgstr "Registro"
 
@@ -696,6 +696,9 @@ msgid ""
 "<strong>Vigo</strong>,\n"
 "            tras una primera edición exitosa, con muy buena acogida.\n"
 "          </p>\n"
+"\t  <p>La entrada al evento es totalmente gratuita, fomentando así \n"
+"\t   la difusión de conocimiento y la promoción de la cultura tecnológica.\n"
+"\t  </p>\n"
 "          <p class=\"card-text\">\n"
 "            Como novedad en esta edición, contaremos con dos tracks de "
 "conferencias,<br>\n"
@@ -713,6 +716,9 @@ msgstr ""
 "<strong>Vigo</strong>,\n"
 "            tras una primera edición exitosa, con muy buena acogida.\n"
 "          </p>\n"
+"\t  <p>La entrada al evento es totalmente gratuita, fomentando así \n"
+"\t   la difusión de conocimiento y la promoción de la cultura tecnológica.\n"
+"\t  </p>\n"
 "          <p class=\"card-text\">\n"
 "            Como novedad en esta edición, contaremos con dos tracks de "
 "conferencias,<br>\n"
@@ -720,7 +726,7 @@ msgstr ""
 "          </p>\n"
 "          "
 
-#: pydaygal/templates/pages/home.html:37
+#: pydaygal/templates/pages/home.html:40
 msgid "¿Quién hace este evento posible?"
 msgstr "¿Quién hace este evento posible?"
 
@@ -844,13 +850,13 @@ msgstr ""
 "Estamos preparando la nueva edición de la PyDay Galicia,\n"
 "          dentro de poco habrá más novedades."
 
-#: pydaygal/templates/pages/registry.html:7
-msgid "REGISTRO"
-msgstr "REGISTRO"
-
 #: pydaygal/templates/pages/registry.html:14
-msgid "En los próximos días abriremos la plataforma de registro. "
-msgstr "En los próximos días abriremos la plataforma de registro. "
+msgid ""
+"En los próximos días abriremos la plataforma de registro. Vuelve pronto, y "
+"no te quedes sin plaza."
+msgstr ""
+"En los próximos días abriremos la plataforma de registro. Vuelve pronto, y "
+"no te quedes sin plaza."
 
 #: pydaygal/templates/speakers/edit.html:8
 #: pydaygal/templates/workshops/edit.html:8
@@ -883,18 +889,14 @@ msgstr ""
 "acceder a un formario que te permitirá <strong>subir el fichero de la "
 "presentación</strong>."
 
-#: pydaygal/templates/speakers/list.html:9
-msgid "¡En breve podréis conocer a nuestros ponentes de primera!"
-msgstr "¡En breve podréis conocer a nuestros ponentes de primera!"
+#: pydaygal/templates/speakers/list.html:12
+msgid "¡Iremos desvelando poco a poco a nuestros próximos ponentes!"
+msgstr "¡Iremos desvelando poco a poco a nuestros próximos ponentes!"
 
 #: pydaygal/templates/speakers/list.html:11
 #: pydaygal/templates/speakers/list.html:20
 msgid "¿Quieres ofrecer una charla? ¡Apúntate en el CFP!"
 msgstr "¿Quieres ofrecer una charla? ¡Apúntate en el CFP!"
-
-#: pydaygal/templates/speakers/list.html:19
-msgid "¡Iremos desvelando poco a poco a nuestros próximos ponentes!"
-msgstr "¡Iremos desvelando poco a poco a nuestros próximos ponentes!"
 
 #: pydaygal/templates/users/request_code.html:5
 #: pydaygal/templates/users/restore.html:5
@@ -1080,6 +1082,12 @@ msgstr "workshop"
 #: pydaygal/workshops/models.py:50
 msgid "workshops"
 msgstr "workshops"
+
+#~ msgid "REGISTRO"
+#~ msgstr "REGISTRO"
+
+#~ msgid "¡En breve podréis conocer a nuestros ponentes de primera!"
+#~ msgstr "¡En breve podréis conocer a nuestros ponentes de primera!"
 
 #~ msgid ""
 #~ "\n"

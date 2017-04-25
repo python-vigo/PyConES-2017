@@ -24,6 +24,9 @@
             en las instalaciones del museo <strong>MARCO</strong>, en <strong>Vigo</strong>,
             tras una primera edición exitosa, con muy buena acogida.
           </p>
+	  <p>La entrada al evento es totalmente gratuita, fomentando así 
+	   la difusión de conocimiento y la promoción de la cultura tecnológica.
+	  </p>
           <p class="card-text">
             Como novedad en esta edición, contaremos con dos tracks de conferencias,<br>
             para todos los niveles, y talleres sobre diversas tecnologías.
@@ -85,7 +88,7 @@
             <li class="nav-item">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-gold">
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-silver">
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}
@@ -100,9 +103,6 @@
       {% endif %}
     {% endfor %}
     <br>
-    <h2 class="text-center">Colaboradores</h2>
-    <hr><br>
-    {% sponsor_levels as levels %}
     {% for level in levels %}
       {% sponsors level.pk as sponsors %}
       {% if sponsors %}
@@ -112,7 +112,7 @@
             <li class="nav-item">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-gold">
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-bronze">
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}
@@ -125,7 +125,7 @@
           </ul>
         {% endif %}
       {% endif %}
-    {% endfor %}
+    {% endfor %}    
     <br>
     <p class="text-center">
       {% blocktrans %}¿Quieres ser sponsor?{% endblocktrans %}
