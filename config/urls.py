@@ -20,7 +20,6 @@ urlpatterns = i18n_patterns(
     url(r'^speakers/', include('pydaygal.speakers.urls', namespace="speakers")),
     url(r'^users/', include('pydaygal.users.urls', namespace="users")),
     url(r'^workshops/', include('pydaygal.workshops.urls', namespace="workshops")),
-    url(r'^multimedia/', include('pydaygal.multimedia.urls', namespace="multimedia"))
 )
 
 # URLs without i18n

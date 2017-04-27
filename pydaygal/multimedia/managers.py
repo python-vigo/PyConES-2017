@@ -5,7 +5,7 @@ from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db import models
 
 
-class FotosManager(models.Manager):
+class PhotosManager(models.Manager):
     """Manager for photos. handle photos pagination."""
 
     def requested_objects(self, request, page=None, queryset=None):

@@ -1,6 +1,18 @@
 @import "colors";
+@import "shadows";
 .navbar {
   transition: .8s cubic-bezier(0.39, 0.575, 0.565, 1) ease-in;
+  margin: 0;
+  visibility: visible;
+  padding: 0 !important;
+  box-shadow: $material-shadow-hover;
+  &-collapse {
+    background: white;
+    padding: 1rem;
+  }
+  &-nav {
+    align-items: center;
+  }
   &-menu {
     margin-top: -200px;
     height: 80px;
@@ -21,12 +33,11 @@
     padding: 1rem !important;
   }
   &-link {
-  color: $blue-primary !important;
-  padding: 1rem !important;
-  font-size: 1.25rem;
+    color: $blue-strong !important;
+    padding: 1rem !important;
+    font-size: 1.25rem;
     &:hover {
-    color: $blue-dark !important;
+      color: $blue-dark !important;
     }
   }
 }
-

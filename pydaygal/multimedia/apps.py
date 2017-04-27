@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class MultimediaConfig(AppConfig):
-    name = 'multimedia'
+# class MultimediaConfig(AppConfig):
+#     name = 'multimedia'

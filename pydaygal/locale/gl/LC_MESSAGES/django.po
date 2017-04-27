@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyDay Galicia 2017 Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-24 16:53+0000\n"
-"PO-Revision-Date: 2017-04-24 18:59+0200\n"
+"POT-Creation-Date: 2017-04-27 17:19+0000\n"
+"PO-Revision-Date: 2017-04-27 19:21+0200\n"
 "Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: Python Vigo\n"
 "Language: gl\n"
@@ -26,7 +26,7 @@ msgstr "Galego"
 msgid "Español"
 msgstr "Español"
 
-#: config/urls.py:38
+#: config/urls.py:39
 #, python-format
 msgid "%s Admin"
 msgstr "[%s] Establece o teu contrasinal"
@@ -297,8 +297,8 @@ msgstr ""
 "projects/markdown-cheat-sheet/target='_blank'>Markdown</a>."
 
 #: pydaygal/speakers/models.py:36
-msgid "Foto"
-msgstr "Foto"
+msgid "Fotografía"
+msgstr "Fotografía"
 
 #: pydaygal/sponsorships/__init__.py:10
 msgid "Text"
@@ -429,10 +429,6 @@ msgstr "Información do evento"
 msgid "Registro"
 msgstr "Rexistro"
 
-#: pydaygal/templates/headers.html:30
-msgid "Speakers"
-msgstr "Speakers"
-
 #: pydaygal/templates/headers.html:34
 msgid "Programa"
 msgstr "Programa"
@@ -441,15 +437,11 @@ msgstr "Programa"
 msgid "Workshops"
 msgstr "Workshops"
 
-#: pydaygal/templates/headers.html:42
-msgid "CFP"
-msgstr "CFP"
-
-#: pydaygal/templates/headers.html:45 pydaygal/templates/headers.html:89
+#: pydaygal/templates/headers.html:46 pydaygal/templates/headers.html:90
 msgid "Contacta con nosotros"
 msgstr "Contacta connosco"
 
-#: pydaygal/templates/headers.html:60
+#: pydaygal/templates/headers.html:61
 msgid "Salir"
 msgstr "Saír"
 
@@ -595,7 +587,7 @@ msgstr ""
 "        <h1>Código de comportamento</h1>\n"
 "        <hr>\n"
 "    \t<p>PyDay Galicia é unha conferencia feita pola comunidade pensada\n"
-"      \tpara a divulgación e colaboración dentro de la comunidade de "
+"      \tpara a divulgación e colaboración dentro da comunidade de "
 "desenvolvedores.</p>\n"
 "    \t<p>Valoramos a participación de cada membro da comunidade Python\n"
 "      \te queremos que tódolos asistentes teñan unha experiencia entretida\n"
@@ -608,9 +600,9 @@ msgstr ""
 "voluntarios que\n"
 "      \ttomen parte en actividades relacionadas con PyDay Galicia deberán "
 "acatar o\n"
-"      \tpresente código de comportamento. Los organizadores cuidarán del "
-"cumplimiento de\n"
-"      \teste código durante el evento.</p>\n"
+"      \tpresente código de comportamento. Os organizadores coidarán do "
+"cumprimento de\n"
+"      \teste código durante o evento.</p>\n"
 "    \t<p>Enténdese por acoso todo comentario ofensivo alusivo ao sexo, "
 "preferencias\n"
 "      \tsexuais, discapacidades, aspecto físico, etnias e relixións; toda "
@@ -623,7 +615,7 @@ msgstr ""
 "      \te toda proposta sexual non desexada.</p>\n"
 "    \t<p>Os participantes que sexan apercibidos deberán desistir "
 "inmediatamente da súa actitude.</p>\n"
-"    \t<p>Os expositores, as casetas ou pabellóns de patrocinadores o "
+"    \t<p>Os expositores, as casetas ou pabellóns de patrocinadores ou "
 "empresas\n"
 "      \te actividades similares tamén están suxeitas á política antiacoso.\n"
 "      \tEn particular, os expositores non deberían utilizar material ou "
@@ -632,7 +624,7 @@ msgstr ""
 "voluntarios)\n"
 "      \tnon deberían utilizar uniformes ou vestimentas sexistas, posto que "
 "se crearía\n"
-"      \tun ambente sexualizado.</p>\n"
+"      \tun ambiente sexualizado.</p>\n"
 "    \t<p>Coida a túa linguaxe. Recorda que as bromas sexistas, racistas e "
 "excluíntes\n"
 "      \ten xeral poderían ofender a outras persoas. A linguaxe excesivamente "
@@ -665,7 +657,7 @@ msgstr ""
 "    \t<p>Grazas por facer de este un evento aberto á comunidade e amistoso.</"
 "p>\n"
 "    \t<h3>Licenza</h3>\n"
-"    \t<p>Este Código de Comportamento baséase nose seguintes códigos:</p>\n"
+"    \t<p>Este Código de Comportamento baséase nos seguintes códigos:</p>\n"
 "    \t<p>PyCon US 2013 \n"
 "      \t<a class=\"btn btn-primary\" href='https://us.pycon.org/2013/about/"
 "code-of-conduct/'>\n"
@@ -694,7 +686,7 @@ msgid ""
 "<strong>Vigo</strong>,\n"
 "            tras una primera edición exitosa, con muy buena acogida.\n"
 "          </p>\n"
-"\t  <p>La entrada al evento es totalmente gratuita, fomentando así \n"
+"\t  <p>La entrada al evento es totalmente gratuita, fomentando así\n"
 "\t   la difusión de conocimiento y la promoción de la cultura tecnológica.\n"
 "\t  </p>\n"
 "          <p class=\"card-text\">\n"
@@ -729,11 +721,11 @@ msgstr ""
 msgid "¿Quién hace este evento posible?"
 msgstr "¿Quen fai este evento posible?"
 
-#: pydaygal/templates/pages/home.html:131
+#: pydaygal/templates/pages/home.html:133
 msgid "¿Quieres ser sponsor?"
 msgstr "¿Queres ser sponsor?"
 
-#: pydaygal/templates/pages/home.html:136
+#: pydaygal/templates/pages/home.html:138
 msgid "EDICIONES ANTERIORES"
 msgstr "EDICIÓNS ANTERIORES"
 
@@ -848,12 +840,16 @@ msgstr ""
 "Estamos preparando a nova edición da PyDay Galicia,\n"
 "          dentro de pouco haberá máis novidades."
 
+#: pydaygal/templates/pages/multimedia.html:4
+msgid "Ponencias"
+msgstr "Ponencias"
+
 #: pydaygal/templates/pages/registry.html:14
 msgid ""
 "En los próximos días abriremos la plataforma de registro. Vuelve pronto, y "
 "no te quedes sin plaza."
 msgstr ""
-"Nos próximos días abriremos a plataforma de rexistro. Volve pronto, e non te "
+"Nos próximos días abriremos a plataforma de rexistro. Volve pronto, e non "
 "quedes sen praza."
 
 #: pydaygal/templates/speakers/edit.html:8
@@ -891,8 +887,7 @@ msgstr ""
 msgid "¡Iremos desvelando poco a poco a nuestros próximos ponentes!"
 msgstr "Desvelaremos pouco a pouco ós nosos próximos poñentes!"
 
-#: pydaygal/templates/speakers/list.html:11
-#: pydaygal/templates/speakers/list.html:20
+#: pydaygal/templates/speakers/list.html:14
 msgid "¿Quieres ofrecer una charla? ¡Apúntate en el CFP!"
 msgstr "¿Queres dar unha charla? Apúntate no CFP!"
 
@@ -1080,6 +1075,15 @@ msgstr "workshop"
 #: pydaygal/workshops/models.py:50
 msgid "workshops"
 msgstr "workshops"
+
+#~ msgid "Foto"
+#~ msgstr "Foto"
+
+#~ msgid "Speakers"
+#~ msgstr "Speakers"
+
+#~ msgid "CFP"
+#~ msgstr "CFP"
 
 #~ msgid "REGISTRO"
 #~ msgstr "REXISTRO"
