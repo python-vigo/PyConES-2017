@@ -7,7 +7,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.core.urlresolvers import reverse
 from django.http import Http404
 from django.shortcuts import render, redirect
-# from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 from django.views.generic import View
 from django.utils.safestring import mark_safe
 from django.shortcuts import render, get_object_or_404

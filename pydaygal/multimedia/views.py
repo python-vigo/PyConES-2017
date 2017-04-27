@@ -11,14 +11,15 @@ from django.views.generic import View
 from django.utils.safestring import mark_safe
 from django.shortcuts import render, get_object_or_404
 
-from pydaygal.multimedia.models import Foto
+from pydaygal.multimedia.models import Photo
 from pydaygal.multimedia.models import Video
 
 class MultimediaListView(View):
     """List of photos and videos."""
+    template_name = "pages/multimedia.html"
 
     @staticmethod
-    def get(request):
-        photos = Foto.objects.all()
+    def get(self, request):
+        photos = Photo.objects.all()
         videos = Video.objects.all()
-        return render(request, "pages/multimedia.html", {"photos": photos, "videos":  videos})
+        return render(request, self.template_name, {"photos": photos, "videos":  videos})
