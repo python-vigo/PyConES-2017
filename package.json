@@ -12,7 +12,7 @@
     "dev": "concurrently --raw \"gulp build\" \"gulp watch\"",
     "gen-migrations": "sh scripts/dev-migrations.sh",
     "gen-locales": "sh scripts/dev-locales.sh",
-    "build-pre": "concurrently --raw  -c \"npm run gen-migrations\" \"npm run gen-locales\" && \"npm run build\"",
+    "build-pre": "concurrently --raw  -c \"npm run gen-migrations\" \"npm run gen-locales\" \"npm run build\"",
     "start": "./manage.py runserver"
   },
   "repository": {

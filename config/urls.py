@@ -8,7 +8,6 @@ from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
-from pydaygal.multimedia.views import MultimediaListView
 
 # URLs with with i18n
 urlpatterns = i18n_patterns(
@@ -21,7 +20,6 @@ urlpatterns = i18n_patterns(
     url(r'^speakers/', include('pydaygal.speakers.urls', namespace="speakers")),
     url(r'^users/', include('pydaygal.users.urls', namespace="users")),
     url(r'^workshops/', include('pydaygal.workshops.urls', namespace="workshops")),
-    # url(r'^multimedia/', include('pydaygal.multimedia.urls', namespace="multimedia"))
 )
 
 # URLs without i18n
