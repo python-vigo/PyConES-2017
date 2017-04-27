@@ -7,11 +7,11 @@ from django.templatetags.static import static
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 
-from pydaygal.multimedia.managers import FotosManager
+from pydaygal.multimedia.managers import PhotosManager
 from pydaygal.multimedia.managers import VideosManager
 
 @python_2_unicode_compatible
-class Foto(models.Model):
+class Photo(models.Model):
     title = models.CharField(max_length=150, default="",  blank=True)
     photographer = models.CharField(max_length=100, default="",  blank=True)
     annotation = models.TextField(default="", blank=True)
@@ -19,7 +19,7 @@ class Foto(models.Model):
         upload_to="fotos",
         blank=True
     )
-    objects = FotosManager()
+    objects = PhotosManager()
 
     def __str__(self):
         return self.title
