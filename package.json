@@ -1,38 +1,44 @@
 {
-    "name": "pydaygal",
-    "version": "1.0.0",
-    "description": "Web page for PyDay Galicia 2017.",
-    "main": "gulpfile.js",
-    "directories": {
-        "doc": "docs"
-    },
-    "scripts": {
-        "watch": "gulp",
-        "build": "gulp build"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+git@github.com:ivannieto/PyDay-Galicia-2017.git"
-    },
-    "author": "Ivan Nieto",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/ivannieto/PyDay-Galicia-2017/issues"
-    },
-    "homepage": "https://github.com/ivannieto/PyDay-Galicia-2017#readme",
-    "devDependencies": {
-        "babel": "^6.5.2",
-        "babel-preset-es2015": "^6.18.0",
-        "bootstrap": "^4.0.0-alpha.6",
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^3.1.1",
-        "gulp-babel": "^6.1.2",
-        "gulp-browserify": "^0.5.1",
-        "gulp-cssnano": "^2.1.2",
-        "gulp-imagemin": "^3.1.1",
-        "gulp-pixrem": "^1.0.0",
-        "gulp-sass": "^3.1.0",
-        "node-sass": "^4.3.0",
-        "tether": "^1.4.0"
-    }
+  "name": "pydaygal",
+  "version": "1.0.0",
+  "description": "Web page for PyDay Galicia 2017.",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "dev": "concurrently --raw \"gulp build\" \"gulp watch\"",
+    "gen-migrations": "sh dev-migrations.sh",
+    "gen-locales": "sh dev-locales.sh",
+    "build-pre": "concurrently --raw  -c \"npm run gen-migrations\" \"npm run gen-locales\" && \"npm run build\"",
+    "start": "./manage.py runserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:ivannieto/PyDay-Galicia-2017.git"
+  },
+  "author": "Ivan Nieto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivannieto/PyDay-Galicia-2017/issues"
+  },
+  "homepage": "https://github.com/ivannieto/PyDay-Galicia-2017#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.18.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "concurrently": "^3.4.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pixrem": "^1.0.0",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.3.0",
+    "tether": "^1.4.0"
+  }
 }
