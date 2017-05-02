@@ -61,7 +61,8 @@
                   {% if level.name == 'Colaborador' %}sponsors-img-gold{% endif %}
                   {% if level.name == 'Oro' or level.name == 'Ouro' %}sponsors-img-gold{% endif %}
                   {% if level.name == 'Plata' or level.name == 'Prata' %}sponsors-img-silver{% endif %}
-                  {% if level.name == 'Bronce' %}sponsors-img-bronze{% endif %}">
+                  {% if level.name == 'Bronce' %}sponsors-img-bronze{% endif %}
+                  {% if sponsor.name == 'Gradiant' %}sponsors-push-up{% endif %}">
               </a>
           </li>
           {% if forloop.counter|divisibleby:"2" %}
