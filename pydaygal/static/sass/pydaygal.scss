@@ -1,7 +1,7 @@
 // Import own SCSS files that override Bootstrap
 // -----------------------------------------------------------------------------
 @import "variables";
-@import "cards";
+
 // Import Bootstrap
 // -----------------------------------------------------------------------------
 @import "bootstrap/scss/bootstrap";
@@ -14,6 +14,7 @@
 // Project specific
 // -----------------------------------------------------------------------------
 @import "nav";
+@import "cards";
 @import "common";
 @import "bgs";
 @import "shadows";
