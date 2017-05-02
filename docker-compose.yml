@@ -31,23 +31,23 @@ services:
     networks:
       - back-tier
 
-  nginx:
-    build:
-      context: .
-      dockerfile: compose/nginx/Dockerfile
-    image: pydaygal/nginx
-    container_name: pydaygal-nginx
-    volumes:
-      - ./public:/public
-      - ./pydaygal/media:/media
-    ports:
-      - "80:80"
-      - "443:443"
-    depends_on:
-      - webapp
-    networks:
-      - front-tier
-      - back-tier
+  # nginx:
+  #   build:
+  #     context: .
+  #     dockerfile: compose/nginx/Dockerfile
+  #   image: pydaygal/nginx
+  #   container_name: pydaygal-nginx
+  #   volumes:
+  #     - ./public:/public
+  #     - ./pydaygal/media:/media
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   depends_on:
+  #     - webapp
+  #   networks:
+  #     - front-tier
+  #     - back-tier
 
 networks:
   front-tier:
