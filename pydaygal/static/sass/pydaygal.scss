@@ -53,16 +53,17 @@ h6 {
 }
 
 footer {
-    background-color: white;
+    background-color: $blue-strong;
     color: $blue-dark;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    a {
-        color: $blue-dark;
+    & a {
+        color: $blue-light;
         &:hover {
-            color: $blue-light
+            color: white
         }
+    }
+    & nav {
+      padding: 15px !important;
     }
 }
 
