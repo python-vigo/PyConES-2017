@@ -4,7 +4,6 @@
   transition: .8s cubic-bezier(0.39, 0.575, 0.565, 1) ease-in;
   margin: 0;
   visibility: visible;
-  padding: 0 !important;
   box-shadow: $material-shadow-hover;
   &-collapse {
     background: white;
@@ -39,5 +38,8 @@
     &:hover {
       color: $blue-dark !important;
     }
+  }
+  &.fixed-top {
+    padding: 0px !important;
   }
 }
