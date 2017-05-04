@@ -29,7 +29,7 @@
 #  certbot certonly --webroot --webroot-path /usr/share/nginx/html -d pyday2017.python-vigo.es
 
 # 6 - Configurar  nginx
-ADD ./compose/nginx/nginx.conf /etc/nginx/nginx.conf
+# ADD ./compose/nginx/nginx.conf /etc/nginx/nginx.conf
 
 FROM nginx:latest
 
@@ -37,11 +37,9 @@ RUN mkdir /usr/share/nginx/html/.well-known
 RUN echo  "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y software-properties-common curl vim
-RUN apt-get install certbot -t jessie-backports
-
-RUN certbot certonly --webroot --webroot-path /usr/share/nginx/html -d pyday2017.python-vigo.es
+RUN apt-get update && apt-get install -y certbot -t jessie-backports
 
 # Nginx config
-ADD ./compose/nginx/nginx.conf /etc/nginx/nginx.conf
+# ADD ./compose/nginx/nginx.conf /etc/nginx/nginx.conf
 
-RUN service nginx reload
+# RUN service nginx reload
