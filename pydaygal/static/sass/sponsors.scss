@@ -1,73 +1,61 @@
 @import "_mixins";
 @import "colors";
+
 .sponsors {
-  p {
-    color: $blue-dark;
-  }
-  a {
-    color: $blue-dark !important;
-    padding: 10px;
-    border: 1px solid $blue-dark;
-    &:hover {
-      color: white !important;
+    p {
+        color: $blue-dark;
     }
-  }
-  &-img-organizador {
-    @include sponsor_img();
-    max-height: 130px;
-    height: 130px;
-  }
-  &-img-colaborador {
-    @include sponsor_img();
-    max-height: 130px;
-    height: 130px;
-  }
-  &-img {
-    min-height: 50px;
-    &-gold {
-      @include sponsor_img();
-      height: 180px;
-      max-height: 180px;
+    a {
+        color: $blue-dark !important;
+        padding: 10px;
+        border: 1px solid $blue-dark;
+        &:hover {
+            color: white !important;
+        }
     }
-    &-silver {
-      @include sponsor_img();
-      height: 150px;
-      max-height: 150px;
+    &-img {
+        min-height: 50px;
+        &-gold {
+            @include sponsor_img();
+            max-height: 150px;
+        }
+        &-silver {
+            @include sponsor_img();
+            max-height: 120px;
+        }
+        &-bronze {
+            @include sponsor_img();
+            max-height: 100px;
+        }
     }
-    &-bronze {
-      @include sponsor_img();
-      max-height: 100px;
-      height: 100px;
+    &-list {
+        text-align: center;
+        @include flex_vertical();
+        & .nav-item {
+            margin-bottom: 20px;
+        }
     }
-  }
-  &-list {
-    text-align: center;
-    @include flex_vertical();
-    & .nav-item {
+    &-level {
+        border-radius: 20px;
+        padding: 10px;
+        cursor: initial;
+        &-toptier {
+            border: 1px solid darkgoldenrod;
+            color: darkgoldenrod;
+        }
+        &-midtier {
+            border: 1px solid #949494;
+            color: #949494;
+        }
+        &-lowtier {
+            border: 1px solid #8b4513;
+            color: #8b4513;
+        }
+    }
+    &-level-block {
+        margin: 50px 0 50px 0;
+    }
+    &-push-up {
       margin-bottom: 20px;
     }
-  }
-  &-level {
-    border-radius: 20px;
-    padding: 10px;
-    cursor: initial;
-    &-toptier {
-      border: 1px solid darkgoldenrod;
-      color: darkgoldenrod;
-    }
-    &-midtier {
-      border: 1px solid #949494;
-      color: #949494;
-    }
-    &-lowtier {
-      border: 1px solid #8b4513;
-      color: #8b4513;
-    }
-  }
-  &-level-block {
-    margin: 50px 0 50px 0;
-  }
-  &-push-up {
-    margin-bottom: 20px;
-  }
 }

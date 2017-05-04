@@ -43,38 +43,37 @@
   </div>
 </section>
 <section id="sponsors">
-  <div class="container text-center">
+  <div class="container">
 
-    <h2 class="text-center">Patrocinadores</h2>
+    <h2 class="text-center">Sponsors</h2>
     <hr><br>
     {% sponsor_levels as levels %}
     {% for level in levels %}
-      {% if level.name == 'Oro' or level.name == 'Ouro' or level.name == 'Bronce' %}
-      <a class="btn btn-primary" style="margin-bottom:30px;">{{ level.name }}</a>
+      {% if level.name == 'Oro' or level.name == 'Ouro' or level.name == 'Plata' or level.name == 'Prata' or level.name == 'Bronce' %}
       {% sponsors level.pk as sponsors %}
-        {% if sponsors %}
-        <ul class="sponsors-list" style="-webkit-padding-start: 0;">
-            {% for sponsor in sponsors %}
-              <li class="nav-item">
-                  <a href="{{ sponsor.external_url }}" target="_blank">
-                      <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                      alt="{{ sponsor.name }}" class="img-fluid
-                      {% if level.name == 'Colaborador' %}sponsors-img-gold{% endif %}
-                      {% if level.name == 'Oro' or level.name == 'Ouro' %}sponsors-img-gold{% endif %}
-                      {% if level.name == 'Plata' or level.name == 'Prata' %}sponsors-img-silver{% endif %}
-                      {% if level.name == 'Bronce' %}sponsors-img-bronze{% endif %}
-                      {% if sponsor.name == 'Gradiant' %}sponsors-push-up{% endif %}">
-                  </a>
-              </li>
-              {% if forloop.counter|divisibleby:"2" %}
-              <div class="clearfix visible-xs"></div>
-              {% endif %}
-              {% if forloop.counter|divisibleby:"3" %}
-              <div class="clearfix visible-sm"></div>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        {% endif %}
+      {% if sponsors %}
+      <ul class="sponsors-list" style="-webkit-padding-start: 0;">
+          {% for sponsor in sponsors %}
+          <li class="nav-item">
+              <a href="{{ sponsor.external_url }}" target="_blank">
+                  <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
+                  alt="{{ sponsor.name }}" class="img-fluid
+                  {% if level.name == 'Colaborador' %}sponsors-img-gold{% endif %}
+                  {% if level.name == 'Oro' or level.name == 'Ouro' %}sponsors-img-gold{% endif %}
+                  {% if level.name == 'Plata' or level.name == 'Prata' %}sponsors-img-silver{% endif %}
+                  {% if level.name == 'Bronce' %}sponsors-img-bronze{% endif %}
+                  {% if sponsor.name == 'Gradiant' %}sponsors-push-up{% endif %}">
+              </a>
+          </li>
+          {% if forloop.counter|divisibleby:"2" %}
+          <div class="clearfix visible-xs"></div>
+          {% endif %}
+          {% if forloop.counter|divisibleby:"3" %}
+          <div class="clearfix visible-sm"></div>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
       {% endif %}
     {% endfor %}
     <br>
@@ -90,7 +89,7 @@
             <li class="nav-item">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-organizador">
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-silver">
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}
@@ -116,7 +115,7 @@
             <li class="nav-item">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-colaborador">
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-bronze">
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}
@@ -132,7 +131,7 @@
     {% endfor %}
     <br>
     <p class="text-center">
-      {% blocktrans %}¿Quieres ser patrocinador?{% endblocktrans %}
+      {% blocktrans %}¿Quieres ser sponsor?{% endblocktrans %}
       <br>
       <a class="btn btn-primary" href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">{{ SPONSORS_EMAIL }}</a>
     </p>
