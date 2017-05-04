@@ -12,6 +12,16 @@
       color: white !important;
     }
   }
+  &-img-organizador {
+    @include sponsor_img();
+    max-height: 130px;
+    height: 130px;
+  }
+  &-img-colaborador {
+    @include sponsor_img();
+    max-height: 130px;
+    height: 130px;
+  }
   &-img {
     min-height: 50px;
     &-gold {
@@ -28,16 +38,6 @@
       @include sponsor_img();
       max-height: 100px;
       height: 100px;
-    }
-    &-organizador {
-      @include sponsor_img();
-      max-height: 130px;
-      height: 130px;
-    }
-    &-colaborador {
-      @include sponsor_img();
-      max-height: 130px;
-      height: 130px;
     }
   }
   &-list {
