@@ -1,61 +1,70 @@
 @import "_mixins";
 @import "colors";
-
 .sponsors {
-    p {
-        color: $blue-dark;
+  p {
+    color: $blue-dark;
+  }
+  a {
+    color: $blue-dark !important;
+    padding: 10px;
+    border: 1px solid $blue-dark;
+    &:hover {
+      color: white !important;
     }
-    a {
-        color: $blue-dark !important;
-        padding: 10px;
-        border: 1px solid $blue-dark;
-        &:hover {
-            color: white !important;
-        }
+  }
+  &-img {
+    min-height: 50px;
+    &-gold {
+      @include sponsor_img();
+      max-height: 170px;
+      height: 170px;
     }
-    &-img {
-        min-height: 50px;
-        &-gold {
-            @include sponsor_img();
-            max-height: 150px;
-        }
-        &-silver {
-            @include sponsor_img();
-            max-height: 120px;
-        }
-        &-bronze {
-            @include sponsor_img();
-            max-height: 100px;
-        }
+    &-silver {
+      @include sponsor_img();
+      max-height: 200px;
+      height: 200px;
     }
-    &-list {
-        text-align: center;
-        @include flex_vertical();
-        & .nav-item {
-            margin-bottom: 20px;
-        }
+    &-bronze {
+      @include sponsor_img();
+      max-height: 100px;
     }
-    &-level {
-        border-radius: 20px;
-        padding: 10px;
-        cursor: initial;
-        &-toptier {
-            border: 1px solid darkgoldenrod;
-            color: darkgoldenrod;
-        }
-        &-midtier {
-            border: 1px solid #949494;
-            color: #949494;
-        }
-        &-lowtier {
-            border: 1px solid #8b4513;
-            color: #8b4513;
-        }
-    }
-    &-level-block {
-        margin: 50px 0 50px 0;
-    }
-    &-push-up {
+  }
+  &-list {
+    text-align: center;
+    @include flex_vertical();
+    & .nav-item {
       margin-bottom: 20px;
     }
+  }
+  &-level {
+    border-radius: 20px;
+    padding: 10px;
+    cursor: initial;
+    &-toptier {
+      border: 1px solid darkgoldenrod;
+      color: darkgoldenrod;
+    }
+    &-midtier {
+      border: 1px solid #949494;
+      color: #949494;
+    }
+    &-lowtier {
+      border: 1px solid #8b4513;
+      color: #8b4513;
+    }
+  }
+  &-level-block {
+    margin: 0 50px;
+  }
+  &-push-up {
+    margin-bottom: 20px;
+  }
+  &-bigger-gold {
+    height: 180px;
+    max-height: 180px;
+  }
+}
+
+.btn-level {
+  margin: 30px 0;
 }

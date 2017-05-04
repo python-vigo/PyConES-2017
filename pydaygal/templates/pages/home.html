@@ -37,19 +37,22 @@
       </div>
       <br><br><br>
       <div class="text-center">
-        <a href="#sponsors" class="btn btn-primary">{% trans "¿Quién hace este evento posible?" %}</a>
+        <a href="#sponsors" class="btn btn-primary text-center">{% trans "¿Quién hace este evento posible?" %}</a>
       </div>
     </div>
   </div>
 </section>
 <section id="sponsors">
-  <div class="container">
-
-    <h2 class="text-center">Sponsors</h2>
-    <hr><br>
+  <div class="container text-center">
+    <br>
+    <h2>Patrocinadores</h2>
+    <hr>
+    <br>
+    <br>
     {% sponsor_levels as levels %}
     {% for level in levels %}
-      {% if level.name == 'Oro' or level.name == 'Ouro' or level.name == 'Plata' or level.name == 'Prata' or level.name == 'Bronce' %}
+      {% if level.name == 'Oro' or level.name == 'Ouro' or level.name == 'Bronce' %}
+      <a class="btn btn-primary btn-level">{{ level.name }}</a>
       {% sponsors level.pk as sponsors %}
       {% if sponsors %}
       <ul class="sponsors-list" style="-webkit-padding-start: 0;">
@@ -77,8 +80,11 @@
       {% endif %}
     {% endfor %}
     <br>
-    <h2 class="text-center">Organizadores</h2>
-    <hr><br>
+    <br>
+    <h2>Organizadores</h2>
+    <hr>
+    <br>
+    <br>
     {% sponsor_levels as levels %}
     {% for level in levels %}
       {% sponsors level.pk as sponsors %}
@@ -89,7 +95,7 @@
             <li class="nav-item">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-silver">
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-bronze">
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}
@@ -104,7 +110,7 @@
       {% endif %}
     {% endfor %}
     <br>
-    <h2 class="text-center">Colaboradores</h2>
+    <h2>Colaboradores</h2>
     <hr><br>
     {% for level in levels %}
       {% sponsors level.pk as sponsors %}
@@ -130,13 +136,13 @@
       {% endif %}
     {% endfor %}
     <br>
-    <p class="text-center">
+    <p>
       {% blocktrans %}¿Quieres ser sponsor?{% endblocktrans %}
       <br>
       <a class="btn btn-primary" href="mailto:{{ SPONSORS_EMAIL }}" target="_blank">{{ SPONSORS_EMAIL }}</a>
     </p>
     <br><br>
-    <h6 class="text-center">{% blocktrans %}EDICIONES ANTERIORES{% endblocktrans %}</h6>
+    <h6>{% blocktrans %}EDICIONES ANTERIORES{% endblocktrans %}</h6>
     <p class="text-center indented">
         <a class="btn btn-primary" href="https://python-vigo.github.io/pyday-2016/"
         target="_blank">PyDay Galicia 2016</a>
