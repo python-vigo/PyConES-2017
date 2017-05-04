@@ -49,7 +49,7 @@
     <hr><br>
     {% sponsor_levels as levels %}
     {% for level in levels %}
-      {% if level.name == 'Oro' or level.name == 'Ouro' or level.name == 'Plata' or level.name == 'Prata' or level.name == 'Bronce' %}
+      {% if level.name == 'Oro' or level.name == 'Ouro' or level.name == 'Bronce' %}
       <a class="btn btn-primary" style="margin-bottom:30px;">{{ level.name }}</a>
       {% sponsors level.pk as sponsors %}
         {% if sponsors %}

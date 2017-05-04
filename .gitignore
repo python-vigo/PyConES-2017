@@ -71,7 +71,7 @@ pydaygal/static/js/bin/*.js
 pydaygal/static/images/dummy-pics
 pydaygal/static/images/dummy-logos
 public/
-
+public_/
 
 # Media files
 pydaygal/media/
