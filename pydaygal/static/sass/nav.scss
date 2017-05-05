@@ -7,7 +7,7 @@
   box-shadow: $material-shadow-hover;
   &-collapse {
     background: white;
-    padding: 1rem;
+    padding: 0 0 10px 0;
   }
   &-nav {
     align-items: center;
@@ -28,16 +28,13 @@
     white-space: nowrap;
   }
   &-toggler {
-    color: $blue-dark;
+    color: $blue-strong;
     padding: 1rem !important;
   }
   &-link {
     color: $blue-strong !important;
     padding: 1rem !important;
     font-size: 1.25rem;
-    &:hover {
-      color: $blue-dark !important;
-    }
   }
   &.fixed-top {
     padding: 0px !important;

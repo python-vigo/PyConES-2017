@@ -1,7 +1,7 @@
 @import "_mixins";
 @import "colors";
 #home {
-    @include bg_mixin($blend-bg-color, "../images/pyday2016/pyday16-publico02.jpg");
+    @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-publico02.jpg");
 }
 
 #cfp {
