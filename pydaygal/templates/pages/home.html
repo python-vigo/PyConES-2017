@@ -95,7 +95,7 @@
             <li class="nav-item">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-bronze">
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-org">
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}
@@ -121,7 +121,7 @@
             <li class="nav-item">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-bronze">
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-colab">
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}

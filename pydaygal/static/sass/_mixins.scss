@@ -1,37 +1,39 @@
-@mixin sponsor_img() {
-    transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-    padding: 5px;
-    &:hover {
-        transform: scale(1.05);
-    }
+@mixin sponsor_img($height: null, $max-height: null, $padding: null) {
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  max-height: $height;
+  height: $max-height;
+  padding: $padding;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 @mixin flex_vertical() {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
 @mixin bg_base_mixin() {
-    background-repeat: no-repeat;
-    background-blend-mode: exclusion;
+  background-repeat: no-repeat;
+  background-blend-mode: exclusion;
 }
 
 @mixin bg_mixin($color, $url: null) {
-    @include bg_base_mixin();
-    background: url($url);
-    background-color: $color;
-    background-position-x: 50%;
-    background-position-y: 70%;
-    background-size: cover;
+  @include bg_base_mixin();
+  background: url($url);
+  background-color: $color;
+  background-position-x: 50%;
+  background-position-y: 70%;
+  background-size: cover;
 }
 
-@mixin bg_mixin_fixed($color, $url)  {
-    @include bg_base_mixin();
-    background: url($url);
-    background-color: $color;
-    background-attachment: fixed;
-    background-position: center;
+@mixin bg_mixin_fixed($color, $url) {
+  @include bg_base_mixin();
+  background: url($url);
+  background-color: $color;
+  background-attachment: fixed;
+  background-position: center;
 }
