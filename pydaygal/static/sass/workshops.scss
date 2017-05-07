@@ -13,7 +13,7 @@ $material-shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25),
     padding: 1rem 1rem 0 1rem;
     &:hover {
         box-shadow: $material-shadow-hover;
-        background: $blue-primary;
+        background: $blue-strong;
         z-index: 9;
     }
     &-photo {
