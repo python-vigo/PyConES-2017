@@ -1,10 +1,10 @@
-@mixin sponsor_img($height: null, $max-height: null, $padding: null) {
+@mixin sponsor_img($height: auto, $max-height: null, $padding: null) {
   transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-  max-height: $height;
-  height: $max-height;
+  max-height: $max-height;
+  height: $height;
   padding: $padding;
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
 }
 

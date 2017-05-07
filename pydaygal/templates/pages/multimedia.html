@@ -1,7 +1,7 @@
 {% extends "container_clean.html" %} {% load i18n %} {% load static %} {% block content %}
 <section id="multimedia">
   <div class="container-fluid text-center">
-    <h2>{% trans "Ponencias" %} 2016</h2>
+    <h2><i class="fa fa-video-camera" aria-hidden="true"></i> {% trans "Ponencias" %} 2016</h2>
     <hr>
     <div class="row text-center" style="color:black;list-style: none;">
       {% for v in videos %}
@@ -13,7 +13,7 @@
       {% endfor %}
     </div>
     <div>
-      <h2>Fotos 2016</h2>
+      <h2><i class="fa fa-camera" aria-hidden="true"></i> Fotos 2016</h2>
       <hr>
       <div class="row text-center" style="color:black;list-style: none;">
         {% for foto in photos %}
@@ -23,6 +23,7 @@
         </li>
         {% endfor %}
       </div>
+      <p>Fotos por: <a href="https://twitter.com/marta_FFPP" target="_blank">Marta Fernández Pereira</a></p>
     </div>
 </section>
 {% endblock content %}

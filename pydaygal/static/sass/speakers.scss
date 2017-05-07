@@ -1,36 +1,44 @@
 @import "colors";
 @import "shadows";
 .speakers-list {
-  text-align: center;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  list-style-type: none;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.speaker-card {
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  padding: 1rem 1rem 0 1rem;
-  min-height: 500px;
-  max-height: 500px;
-  &:hover {
-    box-shadow: $material-shadow-hover;
-    background: $blue-primary;
-    z-index: 9;
-  }
-  &-photo {
-    border-radius: 50%;
-    max-width: 100px;
-    box-shadow: $material-shadow;
-    margin-bottom: 1rem;
-    border: 5px solid #e2c672;
-  }
-  &-content {
-    padding: 1rem;
+  & .card {
+    & a {
+      border: 1px solid $blue-dark;
+    }
+    & figure {
+      margin: -1px 0;
+    }
+    border: 0;
+    &-img {
+      border-radius: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+    & .card__primary-title {
+      color: white;
+      padding: 15px;
+      background: $blue-strong;
+      & h5 {
+        color: white;
+      }
+    }
+    & .card__supporting-text {
+      padding: 20px;
+    }
+    & .card__actions {
+      color: $blue-strong;
+      display: flex;
+      min-height: 60px;
+      justify-content: center;
+      align-items: center;
+      & a:hover {
+        color: $blue-strong;
+      }
+      & .fa {
+        padding: 5px;
+      }
+    }
   }
 }
