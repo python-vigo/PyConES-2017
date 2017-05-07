@@ -11,6 +11,7 @@ from model_utils.models import TimeStampedModel
 
 from pydaygal.speakers.managers import SpeakersManager
 
+
 @python_2_unicode_compatible
 class Speaker(TimeStampedModel):
 
@@ -45,6 +46,7 @@ class Speaker(TimeStampedModel):
     track = models.IntegerField(default=0)
     presentations = []
     presentation = models.CharField(max_length=200, default="", blank=True)
+    presentation_schedule = models.CharField(max_length=16, default="00:00 - 00:01", blank=True)
     annotation = models.CharField(max_length=200, default="", blank=True)
 
     is_keynoter = models.BooleanField(default=False)
@@ -67,6 +69,7 @@ class Speaker(TimeStampedModel):
             return self.user.email
         else:
             return self.invite_email
+
     @property
     def get_contact_urls(self):
         if self.contact_urls:
