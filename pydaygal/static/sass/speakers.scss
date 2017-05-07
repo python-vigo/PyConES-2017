@@ -3,39 +3,42 @@
 .speakers-list {
   display: flex;
   justify-content: center;
-}
-.card {
-  & figure {
-    margin: -1px 0;
-  }
-  border: 0;
-  &-img {
-    border-radius: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-  & .card__primary-title {
-    color: white;
-    padding: 15px;
-    background: $blue-strong;
-    & h5 {
+  & .card {
+    & a {
+      border: 1px solid $blue-dark;
+    }
+    & figure {
+      margin: -1px 0;
+    }
+    border: 0;
+    &-img {
+      border-radius: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+    & .card__primary-title {
       color: white;
+      padding: 15px;
+      background: $blue-strong;
+      & h5 {
+        color: white;
+      }
     }
-  }
-  & .card__supporting-text {
-    padding: 20px;
-  }
-  & .card__actions {
-    color: $blue-strong;
-    display: flex;
-    min-height: 60px;
-    justify-content: center;
-    align-items: center;
-    & a:hover {
+    & .card__supporting-text {
+      padding: 20px;
+    }
+    & .card__actions {
       color: $blue-strong;
-    }
-    & .fa {
-      padding: 5px;
+      display: flex;
+      min-height: 60px;
+      justify-content: center;
+      align-items: center;
+      & a:hover {
+        color: $blue-strong;
+      }
+      & .fa {
+        padding: 5px;
+      }
     }
   }
 }
