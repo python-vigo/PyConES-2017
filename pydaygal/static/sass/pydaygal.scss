@@ -1,7 +1,6 @@
 // Import own SCSS files that override Bootstrap
 // -----------------------------------------------------------------------------
 @import "variables";
-
 // Import Bootstrap
 // -----------------------------------------------------------------------------
 @import "bootstrap/scss/bootstrap";
@@ -25,22 +24,22 @@
 @import "speakers";
 @import "workshops";
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-    font-family: $body-font-family;
-    font-weight: $body-font-weight;
-    font-size: $font-size-root;
-    bottom: 200px;
-    color: white;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-size: $font-size-root;
+  bottom: 200px;
+  color: white;
 }
 
 b,
 bolder strong {
-    font-family: $body-font-family;
-    font-weight: $headings-font-weight;
+  font-family: $body-font-family;
+  font-weight: $headings-font-weight;
 }
 
 h1,
@@ -49,68 +48,69 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
 }
 
 footer {
-    background-color: $blue-strong;
-    color: $blue-dark;
-    width: 100%;
-    & a {
-        color: $blue-light;
-        &:hover {
-            color: white
-        }
+  background-color: $blue-strong;
+  color: $blue-dark;
+  width: 100%;
+  & a {
+    color: $blue-light;
+    &:hover {
+      color: white
     }
-    & nav {
-      padding: 15px !important;
-    }
+  }
+  & nav {
+    padding: 15px !important;
+  }
 }
 
 section {
-    padding-top: 160px;
-    padding-bottom: 100px;
-    min-height: 100vh;
-    & #home {
-        padding: 0px;
-    }
+  padding-top: 160px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  & #home {
+    padding: 0px;
+  }
 }
 
 #sponsors {
-	color: $blue-dark !important;
-    	& .btn-primary {
-		color: $blue-dark !important;
-		border-color: $blue-dark !important;
-    		&:hover {
-        		color: white !important;
-     		}
-    	}
+  color: $blue-dark !important;
+  & .btn-primary {
+    color: $blue-dark !important;
+    border-color: $blue-dark !important;
+    &:hover {
+      color: white !important;
+    }
+  }
 }
 
 @media (min-width: 768px) {
-    .navbar-nav {
-        margin: 0 0 0 auto;
-        display: inherit;
-        float: none;
-    }
+  .navbar-nav {
+    margin: 0 0 0 auto;
+    display: inherit;
+    float: none;
+  }
 }
 
 @media (max-width: 767px) {
-    body {
-        font-size: .9rem;
+  body {
+    font-size: .9rem;
+  }
+  nav {
+    padding: 10px !important;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  #home {
+    padding-top: 250px !important;
+  }
+  #info {
+    & .card {
+      padding:  20px;
     }
-    nav {
-        padding: 10px !important;
-    }
-    .navbar-nav {
-        text-align: center;
-    }
-}
-
-@media (max-width: 459px) {
-    section #home {
-        padding-top: 140px;
-        padding-bottom: 200px;
-    }
+  }
 }
