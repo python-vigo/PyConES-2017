@@ -15,19 +15,19 @@
   &-img {
     min-height: 50px;
     &-gold {
-      @include sponsor_img($height: 170px, $max-height: 170px);
+      @include sponsor_img($max-height: 170px);
     }
     &-silver {
-      @include sponsor_img($height: 200px, $max-height: 200px);
+      @include sponsor_img($max-height: 200px);
     }
     &-bronze {
       @include sponsor_img($max-height: 100px);
     }
     &-colab {
-      @include sponsor_img($max-height: 100px, $padding: 10px);
+      @include sponsor_img($max-height: 100px, $padding: 20px);
     }
     &-org {
-      @include sponsor_img($max-height: 120px, $padding: 20px);
+      @include sponsor_img($max-height: 100px);
     }
   }
   &-list {
