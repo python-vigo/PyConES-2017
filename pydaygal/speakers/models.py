@@ -38,14 +38,17 @@ class Speaker(TimeStampedModel):
         blank=True,
         null=True
     )
-    url_github = models.TextField(default="", blank=True)
-    url_blog = models.TextField(default="", blank=True)
-    url_mail = models.TextField(default="", blank=True)
-    url_twitter = models.TextField(default="", blank=True)
+    url_github = models.CharField(max_length=100, default="", blank=True)
+    url_blog = models.CharField(max_length=100, default="", blank=True)
+    url_mail = models.CharField(max_length=100, default="", blank=True)
+    url_twitter = models.CharField(max_length=100, default="", blank=True)
     track = models.IntegerField(default=0)
     presentations = []
-    annotation = models.TextField(default="", blank=True)
+    presentation = models.CharField(max_length=200, default="", blank=True)
+    annotation = models.CharField(max_length=200, default="", blank=True)
+
     is_keynoter = models.BooleanField(default=False)
+
     objects = SpeakersManager()
 
     class Meta:
