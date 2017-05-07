@@ -12,7 +12,7 @@ class PhotosManager(models.Manager):
         if not queryset:
             queryset = self.all()
         photos_list = queryset.order_by('title')
-        paginator = Paginator(photos_list, 10)
+        paginator = Paginator(photos_list, 30)
         if page is None:
             page = request.GET.get('page')
         try:
