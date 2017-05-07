@@ -13,6 +13,7 @@ from django.views.generic import TemplateView
 urlpatterns = i18n_patterns(
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
     url(r'^reg/', TemplateView.as_view(template_name='pages/registry.html'), name="reg"),
+    url(r'^programa/', include('pydaygal.schedule.urls', namespace="programa")),
     url(r'^code-of-conduct/$', TemplateView.as_view(
         template_name='pages/code_of_conduct.html'), name="code-of-conduct"),
     url(r'^info/$', TemplateView.as_view(template_name='pages/info.html'), name="info"),
