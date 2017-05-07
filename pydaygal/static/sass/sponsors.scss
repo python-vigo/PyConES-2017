@@ -15,10 +15,10 @@
   &-img {
     min-height: 50px;
     &-gold {
-      @include sponsor_img($max-height: 170px);
+      @include sponsor_img($max-height: 200px);
     }
     &-silver {
-      @include sponsor_img($max-height: 200px);
+      @include sponsor_img($max-height: 150px);
     }
     &-bronze {
       @include sponsor_img($max-height: 100px);
