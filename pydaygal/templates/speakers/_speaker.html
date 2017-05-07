@@ -1,59 +1,36 @@
-<div class="speaker-card">
+<div class="card-block col-lg-4 col-xs-12 col-md-12">
     <div class="example">
-    <h2>Image Card</h2>
     <article class="card depth--two">
-      <figure class="image">
-        <img src="http://lorempixel.com/output/city-q-c-640-480-1.jpg" alt="City picture via LoremPixel" />
+      <figure>
+        {% if speaker.photo %}<img class="card-img" src="{{ speaker.photo.url }}" alt="{{ speaker.name }}">{% endif %}
       </figure>
       <div class="card__body">
         <header class="card__primary-title">
-          <h2 class="text-large">Card Title</h2>
-          <h3 class="text-secondary text-normal text-small">Card Subtitle</h3>
+          <h5>{{ speaker.name }}</h5>
+          <p class="text-secondary text-normal text-small"><strong>{{ speaker.annotation }}</strong></p>
         </header>
         <div class="card__supporting-text">
-          Supporting text. Lorem ipsum dolor sit amet.
+          <p class="hidden-sm-down">{{ speaker.biography }}</p>
         </div>
       </div>
-      <footer class="card__actions">
-        <a class="btn" href="#">Action 1</a>
-        <a class="btn" href="#">Action 2</a>
-      </footer>
-    </article>
-  </div>
-</div>
-
-<!--
-
-
-<div class="card speaker-card">
-    <div class="speaker-card-content">
-    {% if speaker.photo %}<img class="img-responsive speaker-card-photo hvr-grow-rotate" src="{{ speaker.photo.url }}">{% endif %}
-        <h5>{{ speaker.name }}</h5>
-        <hr>
-        <p class="hidden-xs-down">{{ speaker.annotation }}</p>
-        <p>
+      <div class="card__actions">
             {% if speaker.url_github %}
             <a href="{{ speaker.url_github }}" alt="github" target="_blank">
-              <i class="fa fa-github" style="color:black"></i>
+              <i class="fa fa-github"></i>
             </a>&nbsp;{% endif %}
             {% if speaker.url_twitter %}
             <a href="{{ speaker.url_twitter }}" alt="twitter">
-              <i class="fa fa-twitter" style="color:black" target="_blank"></i>
+              <i class="fa fa-twitter" target="_blank"></i>
             </a>&nbsp;{% endif %}
             {% if speaker.url_blog %}
             <a href="{{ speaker.url_blog }}" alt="blog">
-              <i class="fa fa-medium" style="color:black" target="_blank"></i>
+              <i class="fa fa-medium" target="_blank"></i>
             </a>&nbsp;{% endif %}
             {% if speaker.url_mail %}
             <a href="{{ speaker.url_mail }}" alt="email">
-              <i class="fa fa-address-card-o" style="color:black" target="_blank"></i>
+              <i class="fa fa-address-card-o" target="_blank"></i>
             </a>{% endif %}
-        </p>
-        <br>
-        <p class="hidden-sm-down">{{ speaker.biography }}</p>
-        <br>
-    </div>
+      </div>
+    </article>
+  </div>
 </div>
-
-
--->

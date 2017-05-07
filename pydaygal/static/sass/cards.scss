@@ -8,27 +8,22 @@
   background-color: #fff;
   color: black !important;
   a {
-    color: $blue-dark !important;
-    padding: 10px;
+    color: $blue-dark;
     border: 1px solid $blue-dark;
     &:hover {
-      color: white !important;
+      color: white;
     }
   }
   &:hover {
     box-shadow: $material-shadow-hover;
-    background: white !important;
+    background: white;
     z-index: 9;
   }
   &-title {
     width: 100%;
   }
+  & row {
+    justify-content: center;
+  }
 }
 
-.card-marco-img {
-  background: url("../images/marco-fachada.jpg");
-  background-color: #3d73a7;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 200px
-}
