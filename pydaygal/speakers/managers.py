@@ -12,7 +12,7 @@ class SpeakersManager(models.Manager):
         if not queryset:
             queryset = self.all()
         speakers_list = queryset.order_by('name')
-        paginator = Paginator(speakers_list, 10)
+        paginator = Paginator(speakers_list, 20)
         if page is None:
             page = request.GET.get('page')
         try:

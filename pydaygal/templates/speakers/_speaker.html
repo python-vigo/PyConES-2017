@@ -6,8 +6,11 @@
       <div class="card__body">
         <header class="card__primary-title">
           <h5>{{ speaker.name }}</h5>
-          <p class="text-secondary text-normal text-small"><strong>{{ speaker.annotation }}</strong></p>
+          <strong>{{ speaker.annotation }}</strong>
         </header>
+        <div class="card__supporting-text" style="background: white;">
+          <strong>{{ speaker.presentation }}</strong>
+        </div>
         <div class="card__supporting-text">
           <p class="hidden-sm-down">{{ speaker.biography }}</p>
         </div>

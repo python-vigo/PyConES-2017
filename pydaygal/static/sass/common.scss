@@ -21,7 +21,6 @@ $logo-height: 400px;
 
 a:focus {
   box-shadow: none;
-  color: white;
 }
 
 button {
@@ -76,7 +75,7 @@ button {
 }
 
 .nav-link {
-  color: $blue-primary !important;
+  color: $blue-strong !important;
   &:hover {
     color: $blue-dark !important;
   }

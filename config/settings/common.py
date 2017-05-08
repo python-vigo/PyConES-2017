@@ -177,6 +177,7 @@ LOCAL_APPS = (
     'pydaygal.utils',
     'pydaygal.users',
     'pydaygal.configurations',
+    'pydaygal.schedule',
     'pydaygal.sponsorships',
     'pydaygal.speakers',
     'pydaygal.workshops',

@@ -11,6 +11,7 @@ from model_utils.models import TimeStampedModel
 
 from pydaygal.speakers.managers import SpeakersManager
 
+
 @python_2_unicode_compatible
 class Speaker(TimeStampedModel):
 
@@ -38,14 +39,18 @@ class Speaker(TimeStampedModel):
         blank=True,
         null=True
     )
-    url_github = models.TextField(default="", blank=True)
-    url_blog = models.TextField(default="", blank=True)
-    url_mail = models.TextField(default="", blank=True)
-    url_twitter = models.TextField(default="", blank=True)
+    url_github = models.CharField(max_length=100, default="", blank=True)
+    url_blog = models.CharField(max_length=100, default="", blank=True)
+    url_mail = models.CharField(max_length=100, default="", blank=True)
+    url_twitter = models.CharField(max_length=100, default="", blank=True)
     track = models.IntegerField(default=0)
     presentations = []
-    annotation = models.TextField(default="", blank=True)
+    presentation = models.CharField(max_length=200, default="", blank=True)
+    presentation_schedule = models.CharField(max_length=16, default="00:00 - 00:01", blank=True)
+    annotation = models.CharField(max_length=200, default="", blank=True)
+
     is_keynoter = models.BooleanField(default=False)
+
     objects = SpeakersManager()
 
     class Meta:
@@ -64,6 +69,7 @@ class Speaker(TimeStampedModel):
             return self.user.email
         else:
             return self.invite_email
+
     @property
     def get_contact_urls(self):
         if self.contact_urls:
