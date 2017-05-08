@@ -21,17 +21,19 @@
       @include sponsor_img($max-height: 150px);
     }
     &-bronze {
-      @include sponsor_img($max-height: 100px);
+      @include sponsor_img($max-height: 80px);
+      margin-bottom: 30px;
     }
     &-colab {
-      @include sponsor_img($max-height: 100px, $padding: 20px);
+      @include sponsor_img($max-height: 80px, $padding: 10px);
     }
     &-org {
-      @include sponsor_img($max-height: 100px);
+      @include sponsor_img($max-height: 90px);
     }
   }
   &-list {
     text-align: center;
+    padding: 0;
     @include flex_vertical();
     & .nav-item {
       margin-bottom: 20px;
