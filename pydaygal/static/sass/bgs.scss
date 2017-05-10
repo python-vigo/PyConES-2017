@@ -44,19 +44,3 @@
   @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-publico03.jpg");
   height: 100%;
 }
-
-.schedule-bg {
-  background-repeat: no-repeat !important;
-  background-blend-mode: exclusion !important;
-  background-color: #717579 !important;
-  background-position: center !important;
-  background-size: cover !important;
-  color: white !important;
-  text-align: left !important;
-  padding-left: 20px !important;
-  border-left: 2px solid white !important;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  &:hover {
-    transform: scale(1.05);
-  }
-}

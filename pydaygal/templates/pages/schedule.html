@@ -1,179 +1,252 @@
 {% extends "container_clean.html" %} {% load i18n %} {% block content %}
+
 <section id="programa" class="vertical-center">
-  <div class="container text-center">
-    <div class="card-container">
-      <div class="card col">
-        <div class="card-block">
-          <h1><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Programa</h1>
+<div class="container card">
+  <div class="card-block">
+  <div class="sch">
+    <div class="sch-container">
+
+          <h1 class="text-center" style="color: #006997 !important;"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Programa</h1>
           <hr>
-          <table class="table table-striped">
-            <thead class="thead-inverse">
-              <tr>
-                <th>
-                  <strong>Horario</strong>
-                </th>
-                <th>
-                  <strong>Track Principal</strong>
-                </th>
-                <th>
-                  <strong>Track Iniciación</strong>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="schedule-bg-event">
-                <td>09:00 - 09:30</td>
-                <td colspan="2">
-                  <p>{% trans "Registro" %}</p>
-                </td>
-              </tr>
-              <tr class="schedule-bg-event">
-                <td>09:30 - 09:55</td>
-                <td colspan="2">
-                  <p>Presentación</p>
-                </td>
-              </tr>
-              <tr>
-                <td>10:00 - 10:45</td>
+
+          <div class="row sch-row sch-thead">
+            <div class="col-xs-12 col-md-2">&nbsp;</div>
+            <div class="col sch-track sch-head">TRACK 1</div>
+            <div class="col sch-track sch-head">TRACK 2</div>
+          </div>
+
+          <div class="row sch-row">
+            <div class="col-xs-12 col-md-2 sch-hora">
+              09:00 - 09:30
+            </div>
+
+            <div class="col text-center sch-event">
+              <p><strong>{% trans "Registro" %}</strong></p>
+            </div>
+          </div>
+
+          <div class="row sch-row">
+            <div class="col-xs-12 col-md-2 sch-hora">
+              09:30 - 09:55
+            </div>
+
+            <div class="col text-center sch-event">
+              <p><strong>Presentación [ Track 1 ]</strong></p>
+            </div>
+          </div>
+
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              10:00 - 10:45
+            </div>
+
+            <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
                   {% if speaker.presentation_schedule == '10:00 - 10:45' and speaker.track == 1 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <div>
-                    <p><strong>{{ speaker.name }}</strong></p>
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                    </div>
-                    </td>
                   {% endif %}
                 {% endfor %}
+            </div>
+
+            <div class="col sch-track sch-track2">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '10:00 - 10:45' and speaker.track == 2 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <div>
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '10:00 - 10:45' and speaker.track == 2 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                    </div>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
-              </tr>
-              <tr>
-                <td>10:55 - 11:40</td>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              10:55 - 11:40
+            </div>
+
+            <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '10:55 - 11:40' and speaker.track == 1 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '10:55 - 11:40' and speaker.track == 1 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
+            </div>
+
+            <div class="col sch-track sch-track2">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '10:55 - 11:40' and speaker.track == 2 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '10:55 - 11:40' and speaker.track == 2 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
-              </tr>
-              <tr class="schedule-bg-event">
-                <td>11:45 - 12:15</td>
-                <td colspan="2">
-                  <p>Café</p>
-                </td>
-              </tr>
-              <tr>
-                <td>12:20 - 13:10</td>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              11:45 - 12:15
+            </div>
+
+            <div class="col text-center sch-event">
+              <p><strong>Café</strong></p>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              12:20 - 13:10
+            </div>
+
+            <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '12:20 - 13:10' and speaker.track == 1 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '12:20 - 13:10' and speaker.track == 1 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
+            </div>
+
+            <div class="col sch-track sch-track2">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '12:20 - 13:10' and speaker.track == 2 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '12:20 - 13:10' and speaker.track == 2 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
-              </tr>
-              <tr>
-                <td>13:10 - 13:55</td>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              13:10 - 13:55
+            </div>
+
+            <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
                   {% if speaker.presentation_schedule == '13:10 - 13:55' and speaker.track == 1 %}
-                    <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                      <p><strong>{{ speaker.name }}</strong></p>
-                      <p>{{ speaker.presentation }}</p>
-                    </td>
+                    <h6><strong>{{ speaker.name }}</strong></h6>
+                    <p>{{ speaker.presentation }}</p>
                   {% endif %}
                 {% endfor %}
+            </div>
+
+            <div class="col sch-track sch-track2">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '13:10 - 13:55' and speaker.track == 2 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '13:10 - 13:55' and speaker.track == 2 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
-              </tr>
-              <tr class="schedule-bg-event">
-                <td>14:00 - 16:00</td>
-                <td colspan="2">
-                  <p>Comida</p>
-                </td>
-              </tr>
-              <tr>
-                <td>16:05 - 16:50</td>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              14:00 - 16:00
+            </div>
+
+            <div class="col text-center sch-event">
+              <p><strong>Comida</strong></p>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              16:05 - 16:50
+            </div>
+
+            <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
                   {% if speaker.presentation_schedule == '16:05 - 16:50' and speaker.track == 1 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                      <p><strong>{{ speaker.name }}</strong></p>
-                      <p>{{ speaker.presentation }}</p>
-                    </td>
+                    <h6><strong>{{ speaker.name }}</strong></h6>
+                    <p>{{ speaker.presentation }}</p>
                   {% endif %}
                 {% endfor %}
+            </div>
+
+            <div class="col sch-track sch-track2">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '16:05 - 16:50' and speaker.track == 2 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '16:05 - 16:50' and speaker.track == 2 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
-              </tr>
-              <tr>
-                <td>16:55 - 17:40</td>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              16:55 - 17:40
+            </div>
+
+            <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '16:55 - 17:40' and speaker.track == 1 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '16:55 - 17:40' and speaker.track == 1 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
+            </div>
+
+            <div class="col sch-track sch-track2">
                 {% for speaker in speakers %}
-                {% if speaker.presentation_schedule == '16:55 - 17:40' and speaker.track == 2 %}
-                  <td class="schedule-bg" style="background: url('{{ speaker.photo.url }}');">
-                    <p><strong>{{ speaker.name }}</strong></p>
+                  {% if speaker.presentation_schedule == '16:55 - 17:40' and speaker.track == 2 %}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
-                  </td>
-                {% endif %}
+                  {% endif %}
                 {% endfor %}
-              </tr>
-              <tr class="schedule-bg-event">
-                <td colspan="1">18:00 - 19:00</td>
-                <td colspan="1">
-                  <p>Lightning Talks y Cierre</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              18:00 - 19:00
+            </div>
+
+            <div class="col text-center sch-event">
+              <p><strong>Lightning Talks / Cierre</strong></p>
+            </div>
+
+          </div>
+
     </div>
   </div>
+  </div>
+</div>
 </section>
 {% endblock content %}

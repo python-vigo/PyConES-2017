@@ -23,7 +23,7 @@
 
 @mixin bg_mixin($color, $url: null) {
   @include bg_base_mixin();
-  background: url($url);
+  background-image: url($url);
   background-color: $color;
   background-position-x: 50%;
   background-position-y: 70%;
@@ -32,7 +32,7 @@
 
 @mixin bg_mixin_fixed($color, $url) {
   @include bg_base_mixin();
-  background: url($url);
+  background-image: url($url);
   background-color: $color;
   background-attachment: fixed;
   background-position: center;
