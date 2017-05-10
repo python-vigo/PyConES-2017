@@ -1,0 +1,65 @@
+@import "colors";
+.sch {
+  p {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+  &-container {}
+  &-row {
+    height: auto;
+    color: white;
+  }
+  &-hora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 2px;
+    color: black;
+    background-color: $yellow !important;
+  }
+  &-event {
+    background: #353535;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 2px;
+  }
+  &-track {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 2px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-blend-mode: exclusion !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-color: $blue-strong !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  &-thead {
+    margin: 15px -15px;
+  }
+  &-head {
+    background-color: #ffc40d !important;
+    color: black;
+    padding: 5px;
+  }
+}
