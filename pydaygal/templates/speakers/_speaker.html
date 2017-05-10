@@ -1,4 +1,4 @@
-<div class="card-block col-lg-4 col-xs-12 col-md-12">
+<div class="card-block col col-sm-6 col-md-4">
     <article class="card depth--two">
       <figure>
         {% if speaker.photo %}<img class="card-img" src="{{ speaker.photo.url }}" alt="{{ speaker.name }}">{% endif %}
@@ -26,7 +26,7 @@
             </a>&nbsp;{% endif %}
             {% if speaker.url_blog %}
             <a href="{{ speaker.url_blog }}" alt="blog">
-              <i class="fa fa-medium" target="_blank"></i>
+              <i class="fa fa-pencil-square-o" target="_blank"></i>
             </a>&nbsp;{% endif %}
             {% if speaker.url_mail %}
             <a href="{{ speaker.url_mail }}" alt="email">
