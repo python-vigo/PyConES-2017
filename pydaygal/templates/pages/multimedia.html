@@ -3,21 +3,22 @@
   <div class="container-fluid text-center">
     <h2><i class="fa fa-video-camera" aria-hidden="true"></i> {% trans "Ponencias" %} 2016</h2>
     <hr>
-    <div class="row text-center" style="color:black;list-style: none;">
+    <div class="row text-center" style="color: black;list-style: none;justify-content: center;">
       {% for v in videos %}
-      <li class="col-xs-6 col-md-4 col-lg-3">
-        <iframe width="100%" height="290" src="{{ v.url }}?controls=0"frameborder="0" allowfullscreen></iframe>
+      <li class="col-12 col-md-4">
+        <iframe width="100%" height="auto" src="{{ v.url }}?controls=0"frameborder="0" allowfullscreen></iframe>
         <br>
         <p class="text-left">{{ v.speaker }} | {{ v.title }}</p>
       </li>
       {% endfor %}
     </div>
+    <br><br>
     <div>
       <h2><i class="fa fa-camera" aria-hidden="true"></i> Fotos 2016</h2>
       <hr>
-      <div class="row text-center" style="color:black;list-style: none;">
+      <div class="row text-center" style="color:black;list-style: none;justify-content: center;align-items: center;">
         {% for foto in photos %}
-        <li class="col-xs-6 col-md-4 col-lg-3">
+        <li class="col-6 col-md-3">
           <a href="/media/{{ foto.photo }}"><img class="m-box-img" src="/media/{{ foto.photo }}"></a>
           <p  class="text-left">{{ foto.title }} </p>
         </li>
