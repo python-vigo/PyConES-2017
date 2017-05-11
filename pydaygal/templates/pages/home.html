@@ -45,7 +45,7 @@
 <section id="sponsors">
   <div class="container text-center">
     <br>
-    <h2>Patrocinadores</h2>
+    <p>PATROCINADORES</p>
     <hr>
     <br>
     <br>
@@ -53,6 +53,8 @@
     {% for level in levels %}
       {% if level.name == 'Oro' or level.name == 'Ouro' or level.name == 'Bronce' %}
       <a class="btn btn-primary btn-level">{{ level.name }}</a>
+      <br>
+      <br>
       {% sponsors level.pk as sponsors %}
       {% if sponsors %}
       <ul class="sponsors-list" style="-webkit-padding-start: 0;">
@@ -81,7 +83,7 @@
     {% endfor %}
     <br>
     <br>
-    <h2>Organizadores</h2>
+    <p>ORGANIZADORES</p>
     <hr>
     <br>
     <br>
@@ -110,7 +112,7 @@
       {% endif %}
     {% endfor %}
     <br>
-    <h2>Colaboradores</h2>
+    <p>COLABORADORES</p>
     <hr><br>
     {% for level in levels %}
       {% sponsors level.pk as sponsors %}
