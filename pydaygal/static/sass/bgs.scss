@@ -5,11 +5,12 @@
 }
 
 #cfp {
-  @include bg_mixin($blend-bg-color, "../images/pyday2016/pyday16-sonrisas.jpg");
+  @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-sonrisas.jpg");
 }
 
 #registro {
-  @include bg_mixin($blend-bg-color, "../images/pyday2016/pyday16-registro.jpg");
+  @include bg_mixin_fixed($blend-bg-color, "../images/pyday2016/pyday16-registro.jpg");
+  padding: 100px;
 }
 
 #speakers {
