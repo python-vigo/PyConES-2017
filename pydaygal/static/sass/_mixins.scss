@@ -19,6 +19,7 @@
 @mixin bg_base_mixin() {
   background-repeat: no-repeat;
   background-blend-mode: exclusion;
+  background-size: cover;
 }
 
 @mixin bg_mixin($color, $url: null) {

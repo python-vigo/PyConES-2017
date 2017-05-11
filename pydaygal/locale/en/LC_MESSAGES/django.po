@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 17:19+0000\n"
-"PO-Revision-Date: 2016-07-23 17:43+0200\n"
-"Last-Translator: b'  <organizacion2015@lists.es.python.org>'\n"
+"POT-Creation-Date: 2017-05-11 12:43+0000\n"
+"PO-Revision-Date: 2017-05-11 13:48+0200\n"
+"Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Translated-Using: django-rosetta 0.7.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: config/settings/common.py:72
 msgid "Galego"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Español"
 msgstr "Spanish"
 
-#: config/urls.py:39
+#: config/urls.py:41
 #, python-format
 msgid "%s Admin"
 msgstr ""
@@ -243,56 +243,33 @@ msgstr ""
 msgid "[%s] Tienes una nueva propuesta para revisar"
 msgstr ""
 
-#: pydaygal/schedules/models.py:104 pydaygal/schedules/models.py:233
-msgid "video URL"
-msgstr ""
-
-#: pydaygal/schedules/models.py:106
-msgid "keynote URL"
-msgstr ""
-
-#: pydaygal/schedules/models.py:107
-msgid "keynote file"
-msgstr ""
-
-#: pydaygal/schedules/models.py:235
-msgid "URL de la presentación o del código"
-msgstr ""
-
-#: pydaygal/schedules/models.py:236
-#, fuzzy
-#| msgid "Descargar presentación"
-msgid "Fichero de presentación"
-msgstr "Download keynote"
-
-#: pydaygal/schedules/views.py:90 pydaygal/speakers/views.py:71
-#: pydaygal/workshops/views.py:66
-#, fuzzy
-#| msgid "Datos guardados correctamente"
-msgid "Datos actualizados correctamente"
-msgstr "Data saved correctly"
-
-#: pydaygal/speakers/models.py:20 pydaygal/workshops/models.py:23
+#: pydaygal/speakers/models.py:21 pydaygal/workshops/models.py:23
 msgid "Nombre"
 msgstr "Name"
 
-#: pydaygal/speakers/models.py:23 pydaygal/workshops/models.py:26
+#: pydaygal/speakers/models.py:24 pydaygal/workshops/models.py:26
 msgid "Tal como quieres que apareza en el programa de la conferencia."
 msgstr ""
 
-#: pydaygal/speakers/models.py:26
+#: pydaygal/speakers/models.py:27
 msgid "Biografía"
 msgstr ""
 
-#: pydaygal/speakers/models.py:30
+#: pydaygal/speakers/models.py:31
 msgid ""
 "Unas palabras sobre ti. Edita usando <a href='http://warpedvisions.org/"
 "projects/markdown-cheat-sheet/target='_blank'>Markdown</a>."
 msgstr ""
 
-#: pydaygal/speakers/models.py:36
+#: pydaygal/speakers/models.py:37
 msgid "Fotografía"
 msgstr ""
+
+#: pydaygal/speakers/views.py:71 pydaygal/workshops/views.py:66
+#, fuzzy
+#| msgid "Datos guardados correctamente"
+msgid "Datos actualizados correctamente"
+msgstr "Data saved correctly"
 
 #: pydaygal/sponsorships/__init__.py:10
 msgid "Text"
@@ -414,28 +391,21 @@ msgstr "Enter this link to reset your password:"
 msgid "Hola"
 msgstr ""
 
-#: pydaygal/templates/headers.html:24 pydaygal/templates/pages/home.html:35
-#: pydaygal/templates/pages/info.html:8
+#: pydaygal/templates/headers.html:24 pydaygal/templates/pages/home.html:37
+#: pydaygal/templates/pages/info.html:10
 msgid "Información del evento"
 msgstr "About the event"
 
-#: pydaygal/templates/headers.html:27 pydaygal/templates/pages/registry.html:7
+#: pydaygal/templates/headers.html:30 pydaygal/templates/pages/registry.html:7
+#: pydaygal/templates/pages/schedule.html:24
 msgid "Registro"
 msgstr ""
 
-#: pydaygal/templates/headers.html:34
-msgid "Programa"
-msgstr ""
-
-#: pydaygal/templates/headers.html:38
-msgid "Workshops"
-msgstr ""
-
-#: pydaygal/templates/headers.html:46 pydaygal/templates/headers.html:90
+#: pydaygal/templates/headers.html:42 pydaygal/templates/headers.html:85
 msgid "Contacta con nosotros"
 msgstr "Contact"
 
-#: pydaygal/templates/headers.html:61
+#: pydaygal/templates/headers.html:57
 msgid "Salir"
 msgstr "Logout"
 
@@ -566,10 +536,8 @@ msgid ""
 msgstr ""
 
 #: pydaygal/templates/pages/home.html:18
-#, fuzzy
-#| msgid "¿Que es PyDay Galicia 2017?"
 msgid "¿Qué es PyDay Galicia 2017?"
-msgstr "What is PyDay Galicia 2017?"
+msgstr "¿Qué es PyDay Galicia 2017?"
 
 #: pydaygal/templates/pages/home.html:20
 msgid ""
@@ -583,9 +551,13 @@ msgid ""
 "<strong>Vigo</strong>,\n"
 "            tras una primera edición exitosa, con muy buena acogida.\n"
 "          </p>\n"
-"\t  <p>La entrada al evento es totalmente gratuita, fomentando así\n"
-"\t   la difusión de conocimiento y la promoción de la cultura tecnológica.\n"
-"\t  </p>\n"
+"          <p>La entrada al evento es totalmente gratuita, fomentando así\n"
+"            la difusión de conocimiento y la promoción de la cultura "
+"tecnológica.\n"
+"          </p>\n"
+"          <p>¡Disponemos también de una entrada de pago que incluye la "
+"comida\n"
+"            y lugar en el que disfrutar de una sesión de networking!</p>\n"
 "          <p class=\"card-text\">\n"
 "            Como novedad en esta edición, contaremos con dos tracks de "
 "conferencias,<br>\n"
@@ -594,48 +566,46 @@ msgid ""
 "          "
 msgstr ""
 
-#: pydaygal/templates/pages/home.html:40
+#: pydaygal/templates/pages/home.html:42
 msgid "¿Quién hace este evento posible?"
 msgstr ""
 
-#: pydaygal/templates/pages/home.html:133
+#: pydaygal/templates/pages/home.html:144
 msgid "¿Quieres ser sponsor?"
 msgstr ""
 
-#: pydaygal/templates/pages/home.html:138
+#: pydaygal/templates/pages/home.html:149
 msgid "EDICIONES ANTERIORES"
 msgstr ""
 
-#: pydaygal/templates/pages/info.html:18
+#: pydaygal/templates/pages/info.html:15
 msgid "Localización"
 msgstr "Location"
 
-#: pydaygal/templates/pages/info.html:33
+#: pydaygal/templates/pages/info.html:30
 msgid "Fecha y horarios"
 msgstr ""
 
-#: pydaygal/templates/pages/info.html:36
+#: pydaygal/templates/pages/info.html:33
 msgid ""
 "10 de Junio de 2017 |\n"
 "              <i class=\"fa fa-clock-o fa-4\" aria-hidden=\"true\"></i> De "
 "09:00. a 19:00h."
 msgstr ""
 
-#: pydaygal/templates/pages/info.html:40
-#, fuzzy
-#| msgid "Cómo llegar a Almería"
+#: pydaygal/templates/pages/info.html:37
 msgid "¿Cómo llegar?"
-msgstr "How to arrive to Almeria"
+msgstr "¿Cómo llegar?"
 
-#: pydaygal/templates/pages/info.html:44
+#: pydaygal/templates/pages/info.html:41
 msgid "C1 4A 4C 5A 9A 9B 11 12A 12B 15 16 18 24"
 msgstr ""
 
-#: pydaygal/templates/pages/info.html:65
+#: pydaygal/templates/pages/info.html:63
 msgid "Código de conducta"
 msgstr "Code of Conduct"
 
-#: pydaygal/templates/pages/info.html:69
+#: pydaygal/templates/pages/info.html:67
 msgid ""
 "\n"
 "          <br>\n"
@@ -672,7 +642,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: pydaygal/templates/pages/info.html:96
+#: pydaygal/templates/pages/info.html:94
 msgid "Código de Conducta Completo"
 msgstr "Complete Code of Conduct"
 
@@ -690,18 +660,27 @@ msgstr "We are preparing the new edition of PyDay Galicia, coming soon!"
 msgid "Ponencias"
 msgstr ""
 
-#: pydaygal/templates/pages/registry.html:14
+#: pydaygal/templates/pages/registry.html:10
 msgid ""
-"En los próximos días abriremos la plataforma de registro. Vuelve pronto, y "
-"no te quedes sin plaza."
+"\n"
+"            <p>La entrada al evento es totalmente gratuita, fomentando así\n"
+"              la difusión de conocimiento y la promoción de la cultura "
+"tecnológica.\n"
+"            </p>\n"
+"            <p>¡Disponemos también de una entrada de pago que incluye la "
+"comida\n"
+"              y lugar en el que disfrutar de una sesión de networking!</p>\n"
+"            "
+msgstr ""
+
+#: pydaygal/templates/pages/registry.html:39
+msgid "RESERVA YA TU PLAZA"
 msgstr ""
 
 #: pydaygal/templates/speakers/edit.html:8
 #: pydaygal/templates/workshops/edit.html:8
-#, fuzzy
-#| msgid "Email del ponente"
 msgid "Perfil de ponente"
-msgstr "Speaker email"
+msgstr "Perfil de ponente"
 
 #: pydaygal/templates/speakers/edit.html:11
 #: pydaygal/templates/workshops/edit.html:11
@@ -716,10 +695,8 @@ msgstr "Save"
 
 #: pydaygal/templates/speakers/edit.html:44
 #: pydaygal/templates/workshops/edit.html:46
-#, fuzzy
-#| msgid "Talleres"
 msgid "Charlas/Talleres"
-msgstr "Workshops"
+msgstr "Charlas/Talleres"
 
 #: pydaygal/templates/speakers/edit.html:45
 msgid ""
@@ -728,11 +705,11 @@ msgid ""
 "presentación</strong>."
 msgstr ""
 
-#: pydaygal/templates/speakers/list.html:12
+#: pydaygal/templates/speakers/list.html:16
 msgid "¡Iremos desvelando poco a poco a nuestros próximos ponentes!"
 msgstr ""
 
-#: pydaygal/templates/speakers/list.html:14
+#: pydaygal/templates/speakers/list.html:19
 msgid "¿Quieres ofrecer una charla? ¡Apúntate en el CFP!"
 msgstr ""
 
@@ -912,6 +889,11 @@ msgstr ""
 #: pydaygal/workshops/models.py:50
 msgid "workshops"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Descargar presentación"
+#~ msgid "Fichero de presentación"
+#~ msgstr "Download keynote"
 
 #, fuzzy
 #~| msgid "Fotos"

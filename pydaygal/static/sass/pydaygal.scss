@@ -24,6 +24,7 @@
 @import "speakers";
 @import "workshops";
 @import "schedule";
+@import "reg";
 
 html {
   position: relative;
@@ -38,6 +39,9 @@ body {
   color: white;
 }
 
+a:hover {
+  cursor: pointer !important;
+}
 b,
 bolder strong {
   font-family: $body-font-family;
