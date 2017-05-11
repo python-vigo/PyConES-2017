@@ -1,18 +1,49 @@
-{% extends "container_clean.html" %}
-{% load i18n %}
-{% block content %}
-<section id="reg" class="vertical-center">
+{% extends "container_clean.html" %} {% load i18n %} {% load static %} {% block content %}
+<section id="reg">
   <div class="container text-center">
     <div class="card-container">
       <div class="card col-md-8 offset-md-2">
         <div class="card-block">
           <h1><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;{% trans "Registro" %}</h1>
           <hr><br>
-          <h2 class="card-title">
-            ¡Pronto!
-          </h2>
-          <p class="card-text">{% blocktrans %}En los próximos días abriremos la plataforma de registro. Vuelve pronto, y no te quedes sin plaza.{% endblocktrans %}</p>
+          <div class="row">
+            {% blocktrans %}
+            <p>La entrada al evento es totalmente gratuita, fomentando así
+              la difusión de conocimiento y la promoción de la cultura tecnológica.
+            </p>
+            <p>¡Disponemos también de una entrada de pago que incluye la comida
+              y lugar en el que disfrutar de una sesión de networking!</p>
+            {% endblocktrans %}
+          </div>
+          <div class="row" style="color:white !important;">
+            <div class="col reg-card">
+              <h5 style="color:white !important;">ENTRADA STANDARD</h5>
+              <p>Conferencias</p>
+              <p>+ Café</p>
+              <p>+ Welcome Pack</p>
+              <h6 style="color:white !important; border: 1px solid white;padding:15px;">¡GRATIS!</h6>
+            </div>
+            <div class="col reg-card">
+              <h5 style="color:white !important;">ENTRADA PREMIUM</h5>
+              <p>Conferencias</p>
+              <p>+ Café</p>
+              <p>+ Welcome Pack</p>
+              <p><strong>+ Sesión de networking técnico</strong></p>
+              <p><strong>+ Comida</strong></p>
+              <h6 style="color:white !important; border: 1px solid white;padding:15px;">13 €</h6>
+            </div>
+          </div>
+
+          <br>
+          <a href="https://entradas.ataquilla.com/ventaentradas/es/varios/marcomuseo-arte-contemporanea/7442--pyday-galicia-2017.html"
+            class="btn btn-primary">{% trans "RESERVA YA TU PLAZA" %}</a>
+
+          <div class="col-xs-12 col-sm-6 offset-xs-2 offset-sm-3" style="margin-top:30px;">
+            <a href="https://entradas.ataquilla.com/ventaentradas/es/varios/marcomuseo-arte-contemporanea/7442--pyday-galicia-2017.html" style="border:none;"><img class="img-responsive" src="{% static "images/logos/colaboradores/ataquilla/ataquilla-color.png" %}" alt="Ataquilla.com"></a>
+          </div>
         </div>
+
+
       </div>
     </div>
   </div>

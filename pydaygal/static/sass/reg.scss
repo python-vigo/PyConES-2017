@@ -1,0 +1,19 @@
+@import "colors";
+.reg {
+  p {
+    margin: 0;
+  }
+  &-card {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 2px;
+    text-align: center;
+    background-color: $blue-strong !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+}
