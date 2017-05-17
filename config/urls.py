@@ -8,11 +8,13 @@ from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
+from pydaygal.registration.views import RegistrationRedirectView
 
 # URLs with with i18n
 urlpatterns = i18n_patterns(
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
-    url(r'^reg/', TemplateView.as_view(template_name='pages/registry.html'), name="reg"),
+    url(r'^reg/', TemplateView.as_view(template_name='pages/registration.html'), name='reg'),
+    url(r'^registration/$', RegistrationRedirectView.as_view(), name="registration"),
     url(r'^programa/', include('pydaygal.schedule.urls', namespace="programa")),
     url(r'^code-of-conduct/$', TemplateView.as_view(
         template_name='pages/code_of_conduct.html'), name="code-of-conduct"),
