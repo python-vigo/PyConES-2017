@@ -43,12 +43,17 @@ class Speaker(TimeStampedModel):
     url_blog = models.CharField(max_length=100, default="", blank=True)
     url_mail = models.CharField(max_length=100, default="", blank=True)
     url_twitter = models.CharField(max_length=100, default="", blank=True)
+    url_github_2 = models.CharField(max_length=100, default="", blank=True)
+    url_blog_2 = models.CharField(max_length=100, default="", blank=True)
+    url_mail_2 = models.CharField(max_length=100, default="", blank=True)
+    url_twitter_2 = models.CharField(max_length=100, default="", blank=True)
     track = models.IntegerField(default=0)
     presentations = []
     presentation = models.CharField(max_length=200, default="", blank=True)
+    presentation_text = models.TextField(default="", blank=True)
     presentation_schedule = models.CharField(max_length=16, default="00:00 - 00:01", blank=True)
     annotation = models.CharField(max_length=200, default="", blank=True)
-
+    is_workshop =  models.BooleanField(default=False)
     is_keynoter = models.BooleanField(default=False)
 
     objects = SpeakersManager()

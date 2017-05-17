@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-11 12:43+0000\n"
-"PO-Revision-Date: 2017-05-11 14:44+0200\n"
+"POT-Creation-Date: 2017-05-17 13:11+0000\n"
+"PO-Revision-Date: 2017-05-17 15:12+0200\n"
 "Last-Translator: Ivan Nieto <ivan.nieto.sousa@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -400,7 +400,7 @@ msgid "Hola"
 msgstr "Hola"
 
 #: pydaygal/templates/headers.html:24 pydaygal/templates/pages/home.html:37
-#: pydaygal/templates/pages/info.html:10
+#: pydaygal/templates/pages/info.html:13
 msgid "Información del evento"
 msgstr "Información del evento"
 
@@ -711,15 +711,15 @@ msgstr "¿Quieres ser sponsor?"
 msgid "EDICIONES ANTERIORES"
 msgstr "EDICIONES ANTERIORES"
 
-#: pydaygal/templates/pages/info.html:15
+#: pydaygal/templates/pages/info.html:18
 msgid "Localización"
 msgstr "Localización"
 
-#: pydaygal/templates/pages/info.html:30
+#: pydaygal/templates/pages/info.html:33
 msgid "Fecha y horarios"
 msgstr "Fecha y horarios"
 
-#: pydaygal/templates/pages/info.html:33
+#: pydaygal/templates/pages/info.html:36
 msgid ""
 "10 de Junio de 2017 |\n"
 "              <i class=\"fa fa-clock-o fa-4\" aria-hidden=\"true\"></i> De "
@@ -729,19 +729,19 @@ msgstr ""
 "              <i class=\"fa fa-clock-o fa-4\" aria-hidden=\"true\"></i> De "
 "09:00. a 19:00h."
 
-#: pydaygal/templates/pages/info.html:37
+#: pydaygal/templates/pages/info.html:40
 msgid "¿Cómo llegar?"
 msgstr "¿Cómo llegar?"
 
-#: pydaygal/templates/pages/info.html:41
+#: pydaygal/templates/pages/info.html:44
 msgid "C1 4A 4C 5A 9A 9B 11 12A 12B 15 16 18 24"
 msgstr "C1 4A 4C 5A 9A 9B 11 12A 12B 15 16 18 24"
 
-#: pydaygal/templates/pages/info.html:63
+#: pydaygal/templates/pages/info.html:66
 msgid "Código de conducta"
 msgstr "Código de conducta"
 
-#: pydaygal/templates/pages/info.html:67
+#: pydaygal/templates/pages/info.html:70
 msgid ""
 "\n"
 "          <br>\n"
@@ -811,7 +811,7 @@ msgstr ""
 "          </p>\n"
 "        "
 
-#: pydaygal/templates/pages/info.html:94
+#: pydaygal/templates/pages/info.html:97
 msgid "Código de Conducta Completo"
 msgstr "Código de Conducta Completo"
 
@@ -849,9 +849,13 @@ msgstr ""
 "              y lugar en el que disfrutar de una sesión de networking!</p>\n"
 "            "
 
-#: pydaygal/templates/pages/registry.html:39
+#: pydaygal/templates/pages/registry.html:43
 msgid "RESERVA YA TU PLAZA"
 msgstr "RESERVA YA TU PLAZA"
+
+#: pydaygal/templates/speakers/_speaker.html:21
+msgid "WORKSHOP"
+msgstr "TALLER"
 
 #: pydaygal/templates/speakers/edit.html:8
 #: pydaygal/templates/workshops/edit.html:8
@@ -1071,11 +1075,11 @@ msgstr "Imagen"
 
 #: pydaygal/workshops/models.py:49
 msgid "workshop"
-msgstr "workshop"
+msgstr "taller"
 
 #: pydaygal/workshops/models.py:50
 msgid "workshops"
-msgstr "workshops"
+msgstr "talleres"
 
 #~ msgid "video URL"
 #~ msgstr "video URL"
