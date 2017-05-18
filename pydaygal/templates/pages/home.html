@@ -125,7 +125,8 @@
             <li class="nav-item col-4">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
-                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-colab">
+                    alt="{{ sponsor.name }}" class="img-fluid sponsors-img-colab"
+                    {% if sponsor.name == 'CPR Daniel Castelao' %} style="max-heigth: 120px;"{% endif %}>
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}
