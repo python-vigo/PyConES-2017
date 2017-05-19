@@ -10,6 +10,9 @@
     & figure {
       margin: -1px 0;
     }
+    .btn-workshop {
+      font-size: 12px;
+    }
     border: 0;
     &-img {
       border-radius: 0;
@@ -22,6 +25,29 @@
       background: $blue-strong;
       & h5 {
         color: white;
+      }
+    }
+    & .card__image {
+      position: relative;
+      width: 100%;
+      & .img-overlay-text {
+        display: none;
+      }
+      &:hover {
+        & .img-overlay {
+          background: black;
+          min-width: 100%;
+          opacity: .7;
+          min-height: 100%;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &-text {
+            color: white;
+            display: flex;
+          }
+        }
       }
     }
     & .card__supporting-text {

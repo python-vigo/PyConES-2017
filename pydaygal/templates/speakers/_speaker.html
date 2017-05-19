@@ -1,7 +1,16 @@
+{% load i18n %}
+
 <div class="card-block col col-sm-6 col-md-4">
     <article class="card depth--two">
       <figure>
-        {% if speaker.photo %}<img class="card-img" src="{{ speaker.photo.url }}" alt="{{ speaker.name }}">{% endif %}
+        <div class="card__image">
+          <div class="img-overlay">
+            <p class="img-overlay-text">
+              {{ speaker.presentation_text }}
+            </p>
+          </div>
+          {% if speaker.photo %}<img class="card-img" src="{{ speaker.photo.url }}" alt="{{ speaker.name }}">{% endif %}
+        </div>
       </figure>
       <div class="card__body">
         <header class="card__primary-title">
@@ -9,6 +18,12 @@
           <strong>{{ speaker.annotation }}</strong>
         </header>
         <div class="card__supporting-text" style="background: white;">
+          {% if speaker.is_workshop %}
+          <a class="btn btn-workshop">
+            {% trans "WORKSHOP" %}
+          </a>
+          <br><br>
+          {% endif %}
           <strong>{{ speaker.presentation }}</strong>
         </div>
         <div class="card__supporting-text">
@@ -30,6 +45,23 @@
             </a>&nbsp;{% endif %}
             {% if speaker.url_mail %}
             <a href="{{ speaker.url_mail }}" alt="email">
+              <i class="fa fa-address-card-o" target="_blank"></i>
+            </a>{% endif %}
+            {% if speaker.url_github_2 %}
+            &nbsp;·&nbsp;
+            <a href="{{ speaker.url_github_2 }}" alt="github" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>&nbsp;{% endif %}
+            {% if speaker.url_twitter_2 %}
+            <a href="{{ speaker.url_twitter_2 }}" alt="twitter">
+              <i class="fa fa-twitter" target="_blank"></i>
+            </a>&nbsp;{% endif %}
+            {% if speaker.url_blog_2 %}
+            <a href="{{ speaker.url_blog_2 }}" alt="blog">
+              <i class="fa fa-pencil-square-o" target="_blank"></i>
+            </a>&nbsp;{% endif %}
+            {% if speaker.url_mail_2 %}
+            <a href="{{ speaker.url_mail_2 }}" alt="email">
               <i class="fa fa-address-card-o" target="_blank"></i>
             </a>{% endif %}
       </div>
