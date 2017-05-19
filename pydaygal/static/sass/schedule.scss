@@ -1,5 +1,11 @@
 @import "colors";
 .sch {
+  a {
+    cursor: default !important;
+    &:hover {
+      cursor: default !important;
+    }
+  }
   p {
     margin: 0;
   }
@@ -40,17 +46,12 @@
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    list-style-type: none;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
     margin: 2px;
+    list-style-type: none;
     text-align: center;
-    background-position: center;
-    background-repeat: no-repeat !important;
-    background-blend-mode: exclusion !important;
-    background-position: center !important;
-    background-size: cover !important;
     background-color: $blue-strong !important;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
@@ -61,5 +62,11 @@
     background-color: #ffc40d !important;
     color: black;
     padding: 5px;
+  }
+  .btn-primary {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-size: 12px;
   }
 }

@@ -24697,27 +24697,6 @@ footer a:hover {
   color: #6bffce
 }
 
-@font-face {
-  font-family: 'Raleway_italic';
-  src: url("../fonts/roblealtlight-italic-webfont.woff2") format("woff2"), url("../fonts/roblealtlight-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url("../fonts/roblealtlight-webfont.woff2") format("woff2"), url("../fonts/roblealtlight-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url("../fonts/roblealtmedium-webfont.woff2") format("woff2"), url("../fonts/roblealtmedium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)

@@ -11,13 +11,13 @@
 
           <div class="row sch-row sch-thead">
             <div class="col-xs-12 col-md-2">&nbsp;</div>
-            <div class="col sch-track sch-head">TRACK 1</div>
-            <div class="col sch-track sch-head">TRACK 2</div>
+            <div class="col sch-track sch-head"><p>Track 1</p><strong>Profesional</strong></div>
+            <div class="col sch-track sch-head"><p>Track 2</p><strong>Iniciación</strong></div>
           </div>
 
           <div class="row sch-row">
             <div class="col-xs-12 col-md-2 sch-hora">
-              09:00 - 09:30
+              09:15 - 09:30
             </div>
 
             <div class="col text-center sch-event">
@@ -30,8 +30,11 @@
               09:30 - 09:55
             </div>
 
-            <div class="col text-center sch-event">
-              <p><strong>Presentación [ Track 1 ]</strong></p>
+            <div class="col text-center sch-track">
+              <p><a class="btn btn-primary">TRACK 1</a></p>
+              <br>
+              <p><h6><strong>Presentación + AdaLab </strong></h6>(Creando Diversidad Digtal)</p>
+
             </div>
           </div>
 
@@ -52,12 +55,14 @@
             </div>
 
             <div class="col sch-track sch-track2">
-                {% for speaker in speakers %}
+                <h6><strong></strong></h6>
+                <p>Iniciación a Python!</p>
+                <!--{% for speaker in speakers %}
                   {% if speaker.presentation_schedule == '10:00 - 10:45' and speaker.track == 2 %}
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
                   {% endif %}
-                {% endfor %}
+                {% endfor %}-->
             </div>
 
           </div>
@@ -82,6 +87,8 @@
             <div class="col sch-track sch-track2">
                 {% for speaker in speakers %}
                   {% if speaker.presentation_schedule == '10:55 - 11:40' and speaker.track == 2 %}
+                    <a class="btn btn-primary">{% trans "TALLER" %}</a>
+                    <br>
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
                   {% endif %}
@@ -109,12 +116,12 @@
           <div class="row sch-row">
 
             <div class="col-xs-12 col-md-2 sch-hora">
-              12:20 - 13:10
+              12:20 - 13:05
             </div>
 
             <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
-                  {% if speaker.presentation_schedule == '12:20 - 13:10' and speaker.track == 1 %}
+                  {% if speaker.presentation_schedule == '12:20 - 13:05' and speaker.track == 1 %}
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
                   {% endif %}
@@ -123,7 +130,7 @@
 
             <div class="col sch-track sch-track2">
                 {% for speaker in speakers %}
-                  {% if speaker.presentation_schedule == '12:20 - 13:10' and speaker.track == 2 %}
+                  {% if speaker.presentation_schedule == '12:20 - 13:05' and speaker.track == 2 %}
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
                   {% endif %}
@@ -154,6 +161,10 @@
                   {% if speaker.presentation_schedule == '13:10 - 13:55' and speaker.track == 2 %}
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
+                  {% endif %}
+                  {% if speaker.presentation_2_schedule == '13:10 - 13:55'%}
+                    <h6><strong>{{ speaker.name }}</strong></h6>
+                    <p>{{ speaker.presentation_2 }}</p>
                   {% endif %}
                 {% endfor %}
             </div>
@@ -192,14 +203,11 @@
             </div>
 
             <div class="col sch-track sch-track2">
-                {% for speaker in speakers %}
-                  {% if speaker.presentation_schedule == '16:05 - 16:50' and speaker.track == 2 %}
-                    <h6><strong>{{ speaker.name }}</strong></h6>
-                    <p>{{ speaker.presentation }}</p>
-                  {% endif %}
-                {% endfor %}
+                    <a class="btn btn-primary">{% trans "TALLER" %}</a>
+                    <br>
+                    <h6><strong>Félix Gómez y Miguel Gesteiro</strong></h6>
+                    <p>Controlando el mundo físico con Python y RaspberryPi</p>
             </div>
-
           </div>
 
           <!-- ********************************************* -->
@@ -220,12 +228,36 @@
             </div>
 
             <div class="col sch-track sch-track2">
+                <a class="btn btn-primary">{% trans "TALLER" %}</a>
+                <br>
+                <p>Controlando el mundo físico con Python y RaspberryPi</p>
+                <p><strong style="font-size: 12px">CONTINUACIÓN</strong></p>
+            </div>
+
+          </div>
+
+          <!-- ********************************************* -->
+
+          <div class="row sch-row">
+
+            <div class="col-xs-12 col-md-2 sch-hora">
+              17:40 - 18:25
+            </div>
+
+            <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
-                  {% if speaker.presentation_schedule == '16:55 - 17:40' and speaker.track == 2 %}
+                  {% if speaker.presentation_schedule == '17:40 - 18:25' and speaker.track == 1 %}
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
                   {% endif %}
                 {% endfor %}
+            </div>
+
+            <div class="col sch-track sch-track2">
+                <a class="btn btn-primary">{% trans "TALLER" %}</a>
+                <br>
+                <p>Controlando el mundo físico con Python y RaspberryPi</p>
+                <p><strong style="font-size: 12px">CONTINUACIÓN</strong></p>
             </div>
 
           </div>

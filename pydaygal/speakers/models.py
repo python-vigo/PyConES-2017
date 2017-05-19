@@ -50,8 +50,11 @@ class Speaker(TimeStampedModel):
     track = models.IntegerField(default=0)
     presentations = []
     presentation = models.CharField(max_length=200, default="", blank=True)
+    presentation_2 = models.CharField(max_length=200, default="", blank=True)
     presentation_text = models.TextField(default="", blank=True)
+    presentation_2_text = models.TextField(default="", blank=True)
     presentation_schedule = models.CharField(max_length=16, default="00:00 - 00:01", blank=True)
+    presentation_2_schedule = models.CharField(max_length=16, default="00:00 - 00:01", blank=True)
     annotation = models.CharField(max_length=200, default="", blank=True)
     is_workshop =  models.BooleanField(default=False)
     is_keynoter = models.BooleanField(default=False)
