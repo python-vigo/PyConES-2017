@@ -27,7 +27,7 @@
 
           <div class="row sch-row">
             <div class="col-xs-12 col-md-2 sch-hora">
-              09:30 - 09:55
+              09:30 - 10:00
             </div>
 
             <div class="col text-center sch-track">
@@ -42,12 +42,12 @@
           <div class="row sch-row">
 
             <div class="col-xs-12 col-md-2 sch-hora">
-              10:00 - 10:45
+              10:05 - 10:50
             </div>
 
             <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
-                  {% if speaker.presentation_schedule == '10:00 - 10:45' and speaker.track == 1 %}
+                  {% if speaker.presentation_schedule == '10:05 - 10:50' and speaker.track == 1 %}
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
                   {% endif %}
@@ -58,7 +58,7 @@
                 <h6><strong></strong></h6>
                 <p>Iniciación a Python!</p>
                 <!--{% for speaker in speakers %}
-                  {% if speaker.presentation_schedule == '10:00 - 10:45' and speaker.track == 2 %}
+                  {% if speaker.presentation_schedule == '10:05 - 10:50' and speaker.track == 2 %}
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
                   {% endif %}
