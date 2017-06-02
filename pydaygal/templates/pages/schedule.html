@@ -17,7 +17,7 @@
 
           <div class="row sch-row">
             <div class="col-xs-12 col-md-2 sch-hora">
-              09:15 - 09:30
+              09:15 - 09:45
             </div>
 
             <div class="col text-center sch-event">
@@ -27,13 +27,13 @@
 
           <div class="row sch-row">
             <div class="col-xs-12 col-md-2 sch-hora">
-              09:30 - 09:55
+              09:45 - 10:00
             </div>
 
             <div class="col text-center sch-track">
               <p><a class="btn btn-primary">TRACK 1</a></p>
               <br>
-              <p><h6><strong>Presentación + AdaLab </strong></h6>(Creando Diversidad Digtal)</p>
+              <p><h6><strong>Presentación</strong></h6></p>
 
             </div>
           </div>
@@ -55,14 +55,12 @@
             </div>
 
             <div class="col sch-track sch-track2">
-                <h6><strong></strong></h6>
-                <p>Iniciación a Python!</p>
-                <!--{% for speaker in speakers %}
+                {% for speaker in speakers %}
                   {% if speaker.presentation_schedule == '10:00 - 10:45' and speaker.track == 2 %}
                     <h6><strong>{{ speaker.name }}</strong></h6>
                     <p>{{ speaker.presentation }}</p>
                   {% endif %}
-                {% endfor %}-->
+                {% endfor %}
             </div>
 
           </div>
@@ -195,8 +193,8 @@
             <div class="col sch-track sch-track1">
                 {% for speaker in speakers %}
                   {% if speaker.presentation_schedule == '16:05 - 16:50' and speaker.track == 1 %}
-                    <h6><strong>{{ speaker.name }}</strong></h6>
-                    <p>{{ speaker.presentation }}</p>
+                    <h6><strong>{{ speaker.name }} + AdaLab</strong></h6>
+                    <p>{{ speaker.presentation }} + Creando Diversidad Digtal</p>
                   {% endif %}
                 {% endfor %}
             </div>
