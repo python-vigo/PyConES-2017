@@ -122,11 +122,11 @@
         {% if level.name == 'Colaborador' %}
         <ul class="sponsors-list" style="-webkit-padding-start: 0;">
             {% for sponsor in sponsors %}
-            <li class="nav-item col-4">
+            <li class="nav-item col-6 col-md-4">
                 <a href="{{ sponsor.external_url }}" target="_blank">
                     <img src="{{ sponsor.website_logo.url }}" title="{{ sponsor.name }}"
                     alt="{{ sponsor.name }}" class="img-fluid sponsors-img-colab"
-                    {% if sponsor.name == 'CPR Daniel Castelao' %} style="max-heigth: 120px;"{% endif %}>
+                    {% if sponsor.name == 'CPR Daniel Castelao' %} style="heigth: 120px !important; max-heigth: 120px !important;"{% endif %}>
                 </a>
             </li>
             {% if forloop.counter|divisibleby:"2" %}
@@ -157,4 +157,5 @@
     <br><br>
   </div>
 </section>
+
 {% endblock content %}
